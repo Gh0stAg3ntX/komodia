@@ -11,6 +11,8 @@ komodia.com whois: https://archive.today/lhomp
 * DNS hijack - https://archive.today/fePdu
 * Kernel SDK protection watchdog - https://archive.today/7ZnwY
 * Parental control SDKAPI - https://archive.today/0pMQR
+* Superfish Twitter - https://twitter.com/SuperfishTeam
+* Superfish Founder Twitter - https://twitter.com/_adip_
 
 #### best of good:
 * https://filippo.io/Badfish/
