@@ -11,3 +11,8 @@ komodia.com whois: https://archive.today/lhomp
 * DNS hijack - https://archive.today/fePdu
 * Kernel SDK protection watchdog - https://archive.today/7ZnwY
 * Parental control SDKAPI - https://archive.today/0pMQR
+
+#### best of good:
+* https://filippo.io/Badfish/
+* http://blog.erratasec.com/2015/02/extracting-superfish-certificate.html
+* https://www.eff.org/deeplinks/2015/02/further-evidence-lenovo-breaking-https-security-its-laptops
