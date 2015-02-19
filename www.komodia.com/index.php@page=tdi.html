@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head profile="http://purl.org/uF/hAtom/0.1/ http://purl.org/uF/2008/03/">
+	
+	<title>TDI (Transport Driver Interface) free guide</title>
+
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="WordPress" />
+	<meta name="framework" content="WP Framework" />
+
+	<!-- Favicon: Browser + iPhone Webclip -->
+	<link rel="shortcut icon" href="wp-content/themes/wp-framework/images/favicon.jpg" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="wp-content/themes/wp-framework/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="wp-content/themes/wp-framework/library/media/css/print.css" type="text/css" media="print" />
+
+  	<!-- Links: RSS + Atom Syndication + Pingback etc. -->
+	<link rel="alternate" type="application/rss+xml" title="Komodia RSS Feed" href="feed/rss" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="feed/rss" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="feed/atom" />
+	<link rel="pingback" href="xmlrpc.php" />
+
+	<!-- Theme Hook -->
+    	<link rel="alternate" type="application/rss+xml" title="Komodia &raquo; TDI Comments Feed" href="tdi/feed" />
+<link rel='stylesheet' id='really_simple_share_style-css'  href='wp-content/plugins/really-simple-facebook-twitter-share-buttons/style.css' type='text/css' media='all' />
+<!-- This site uses the Yoast Google Analytics plugin v5.2.7 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-34315916-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Yoast Google Analytics -->
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<link rel='shortlink' href='index.html@p=235.html' />
+
+<!-- All in One SEO Pack 2.2.3.1 by Michael Torbert of Semper Fi Web Design[245,292] -->
+<meta name="description"  content="Free guide about what is TDI" />
+
+<meta name="keywords"  content="tdi, winsock, socket, ssl, ssl socket, tcp, udp, ip, open source, c++" />
+
+<link rel="canonical" href="index.html@p=235.html" />
+<!-- /all in one seo pack -->
+	<script type="text/javascript">
+		function showSub(idname){
+			document.getElementById(idname).style.display = "block";
+		}
+		function hideSub(idname){
+			document.getElementById(idname).style.display = "none";
+		}
+	</script>
+<!--END head-->
+</head>
+<body >
+<div class="container top-space">
+	<div id="header">
+    	<div id="logo-holder"><a href="index.php.html"><img src="wp-content/themes/wp-framework/images/logo.gif" alt="Komodia Logo" border="0" /></a></div>
+        <div id="menu-holder">
+        	<div class="menu-left">&nbsp;</div>
+        	<div class="menu-body">
+        	<ul>
+            	<li onmouseover="showSub('products')" onmouseout="hideSub('products')">
+                	<a href="index.php@page=products.html">Products</a>
+                    <div id="products" class="submenu">                    
+                     <ul>
+                    	<li><a href="index.php@page=redirector.html">Komodia's Redirector</a></li>
+                        
+                        <li><a href="index.php@page=ssl.html">Komodia's SSL Digestor</a></li>
+                        <li><a href="index.php@page=rlsp.html">Komodia's Advanced LSP Installer</a></li>
+                        <li><a href="products/komodias-watchdog/index.html">Komodia's Watchdog</a></li>
+			<li><a href="products/ios/index.html">Komodia's iOS SDK</a></li>
+			<li><a href="http://url.komodia.com">Komodia's classification service</a></li>
+			<li><a href=http://www.komodia.com/client-side-per-page-classification-sdk">Client side classification SDK</a></li>
+			<li><a href="parental-control-demo/index.html">Parental control demo</a></li>
+			<li><a href="ad-injection-sdk/index.html">Ad injection SDK</a></li>
+                    </ul>
+                    <div class="clearer"></div>
+                    </div>
+				</li>
+                <li onmouseover="showSub('lsp')" onmouseout="hideSub('lsp')">
+                	<a href="index.php@page=lsp.html">LSP</a>
+                    <div id="lsp" class="submenu">
+                    	<ul>
+                            <li><a href="index.php@page=lsp.html">LSP Guide</a></li>
+                            <li><a href="index.php@page=lspsamp.html">LSP Sample</a></li>
+			    <li><a href="challenges/index.html">LSP development challenges</a></li>
+			    <li><a href="index.php@page=ndis.html">NDIS Guide</a></li>
+			    <li><a href="index.php@page=wfp.html">WFP Guide</a></li>
+			    <li><a href="index.php@page=tdi.html">TDI Guide</a></li>
+			    <li><a href="dll-injection/index.html">DLL injection</a></li>
+
+						</ul>                            
+                    </div>
+                </li>
+                <li onmouseover="showSub('about')" onmouseout="hideSub('about')">
+                	<a href="index.html@p=2.html">About Us</a>
+                    <div id="about" class="submenu">
+                    	<ul>
+                        	<li><a href="index.html@p=2.html">Company Information</a></li>
+                            <li><a href="index.html@p=155.html">Portfolio</a></li>
+                            <li><a href="index.html@p=170.html">Services</a></li>
+                        </ul>
+                    </div>
+				</li>
+                <li><a href="index.php@page=newcontact.html" style="background:none;">Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="menu-right">&nbsp;</div>
+            <div class="clearer"></div>
+        </div>
+        <div id="scanned-by"></div>
+        <div class="clearer"></div>
+	</div>
+    <div class="center breadcrumb">
+    	<span>&raquo;<a href="index.php.html">Komodia</a> » TDI</span>
+    </div>		<script type="text/javascript">
+</script>
+    <div id="main">
+    	<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+					        	<h3>Retail Products</h3>
+<div class="center banner">
+<ul>
+<li><a href="index.html@p=6.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodia-redirector', ' ']);" > </a></li>
+<li><a href="index.php@page=ssl.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodias-ssl-decoderdigestor/', ' ']);" > </a></li>
+</ul>
+</div>
+<h3>TDI guide</h3>
+<h4>TDI on Windows 8</h4>
+<p>TDI can&#8217;t intercept Modern UI apps on Windows 8 (formerly known as Metro), you must use WFP to intercept Modern UI apps, you can read more here: <a href="index.html@p=540.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/tdi-windows-8', 'TDI Windows 8']);" >TDI Windows 8</a>.</p>
+<h4>TDI high level overview</h4>
+<p>TDI is a driver that is used to perform TCP/IP filtering and inspection, it works on either packets level or stream level and is able to modify, inject and drop packets.</p>
+<h4>When to use TDI?</h4>
+<p>TDI is mostly used for: Firewalls, and Parental control.</p>
+<h4>When not to use TDI?</h4>
+<p>Microsoft has announced that it might not support TDI for Windows 8.</p>
+<p>TDI is driver based so it&#8217;s an advantage and a disadvantage, it depends on the needs of your software and your programming capabilities.</p>
+<h4>Komodia&#8217;s solution</h4>
+<p>In <a href="index.php@page=redirector.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodia-redirector/', 'Komodia&#8217;s Redirector']);" >Komodia&#8217;s Redirector</a> can save you time if you plan to develop an interception component for workstations, save you atleast one year of development time.</p>
+<h4>TDI detailed info</h4>
+<p>TDI is an acronym for Transport Driver Interface; a common interface used by drivers, like Windows 2000 server and redirector, in order to communicate with various NTPs (Network Transport Protocols). The major purpose of using the Transport Driver Interface is to have a standard API for the higher-edge of the Microsoft Windows Network Transport Protocol. Although TDI is specifically used for Windows 2000 or later versions, however, Windows 95 too had a version or variation of TDI; but it was meant only for the TCP/IP protocol. The major benefit of using TDI or the Transport Driver Interface is that by using TDI, services become independent of the network transport protocols. There is no driver for the Transport Driver Interface; unlike the NDIS. Hence it can be used to pass on messages within two layers of the network stack.</p>
+<p>TDI is developed by Microsoft with the purpose of providing more functionality with flexibility as compared to the existing interfaces like the NetBIOS or the Winsock. In Windows 2000 and later versions, all the transport providers can have direct interface with the TDI or the Transport Driver Interface; hence allowing the Transport Driver Interface to offer a better and more consistent interface with the network transport protocols. The specification for the TDI (not included in this article) discusses all the functions and calling mechanisms that is used by the transport drivers and the Transport Driver Interface clients to communicate with each other.</p>
+<p>One important note is that Microsoft plan to phase out support for TDI in the next OS.</p>
+<h4>What does TDI includes</h4>
+<p>The TDI specifically defines a kernel-mode network interface. This interface is visible to the upper level of all TPS (transport protocol stack). In every such protocol stack, all the protocol drivers that are at the highest level supports the TDI interface for all the higher level network clients in kernel-mode. The TDI interface includes:</p>
+<ul>
+<li>A complete set of system-supplied <strong>TdiBuild</strong>Xxx macros. TDI also includes system-supplied functions that can be used by transport clients in order to set I/O requests which can be issued to their basic transports.</li>
+<li>TdiXxx functions set that can be used by the clients and the transports in order to communicate with each other. All of these TdiXxx functions are system-supplied functions.</li>
+<li>A complete set of ClientPnPXxx call-back routines that are exported by the Transport Driver Interface clients. These call-back routines can be registered with the Transport driver for the purpose of receiving alerts and notifications about any particular network event, in case they occur.</li>
+<li>A complete set of ClientPnPXxx call-back routines that are exported by the Transport Driver Interface clients. These call-back routines can be registered with the Transport driver interface for the purpose of receiving various notifications like those for network address, dynamic binding or power-state changes. These notifications are usually sent from the PnP aware transports; specifically for Microsoft Windows 2000 or later versions.</li>
+<li>TDI or the Transport Driver Interface also includes structures, parameters, IOCTLs and various procedural rules that are associated with the TDI transport and ClientPnPXxx / ClientEventXxx routines.</li>
+<li>The Transport Driver Interface also includes a set of IM driver (Intermediate Driver) Dispatch routines for standard kernel-mode. These routines are exported by every TDI transport driver. The TDI clients can submit their I/O request (IRPs) by calling or using these routines. An example of such routine is the Zw.File routine or the IOCallDriver routine.</li>
+</ul>
+<h4>Key features of TDI</h4>
+<p>There are various features of the Transport Driver Interface, however, some of the major features of TDI are mentioned below:</p>
+<ul>
+<li><strong>Asynchronous Operation:</strong> Most of the operations of TDI (kernel mode) are asynchronous operations; means that they use the callback routines, provided by TDI clients, to indicate any asynchronous network events whenever they occur. Moreover, TDI completes most of the operations, which are client-initiated, as IRPs asynchronously.</li>
+<li><strong>Addressing Scheme Flexibility:</strong> One of the features and an advantage of using TDI is that it offers flexible addressing scheme. Unlike NetBIOS, TDI has a special and extensible mechanism which can be used to order to support, use and identify various addressing formats. TDI doesn&#8217;t require any particular format for addressing. NetBIOS has a mandatory addressing requirement; for instance the 16-character NetBIOS name.</li>
+<li><strong>Event Notification:</strong> It is a special feature of TDI in which it defines a scheme using which the transports can alert the clients about any interesting network event; this happens without requiring the clients to explicitly issue an I/O request.</li>
+<li><strong>32-bit Addressing:</strong> Another feature of Transport Driver Interface is that transports and the clients, both are 32-bit code. All kernel-mode components for Microsoft Windows 2000 and later versions. All the structures and parameters that are defined by TDI use 32-bit values and pointers.</li>
+<li><strong>Internal Buffering:</strong> This feature allows the TDI transports to buffer all the client&#8217;s receives and sends in an internal buffer. This internal buffering of Transport allows the TDI client to query and set the size of the driver&#8217;s internal buffer, receiving notification about the buffer space available and looking at the buffered data even before receiving it.</li>
+<li><strong>Event Notification (Plug &amp; Play):</strong> The Transport Driver Interface defines a particular scheme under which the transports (in case of Windows 2000 &amp; later versions) can notify the TDI clients about various PnP events like deletion or addition of connections etc.</li>
+</ul>
+<h4>Operational information</h4>
+<p>Here is brief operational information about the Transport Driver Interface. For the purpose of ease-of-reading, the operational information about the TDI is divided into steps:</p>
+<ul>
+<li>The very first step starts when the TDI client formats or allocates an address open TDI IRP. In response, the TDI returns a file object which is also called as the address object; which is quite equivalent to the winsock bind () function</li>
+<li>If the client allocated a connection open TDI IRP, then the TDI returns a connection object which is equivalent to the socket () function.</li>
+<li>The client then issues an associate address TDI IRP; this is done so that the connection object can be associated with the address object.</li>
+<li>The TDI client the issues a listen TDI IRP and then the accept TDI IRP; these are equivalent to winsock listen() and the accept () respectively.</li>
+</ul>
+<div class='wpfblike' style='height: 40px;'><fb:like href='http://www.komodia.com/tdi' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>            </div>
+</div>
+<script type="text/javascript">
+        //<![CDATA[
+        
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      
+      window.___gcfg = {lang: "en"};
+		  (function() {
+		    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+		    po.src = "https://apis.google.com/js/plusone.js";
+		    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+		  })();
+      
+        //]]>
+  		</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script><!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.komodia.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+<script type='text/javascript' src='https://platform.linkedin.com/in.js'></script>
+<script type='text/javascript' src='wp-includes/js/hoverIntent.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js'></script>
+<div id="footer" class="container">
+	<p>Copyright &copy; 2000-2013 Komodia Inc. All rights reserved.</p>
+    <div id="footer-menu">
+    	<ul>
+        	<li><a href="index.php@page=about.html">About Us</a></li>
+		 <li><a href="index.html@p=673.html">Press releases</a></li>
+		<li><a href="index.html@p=743.html">Newsletters</a></li>
+            <li><a href="index.html@p=701.html">Blogs</a></li>
+            <li><a href="wiki/index.php@title=Main_Page.html" target="_blank">Wiki</a></li>
+            <li><a href="videos/index.html">Videos</a></li>
+		<li><a href="wiki/index.php@title=Komodia%2527s_site_legal_information.html" target="_blank">Privacy</a></li>
+
+            <li><a id="fb" href="http://www.facebook.com/komodia#!/pages/Komodia/129677207087283" target="_blank">Visit Us on Facebook</a></li>
+        </ul>
+    </div>
+    <div class="clearer"></div>
+</div>
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 1/12 queries in 0.005 seconds using disk
+Object Caching 482/522 objects using disk
+
+ Served from: www.komodia.com @ 2014-12-19 19:50:16 by W3 Total Cache -->

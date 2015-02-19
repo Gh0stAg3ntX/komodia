@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head profile="http://purl.org/uF/hAtom/0.1/ http://purl.org/uF/2008/03/">
+	
+	<title>WFP - Windows filtering platform high level overview</title>
+
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="WordPress" />
+	<meta name="framework" content="WP Framework" />
+
+	<!-- Favicon: Browser + iPhone Webclip -->
+	<link rel="shortcut icon" href="wp-content/themes/wp-framework/images/favicon.jpg" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="wp-content/themes/wp-framework/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="wp-content/themes/wp-framework/library/media/css/print.css" type="text/css" media="print" />
+
+  	<!-- Links: RSS + Atom Syndication + Pingback etc. -->
+	<link rel="alternate" type="application/rss+xml" title="Komodia RSS Feed" href="feed/rss" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="feed/rss" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="feed/atom" />
+	<link rel="pingback" href="xmlrpc.php" />
+
+	<!-- Theme Hook -->
+    	<link rel="alternate" type="application/rss+xml" title="Komodia &raquo; WFP Comments Feed" href="wfp_hl/feed" />
+<link rel='stylesheet' id='really_simple_share_style-css'  href='wp-content/plugins/really-simple-facebook-twitter-share-buttons/style.css' type='text/css' media='all' />
+<!-- This site uses the Yoast Google Analytics plugin v5.2.7 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-34315916-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Yoast Google Analytics -->
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<link rel='shortlink' href='index.html@p=244.html' />
+
+<!-- All in One SEO Pack 2.2.3.1 by Michael Torbert of Semper Fi Web Design[245,292] -->
+<meta name="description"  content="WFP development made easy, the only WFP SDK available to develop your network interception solution in minutes and without having WFP knowledge." />
+
+<meta name="keywords"  content="wfp, windows filtering platform, winsock, socket, ssl, ssl socket, tcp, udp, ip, open source, c++" />
+
+<link rel="canonical" href="index.html@p=244.html" />
+<!-- /all in one seo pack -->
+	<script type="text/javascript">
+		function showSub(idname){
+			document.getElementById(idname).style.display = "block";
+		}
+		function hideSub(idname){
+			document.getElementById(idname).style.display = "none";
+		}
+	</script>
+<!--END head-->
+</head>
+<body >
+<div class="container top-space">
+	<div id="header">
+    	<div id="logo-holder"><a href="index.php.html"><img src="wp-content/themes/wp-framework/images/logo.gif" alt="Komodia Logo" border="0" /></a></div>
+        <div id="menu-holder">
+        	<div class="menu-left">&nbsp;</div>
+        	<div class="menu-body">
+        	<ul>
+            	<li onmouseover="showSub('products')" onmouseout="hideSub('products')">
+                	<a href="index.php@page=products.html">Products</a>
+                    <div id="products" class="submenu">                    
+                     <ul>
+                    	<li><a href="index.php@page=redirector.html">Komodia's Redirector</a></li>
+                        
+                        <li><a href="index.php@page=ssl.html">Komodia's SSL Digestor</a></li>
+                        <li><a href="index.php@page=rlsp.html">Komodia's Advanced LSP Installer</a></li>
+                        <li><a href="products/komodias-watchdog/index.html">Komodia's Watchdog</a></li>
+			<li><a href="products/ios/index.html">Komodia's iOS SDK</a></li>
+			<li><a href="http://url.komodia.com">Komodia's classification service</a></li>
+			<li><a href=http://www.komodia.com/client-side-per-page-classification-sdk">Client side classification SDK</a></li>
+			<li><a href="parental-control-demo/index.html">Parental control demo</a></li>
+			<li><a href="ad-injection-sdk/index.html">Ad injection SDK</a></li>
+                    </ul>
+                    <div class="clearer"></div>
+                    </div>
+				</li>
+                <li onmouseover="showSub('lsp')" onmouseout="hideSub('lsp')">
+                	<a href="index.php@page=lsp.html">LSP</a>
+                    <div id="lsp" class="submenu">
+                    	<ul>
+                            <li><a href="index.php@page=lsp.html">LSP Guide</a></li>
+                            <li><a href="index.php@page=lspsamp.html">LSP Sample</a></li>
+			    <li><a href="challenges/index.html">LSP development challenges</a></li>
+			    <li><a href="index.php@page=ndis.html">NDIS Guide</a></li>
+			    <li><a href="index.php@page=wfp.html">WFP Guide</a></li>
+			    <li><a href="index.php@page=tdi.html">TDI Guide</a></li>
+			    <li><a href="dll-injection/index.html">DLL injection</a></li>
+
+						</ul>                            
+                    </div>
+                </li>
+                <li onmouseover="showSub('about')" onmouseout="hideSub('about')">
+                	<a href="index.html@p=2.html">About Us</a>
+                    <div id="about" class="submenu">
+                    	<ul>
+                        	<li><a href="index.html@p=2.html">Company Information</a></li>
+                            <li><a href="index.html@p=155.html">Portfolio</a></li>
+                            <li><a href="index.html@p=170.html">Services</a></li>
+                        </ul>
+                    </div>
+				</li>
+                <li><a href="index.php@page=newcontact.html" style="background:none;">Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="menu-right">&nbsp;</div>
+            <div class="clearer"></div>
+        </div>
+        <div id="scanned-by"></div>
+        <div class="clearer"></div>
+	</div>
+    <div class="center breadcrumb">
+    	<span>&raquo;<a href="index.php.html">Komodia</a> » WFP</span>
+    </div>		<script type="text/javascript">
+</script>
+    <div id="main">
+    	<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+					        	<p><script type="text/javascript" src="wthvideo/wthvideo3.js"></script></p>
+<h3>Retail Products</h3>
+<div class="center banner">
+<ul>
+<li><a href="index.html@p=6.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodia-redirector', ' ']);" > </a></li>
+<li><a href="index.php@page=ssl.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodias-ssl-decoderdigestor/', ' ']);" > </a></li>
+</ul>
+</div>
+<h4>WFP high level overview</h4>
+<p>NDIS is a kernel driver that is used to perform TCP/IP filtering and inspection, it works on packets and stream level and is able to modify, inject and drop packets.</p>
+<p>WFP was built by Microsoft to replace all existing network control technology.</p>
+<h4>When to use WFP?</h4>
+<p>WFP can be used from Vista SP2 and above, and it&#8217;s the only redirection method available on Windows8 and Windows2012 to intercept Modern UI app (formerly known as Metro).</p>
+<h4>When not to use WFP?</h4>
+<p>NDIS is driver based so it&#8217;s an advantage and a disadvantage, it depends on the needs of your software and your programming capabilities.</p>
+<h4>Komodia&#8217;s solution</h4>
+<p>In <a href="index.php@page=redirector.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodia-redirector/', 'Komodia&#8217;s Redirector']);" >Komodia&#8217;s Redirector</a> can save you time if you plan to develop an interception component for workstations, save you atleast one year of development time.</p>
+<h3>WFP detailed information</h3>
+<div style="margin: 0pt auto; width: 90%;">
+<h4>What is WFP?</h4>
+<p>WFP is an acronym for Windows Filtering Platform which is a new architecture available in Microsoft Windows Vista and Windows Server 2008. The purpose of Windows Filtering Platform is to enable different ISVs or Independent Software Vendors to modify or filter TCI/IP packets. Moreover, it also enables them to filter RPCs or Remote Procedure Calls, IPsec (Internet Protocol Security) protected traffic and network connections. WFP or windows filtering protocol also allows these softwares to monitor the above mentioned activities as well. The advantage of modifying, monitoring and filtering TCP/IP packets is that it provides an opportunity to have a unprecedented access to the processing path of the TCI/IP packet. In this way, it is possible to modify or examine all incoming and outgoing packets well before any type of processing occurs. This gives a security advantage as it gives the access to the TCP/IP processing paths during different layers. Moreover, it also becomes possible to create better firewalls, diagnostic services or antivirus applications.</p>
+<p>Windows Filtering Platform also provides APIs with allows participation in various windows filtering decisions that may occur at different layers of the TCP/IP protocol suite/stack. WFP also gives support to the next-generation firewalls features, like dynamic firewall configuration or windows authenticated communication. Such features make use of the Windows Socket API.</p>
+<p>One point to remember here is that WFP should not be confused with a firewall; it isn&#8217;t. In technical terms, WFP is a set of various windows system services APIs (user mode and kernel mode) that provides an opportunity to build firewalls or other network connection monitoring softwares; giving them better performance and less development complexities.. A working example is the Windows Firewall that you use in Microsoft Windows Vista; it uses WFP; same is the case with the windows firewall in Windows Server 2008.</p>
+<h4>Benefits of WFP</h4>
+<p>There are various benefits being offered by Windows Filtering Platform. Some of them are mentioned above in the introductory part and some more are mentioned below:</p>
+<ul>
+<li>Windows Filtering Platform or WFP minimizes the risk of your software components getting affected because of any future SP (service pack) release.</li>
+<li>Windows Filtering Platform allows packet processing after the Internet Protocol Security (IPSec) decryption. Without WFP, it is not possible to do packet processing after the IPSec decryption; hence it adds a level of security.</li>
+<li>If you want your component to examine and monitor the TCP/IP traffic at any level or layer of the TCP/IP stack, then you must consider using Windows Filtering Platform.</li>
+<li>WFP makes it very easy to implement a packet filtering solution or a firewall application because WFP injects the filtering logic into various TCP/IP stack layers.</li>
+<li>As mentioned earlier, one of the great benefits of WFP or Windows Filtering Platform is that it gives a good level of control over the processing path of TCP/IP packets. These controls were not there in Windows XP or Windows Server 2003. The filtering methods in Windows XP or Windows Server 2003 offered very limited access to the processing path of the TCP/IP packets.</li>
+<li>With the help of WFP, it becomes easier to develop various filtering applications or solutions and it allows these solutions to co-exist with already installed filtering solutions (based on WFP); this is because all of the WFP based filtering solutions strictly follows WFP arbitration rules.</li>
+<li>If you are developing a component, WFP allows you to move it from the kernel mode into the user-mode (depending upon the processing or the filtering needs). This gives two advantages; first, it makes the development easier and second, if a crash occurs in user-mode component, it won&#8217;t affect the whole system.</li>
+</ul>
+<h4>WFP architecture</h4>
+<p>the WFP architecture consists of:</p>
+<ul>
+<li><strong>Win32 API: </strong> It is one of the most important components of the WFP components. Win32 API contains Windows Filtering Platform APIs. The WFP filtering APIs allows the 3rd Party firewalls or other solutions to use it in order to develop their own filters within the BFE (Base Filtering Engine). These 3rd party filters can a complete set of filtering conditions, which are pre-defined, at any layer within the main KERNEL MODE filtering engine. Examples of WFP applications include IPsec Policy Agent service; it is available in Windows Vista as well as in Windows Server 2008. .</li>
+<li><strong>BFE (Base Filtering Engine): </strong> One of the features and an advantage of using TDI is that it offers flexible addressing scheme. Unlike NetBIOS, TDI has a special and extensible mechanism which can be used to order to support, use and identify various addressing formats. TDI doesn&#8217;t require any particular format for addressing. NetBIOS has a mandatory addressing requirement; for instance the 16-character NetBIOS name.</li>
+<li><strong>Kernel Mode Filtering Engine:</strong> This is a kernel-mode component and its major purpose is to store all those filters that are created by various filtering applications using the BFE or the Base Filtering Engine. These filters interact with various filtering layers of the TCP/IP stack. Moreover, these filters also interact with the callout drivers as well. Whenever any packet is being processed through TCP/IP stack, every layer of the TCP/IP stack access the Kernel Mode Filtering Engine. As a result, the Kernel-Mode Filtering Engine then checks or scans all the configured filters in order to determine whether the packet, in process, should be dropped, permitted or should be handed over to the callout drivers for further packet inspection or alteration.</li>
+<li><strong>Callout Drivers:</strong> The callout drivers are used when initial filtering of the packets is not enough to determine whether they should be dropped, permitted or modified. The initial filtering or simple packet filtering is done by checking packets against a defined set of WFP filtering conditions. Callout drivers are used for further deeper inspection of the packets because callout inspects the packets beyond the already defined WFP conditions. Deeper inspection can be done through antivirus software which checks the data at the application layer to ensure that there are no viruses, Trojans or worms in the data. Based upon the results of the inspection, data can be modified like in case of NAT or the network address translation where the router makes changes in the fields of an IPv4 packet. Both Windows Vista and Windows Server 2008 includes Callout Drivers.</li>
+</ul>
+</div>
+<div class='wpfblike' style='height: 40px;'><fb:like href='http://www.komodia.com/wfp_hl' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>            </div>
+</div>
+<script type="text/javascript">
+        //<![CDATA[
+        
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      
+      window.___gcfg = {lang: "en"};
+		  (function() {
+		    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+		    po.src = "https://apis.google.com/js/plusone.js";
+		    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+		  })();
+      
+        //]]>
+  		</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script><!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.komodia.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+<script type='text/javascript' src='https://platform.linkedin.com/in.js'></script>
+<script type='text/javascript' src='wp-includes/js/hoverIntent.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js'></script>
+<div id="footer" class="container">
+	<p>Copyright &copy; 2000-2013 Komodia Inc. All rights reserved.</p>
+    <div id="footer-menu">
+    	<ul>
+        	<li><a href="index.php@page=about.html">About Us</a></li>
+		 <li><a href="index.html@p=673.html">Press releases</a></li>
+		<li><a href="index.html@p=743.html">Newsletters</a></li>
+            <li><a href="index.html@p=701.html">Blogs</a></li>
+            <li><a href="wiki/index.php@title=Main_Page.html" target="_blank">Wiki</a></li>
+            <li><a href="videos/index.html">Videos</a></li>
+		<li><a href="wiki/index.php@title=Komodia%2527s_site_legal_information.html" target="_blank">Privacy</a></li>
+
+            <li><a id="fb" href="http://www.facebook.com/komodia#!/pages/Komodia/129677207087283" target="_blank">Visit Us on Facebook</a></li>
+        </ul>
+    </div>
+    <div class="clearer"></div>
+</div>
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 1/8 queries in 0.003 seconds using disk
+Object Caching 497/515 objects using disk
+
+ Served from: www.komodia.com @ 2014-12-19 20:04:03 by W3 Total Cache -->

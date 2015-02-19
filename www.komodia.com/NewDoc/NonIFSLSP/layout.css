@@ -1,0 +1,61 @@
+/*-----------------------------------*/
+.box_text{ text-transform:uppercase;line-height:normal; margin:6px auto;}
+.box_textr{line-height:normal; margin:6px auto;}
+.box_m{ width:25px; height:28px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/products_box_08.jpg); float:left; display:inline-block;}
+.boxess{width:980px;margin-top:10px; margin-bottom:10px; }
+.tools_header{width:980px}
+.tools_content{ text-align:left;}
+.tools_content h2{background-color:#88d6ff; }
+#clearfix2{float:left;}
+/*-----------------------------------*/
+/*#DBE1DF #EFF3F2*/
+.box1{ height:70px;}
+.box1_l{ width:200px;height:65px;vertical-align:middle; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/tool_left_65_1.jpg); float:left; display:inline-block; margin:auto;}
+.box1_r{ width:750px; height:70px;float:left; text-align:left; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right_70_1.jpg); padding-left:5px;}
+
+/*-----------------------------------*/
+
+.box2{height:150px;}
+.box2_l{ width:200px; height:65px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/tool_left_65_2.jpg); vertical-align:middle;  float:left; display:inline-block; margin:auto;}
+.box2_r{ width:750px; height:150px;float:left; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right_150.jpg); text-align:left; padding-left:5px;}
+
+/*-----------------------------------*/
+
+.box3{height:210px;}
+.box3_l{ width:200px; height:65px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/tool_left_65_1.jpg); vertical-align:middle; float:left; display:inline-block; margin:auto;}
+.box3_r{ width:750px; height:210px;float:left;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right_210.jpg); text-align:left;padding-left:5px;}
+
+/*-----------------------------------*/
+
+.box4{height:280px;}
+.box4_l{ width:200px;height:65px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/tool_left_65_2.jpg); vertical-align:middle;  float:left; display:inline-block; margin:auto;}
+.box4_r{ width:750px; height:280px;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right_280.jpg); float:left; text-align:left; padding-left:5px;}
+/*-----------------------------------*/
+
+.box5{height:70px;}
+.box5_l{ width:200px; height:65px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/tool_left_65_2.jpg);vertical-align:middle; float:left; display:inline-block; margin:auto;}
+.box5_r{ width:750px; height:70px; float:left;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right_70_2.jpg); text-align:left; padding-left:5px;}
+
+/*-----------------------------------*/
+/*-----------------------------------*/
+
+.box6{height:180px;}
+.box6_l{ width:200px; height:88px;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_left_90.jpg);vertical-align:middle; float:left; display:inline-block;}
+.box6_r{ width:750px; height:180px; float:left;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right_180.jpg); text-align:left; padding-left:5px;}
+
+/*-----------------------------------*/
+/*#DBE1DF #EFF3F2*/
+.box7{height:70px;}
+.box7_l{ width:200px;height:65px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/tool_left_65_2.jpg); vertical-align:middle;  float:left; display:inline-block;}
+.box7_r{ width:750px; height:70px; float:left;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right_70_2.jpg); text-align:left; padding-left:5px;}
+
+/*-----------------------------------*/
+/*#DBE1DF #EFF3F2*/
+.box8{height:70px;}
+.box8_l{ width:200px;height:65px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/tool_left_65_1.jpg); vertical-align:middle;  float:left; display:inline-block; margin:auto;}
+.box8_r{ width:750px; height:70px; float:left;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right_70_1.jpg); text-align:left; padding-left:5px; }
+
+/*-----------------------------------*/
+
+.doxygen_content {text-align: left; height: auto;width: auto;}
+.doxygen_content a{ color:#000000; text-decoration:underline;}

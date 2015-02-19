@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Komodia&#039;s Winsock LSP products, network interception/modification and SSL decryption blog &#187; Injection</title>
+	<atom:link href="http://www.komodia.com/blog/index.php/tag/injection/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.komodia.com/blog</link>
+	<description>Winsock LSP, Komodia and all in between</description>
+	<lastBuildDate>Thu, 14 Feb 2013 02:24:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.1.1</generator>
+<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+						<item>
+		<title>API interception via DLL redirection</title>
+		<link>http://www.komodia.com/blog/index.php/2010/03/14/api-interception-via-dll-redirection/</link>
+		<comments>http://www.komodia.com/blog/index.php/2010/03/14/api-interception-via-dll-redirection/#comments</comments>
+		<pubDate>Sun, 14 Mar 2010 01:55:49 +0000</pubDate>
+		<dc:creator><![CDATA[Barak Weichselbaum]]></dc:creator>
+				<category><![CDATA[Winsock LSP]]></category>
+		<category><![CDATA[Detours]]></category>
+		<category><![CDATA[Injection]]></category>
+
+		<guid isPermaLink="false">http://www.komodia.com/blog/?p=18</guid>
+		<description><![CDATA[API interception via DLL redirection is a method that can be used to modify the default behaviour of an application that you don&#8217;t have the source code to. Since this Blog is about network interception, I&#8217;ll address that point. It&#8217;s possible to intercept the Winsock API via DLL injection (also called detouring). This method has advantages [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.komodia.com/index.php?page=redirector.html">API interception via DLL redirection</a> is a method that can be used to modify the default behaviour of an application that you don&#8217;t have the source code to.</p>
+<p>Since this Blog is about network interception, I&#8217;ll address that point. It&#8217;s possible to intercept the Winsock API via DLL injection (also called detouring). This method has advantages and disadvantages (at Komodia we use <a href="http://www.komodia.com/index.php?page=lsp.html">Winsock LSP</a> to do that), the main advantages of network DLL injection:</p>
+<ul>
+<li>Doesn&#8217;t require installation of any kind (unless you want to intercept services on Vista/7 which is another story)</li>
+<li>Easy to code</li>
+</ul>
+<p>Disadvantages are:</p>
+<ul>
+<li>Need a detouring library, if you are going for a commercial project it will cost you, also for 64bit you only have Microsoft Detours and <a href="http://www.komodia.com/wiki/index.php?title=Komodia%27s_Detours">Komodia Detours</a> (and that&#8217;s it)</li>
+<li>Will not work with all apps.</li>
+<li>Some apps are protected against detouring.</li>
+<li>Need special code for Vista/7 if you want to intercept services and normal apps from a single service.</li>
+</ul>
+<p>Barak</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/03/14/api-interception-via-dll-redirection/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>]]></content:encoded>
+			<wfw:commentRss>http://www.komodia.com/blog/index.php/2010/03/14/api-interception-via-dll-redirection/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced (Requested URI is rejected)
+Database Caching using disk
+Object Caching 250/251 objects using disk
+
+ Served from: www.komodia.com @ 2015-02-19 19:28:54 by W3 Total Cache -->

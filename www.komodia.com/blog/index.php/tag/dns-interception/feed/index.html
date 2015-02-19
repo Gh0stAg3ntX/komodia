@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Komodia&#039;s Winsock LSP products, network interception/modification and SSL decryption blog &#187; dns interception</title>
+	<atom:link href="http://www.komodia.com/blog/index.php/tag/dns-interception/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.komodia.com/blog</link>
+	<description>Winsock LSP, Komodia and all in between</description>
+	<lastBuildDate>Thu, 14 Feb 2013 02:24:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.1.1</generator>
+<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+						<item>
+		<title>Intercept DNS port</title>
+		<link>http://www.komodia.com/blog/index.php/2010/03/30/intercept-dns-port/</link>
+		<comments>http://www.komodia.com/blog/index.php/2010/03/30/intercept-dns-port/#comments</comments>
+		<pubDate>Tue, 30 Mar 2010 01:35:06 +0000</pubDate>
+		<dc:creator><![CDATA[Barak Weichselbaum]]></dc:creator>
+				<category><![CDATA[dns interception]]></category>
+		<category><![CDATA[Hooking/Detours]]></category>
+		<category><![CDATA[Komodia's products]]></category>
+		<category><![CDATA[Intercept]]></category>
+		<category><![CDATA[NSP]]></category>
+
+		<guid isPermaLink="false">http://www.komodia.com/blog/?p=71</guid>
+		<description><![CDATA[Intercept DNS port can be done with number of ways: NSP, which is very rare and very hard to implement. Detours/hooking, you can hook the DNS functions using a commercial hooking library, just make sure that the library you purchase supports 64bit. Use Komodia&#8217;s Redirector SDK to easily do it for you. Barak]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.komodia.com/index.php?page=redirector.html">Intercept DNS port</a> can be done with number of ways:</p>
+<ul>
+<li>NSP, which is very rare and very hard to implement.</li>
+<li>Detours/hooking, you can hook the DNS functions using a commercial hooking library, just make sure that the library you purchase supports 64bit.</li>
+<li>Use <a href="http://www.komodia.com/index.php?page=redirector.html">Komodia&#8217;s Redirector</a> SDK to easily do it for you.</li>
+</ul>
+<p>Barak</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/03/30/intercept-dns-port/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>]]></content:encoded>
+			<wfw:commentRss>http://www.komodia.com/blog/index.php/2010/03/30/intercept-dns-port/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Intercepting DNS queries LSP</title>
+		<link>http://www.komodia.com/blog/index.php/2010/03/06/intercepting-dns-queries-lsp/</link>
+		<comments>http://www.komodia.com/blog/index.php/2010/03/06/intercepting-dns-queries-lsp/#comments</comments>
+		<pubDate>Sat, 06 Mar 2010 03:28:36 +0000</pubDate>
+		<dc:creator><![CDATA[Barak Weichselbaum]]></dc:creator>
+				<category><![CDATA[Komodia's products]]></category>
+		<category><![CDATA[Winsock LSP]]></category>
+		<category><![CDATA[dns interception]]></category>
+		<category><![CDATA[dns queries]]></category>
+		<category><![CDATA[NSP]]></category>
+
+		<guid isPermaLink="false">http://www.komodia.com/blog/?p=10</guid>
+		<description><![CDATA[It is possible to intercept DNS queries, usually it is done for anonymizers for two reasons: Even if the session is anonymized the DNS query reveals the destination. Some countries have their DNS servers censored. Because of these two reasons when you intercept the DNS you are able to use the domain name via a [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>It is possible to intercept DNS queries, usually it is done for anonymizers for two reasons:</p>
+<ol>
+<li>Even if the session is anonymized the DNS query reveals the destination.</li>
+<li>Some countries have their DNS servers censored.</li>
+</ol>
+<p>Because of these two reasons when you intercept the DNS you are able to use the domain name via a proxy you tunnel the data to (still assuming we are writing an anonymizer).</p>
+<p>What are the ways to do it:</p>
+<ul>
+<li>Winsock LSP or any other network interception ability like TDI, WFP, NDIS.</li>
+<li>Use NSP (it&#8217;s very rare)</li>
+<li>Hooking, detours.</li>
+</ul>
+<p>Each method has it&#8217;s advantage and disadvantage and making the wrong choice can later means starting all over, for example, what works perfect on 32bit may not work at all under 64bit or even worse can&#8217;t work on 64bit, or it may not be compatible with all current OS.</p>
+<p>We at Komodia&#8217;s has an optional module for: &#8220;<a href="http://www.komodia.com/index.php?page=redirector.html">Intercepting DNS queries LSP</a>&#8221; which works on Windows 2000 and up to 7 and 2008 including all 64 bit flavors.</p>
+<p>Barak</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/03/06/intercepting-dns-queries-lsp/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>]]></content:encoded>
+			<wfw:commentRss>http://www.komodia.com/blog/index.php/2010/03/06/intercepting-dns-queries-lsp/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced (Requested URI is rejected)
+Database Caching using disk
+Object Caching 312/321 objects using disk
+
+ Served from: www.komodia.com @ 2015-02-19 19:19:57 by W3 Total Cache -->

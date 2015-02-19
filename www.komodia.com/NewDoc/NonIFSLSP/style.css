@@ -1,0 +1,152 @@
+body{margin:auto; text-align:center; azimuth:center;}
+*{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;}
+*{margin:0px auto 0px auto; padding:0px;}
+
+.color1{ background-color:#d1eef8;}
+.color2{ background-color:#9fdff6;}
+.width{width:984px;}
+div{position:relative;}
+#clearfix {float:left;}
+
+.ban_bg{background-color:#3d4662; width:auto; }
+.banner{height:161px; width:984px; position:relative;background-image:url(images/banner.jpg);}
+.ban_h{height:161px;}
+/*09d0e5 3e4662*/
+
+.menu ul{float:left;width:100%;padding:0;margin:0;list-style-type:none;}
+
+.menu a{float:left;width:164px;height:52px;text-decoration:none;color:white;background-color:#3e4662;padding:0px;}
+
+.menu a:hover {background-color:#09d0e5;text-decoration:none;}
+.m{ margin:16px auto; font-size:17px; font-weight:bold; font-family:;}
+.menu li {display:inline;}
+.menu{padding:0; margin:auto; height:52px;}
+
+#contents{ height:280px; clear:both; font-size:11px;}
+
+
+.copy{margin:20px 0px 20px 5px;}
+
+.foot_menu{ float:right; width:650px; text-align:right;}
+a{margin:0; padding:0; text-decoration:none;  line-height:normal;}
+.h a:link{text-decoration:underline;font-size:11px; color:#000000;}
+.h a:hover{color:#CCCCCC;font-size:11px;}
+
+.cont_left{ width:180px; height:150px; text-align:left; margin:20px 0px 0px 10px;}
+.cont_right{ width:760px; height:150px; text-align:left; margin:20px 0px 0px 10px; }
+
+h1,h2,h3,h4{font-size:14px;}
+
+img{border:0px; float:left;}
+
+.spacer{width:1px; border:1px solid #CCCCCC; height:240px; margin:20px 0px 0px 0px;}
+
+span{font-size:14px; margin-left:0px; font-weight:bold;}
+
+.txt{font-size:12px; font-weight:normal; line-height:250%}
+
+p{line-height:normal; margin:0px; padding:0px;}
+
+.clear{clear:left;}
+/*-----------------Home-----------------------------*/
+.boxes{ width:935px; position:relative; height:200px;  }
+.box_left{ width:430px; height:190px; margin:5px 0px 0px 0px; background-image:url(images/mainbox_04.jpg); text-align:left;}
+.box_right{ width:430px; height:190px; margin:5px 0px 0px 3px; background-image:url(images/mainbox_06.jpg);}
+.seperate{  width:70px; height:31px; margin:50px 0px 50px 0px;}
+.head_txt{font-family:Geneva, Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; margin:20px 0px 0px 40px; width:360px; text-align:left; position:relative;}
+.learn{width:100px; float:right;}
+.learn a:visited{ text-decoration:underline;}
+/*-----------------Products 1-----------------------------*/
+.p_boxes{height:200px; margin-top:10px;}
+.p_seperate{  width:25px; height:28px;}
+.p_box_left{width:200px; height:68px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_left.jpg);}
+.link{margin:10px auto; width:80%; height:70%; vertical-align:middle;}
+.p_box_right{width:755px;height:180px;text-align:left;vertical-align:middle;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right.jpg);}
+.p_text a{font-size:12px; font-weight:600; color:#000000; text-decoration:underline;}
+.p_text a:hover{font-size:12px; color:#999999; text-decoration:none; }
+/*-----------------Products 2-----------------------------*/
+.p_boxes2{height:200px;}
+.p2_seperate{ width:25px; height:29px; }
+.p2_box_left{width:200px;height:68px;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_left2.jpg);}
+.p2_box_right{width:755px;height:180px;text-align:left;vertical-align:middle;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right2.jpg);}
+
+/*-----------------Products 3-----------------------------*/
+.p_boxes3{ position:relative; height:200px; }
+.p_box_left3{width:200px; height:68px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_left.jpg);}
+.p_box_right3{width:755px;height:180px;text-align:left;vertical-align:middle;background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/box_right.jpg);}
+
+/*------------------------*/
+
+.t_space{margin-top:10px;}
+.pul{line-height:270%;padding-left:25px; text-align:justify;list-style-type:square;}
+.pli{ list-style-position:inside;}
+
+/*-----------------LSP-----------------------------*/
+
+.lsp_content{ width:950px; height:auto;}
+.lsp_content h2{ background-color:#88d6ff;1089c7;}
+.lsp_content a{font-size:12px;color:#0000A0;font-weight:bold; text-align:left; text-decoration:underline;}
+.lsp_content a:link{}
+.lsp_content a:hover{ color:#000000;}
+.lsp_links{ float:left; display:inline; margin-left:50px;}
+.lsp_content img{ float:none; margin-left:150px;}
+
+.lsp{ font-size:12px; clear:both; text-align:left; line-height:170%;}
+.lsp hi,h12,h3,h4,h5{ font-size:16px; color:#990000;}
+.lspul{line-height:200%;padding-left:30px; text-align:justify; list-style-type:square;}
+.lspli{ list-style-position:inside;}
+
+/*-----------------contact-----------------------------*/
+.contact.content{ height:auto; position:relative; text-align:left;}
+.contact{ height:auto; margin:10px 0px 0px 0px; text-align:left; line-height:200%;}
+.contact h2{ font-size:12px;}
+.contact2{ height:260px; margin:0px 0px 0px 10px; text-align:left; line-height:200%;}
+.contact2 a{ font-size:12px; color:#0F87FF;}
+/*-----------------about-----------------------------*/
+.about{ height:300px;font-size:12px; text-align:left; line-height:200%;}
+.about a{ font-size:12px; color:#0F87FF; font-weight:bold;}
+b{ font-size:12px;}
+/*-----------------lspsamp-----------------------------*/
+.lspsamp{ height:auto;}
+.samp_head{ text-transform:uppercase; text-align:left; margin:10px auto;}
+.samp2{ width:980px; height:20px; margin:10px auto 10px auto; font-size:12px; font-weight:bold;}
+.samp{ width:980px; height:140px; margin:10px auto 10px auto; font-size:12px; font-weight:bold;}
+.samp_l{ width:120px; background-color:#1872BA;}
+.samp_m{ width:140px; background-color:#1872BA;}
+.samp_r{ width:720px; background-color:#1872BA;}
+.line{ line-height:7px;}
+.middle_l{width:120px; height:100px; margin-top:15px;}
+.middle_r{width:720px; height:100px; margin-top:15px; margin-left:10px;}
+.right_align{ height:120px; margin-top:10px;}
+.samp1_l{ width:120px; height:140px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/lspsamp1_l.jpg);}
+.samp1_m{ width:120px; height:140px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/lspsamp1_m.jpg);}
+.samp1_r{ width:740px; height:140px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/lspsamp1_right.jpg);}
+.samp2_r{ width:740px; height:140px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/lspsamp2_right.jpg);}
+.leftright{text-align:left; width:700px;}
+.samp2_l{ width:120px; height:140px; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/lspsamp1_m.jpg);}
+.samp_2{ width:980px; height:20px; margin:10px auto 10px auto; font-size:12px; font-weight:bold;}
+.samp a{ font-size:11px; color:#000000; text-decoration:underline;}
+.samp a:hover{ font-size:11px; color:#B5B5B5;}
+.samp a:visited{ font-size:11px; color:#B5B5B5; text-decoration:underline;}
+.white{ color:#FFFFFF;}
+/*-------------------menu-----------------------------*/
+.bottom{width:375px; height:55px;position:relative; color:#FFFFFF; margin:auto; background-image:url(http://www.komodia.com/NewDoc/NonIFSLSP/images/bottom.jpg);}
+.bottom a{color:#FFFFFF;}
+.bottom_content{ width:350px; height:50x;padding-top:5px; margin-left:5px;}
+.small{font-size:10px;}
+.footer{ height:59px; background:url(images/page_19.jpg) repeat-x;font-size:11px;}
+.footer a{ text-decoration:underline;}
+.footer a:hover{ text-decoration:underline;}
+.footer a:visited{ text-decoration:underline;}
+
+hr{ clear:both; color:#CCCCCC; margin-top:5px; margin-bottom:5px; padding:0px;}
+
+.ul
+{
+float:left;
+width:100%;
+padding:0px;
+margin:0px;
+list-style-type:none;
+}
+.li {display:inline; padding:0; margin:0;}

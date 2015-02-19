@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Komodia's Redirector COM framework guide - Komodia</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.20.4" />
+<meta name="robots" content="noindex,follow" />
+<link rel="shortcut icon" href="../favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Komodia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="api.php@action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="Komodia Atom feed" href="index.php@title=Special%253ARecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cskins.monobook&amp;only=styles&amp;printable=1&amp;skin=monobook&amp;%252A.css" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: komod_wikidb:resourceloader:filter:minify-css:7:dffa96a73b1be9b0dae7e17005fcc939 */</style>
+
+<script src="load.php@debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=monobook&amp;%252A"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Komodia\'s_Redirector_COM_framework_guide","wgTitle":"Komodia\'s Redirector COM framework guide","wgCurRevisionId":1333,"wgArticleId":54,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Komodia\'s_Redirector_COM_framework_guide","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+/* cache key: komod_wikidb:resourceloader:filter:minify-js:7:c89fc005766e312c555f83b307d08d63 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Komodia_s_Redirector_COM_framework_guide skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading"><span dir="auto">Komodia's Redirector COM framework guide</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From Komodia</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#column-one">navigation</a>, <a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page covers the programming aspects of <a href="index.php/Komodia's_Redirector.html" title="Komodia's Redirector">Komodia's Redirector</a> product when using the COM interface to extend the Redirector’s functionality, this option is good for you if you don't have experience with C/C++ or want to control the product directly from your application.
+</p><p>There are two extra options to extend the Redirector: 
+</p>
+<ul><li> Modify the source code directly inside the class: CClientCustomizations (it's similar to the DLL interface), you also need to uncomment this line: #define SERVICE_CUSTOM_EXTENSIONS inside KomodiaProduct.h 
+</li><li> Use the <a href="index.php/Komodia's_Redirector_DLL_framework_guide.html" title="Komodia's Redirector DLL framework guide">Komodia's Redirector DLL framework guide</a> to extend the Redirector via a C/C++ DLL.
+</li></ul>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#High_level_overview"><span class="tocnumber">2</span> <span class="toctext">High level overview</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#API"><span class="tocnumber">3</span> <span class="toctext">API</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SetInterface"><span class="tocnumber">3.1</span> <span class="toctext">SetInterface</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#IDataContainer"><span class="tocnumber">3.2</span> <span class="toctext">IDataContainer</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#GetSize"><span class="tocnumber">3.2.1</span> <span class="toctext">GetSize</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#RequestString"><span class="tocnumber">3.2.2</span> <span class="toctext">RequestString</span></a>
+<ul>
+<li class="toclevel-4 tocsection-8"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters"><span class="tocnumber">3.2.2.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-9"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#RequestString64"><span class="tocnumber">3.2.3</span> <span class="toctext">RequestString64</span></a>
+<ul>
+<li class="toclevel-4 tocsection-10"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_2"><span class="tocnumber">3.2.3.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-11"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SetDataFromString"><span class="tocnumber">3.2.4</span> <span class="toctext">SetDataFromString</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SetDataFromString64"><span class="tocnumber">3.2.5</span> <span class="toctext">SetDataFromString64</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#ReplaceData"><span class="tocnumber">3.2.6</span> <span class="toctext">ReplaceData</span></a>
+<ul>
+<li class="toclevel-4 tocsection-14"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_3"><span class="tocnumber">3.2.6.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-15"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#InjectData"><span class="tocnumber">3.2.7</span> <span class="toctext">InjectData</span></a>
+<ul>
+<li class="toclevel-4 tocsection-16"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_4"><span class="tocnumber">3.2.7.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-17"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#RemoveData"><span class="tocnumber">3.2.8</span> <span class="toctext">RemoveData</span></a>
+<ul>
+<li class="toclevel-4 tocsection-18"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_5"><span class="tocnumber">3.2.8.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-19"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SearchString"><span class="tocnumber">3.2.9</span> <span class="toctext">SearchString</span></a>
+<ul>
+<li class="toclevel-4 tocsection-20"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_6"><span class="tocnumber">3.2.9.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-21"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SearchHTMLString"><span class="tocnumber">3.2.10</span> <span class="toctext">SearchHTMLString</span></a>
+<ul>
+<li class="toclevel-4 tocsection-22"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_7"><span class="tocnumber">3.2.10.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-23"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SearchStringPosition"><span class="tocnumber">3.2.11</span> <span class="toctext">SearchStringPosition</span></a>
+<ul>
+<li class="toclevel-4 tocsection-24"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_8"><span class="tocnumber">3.2.11.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-25"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SearchHTMLStringPosition"><span class="tocnumber">3.2.12</span> <span class="toctext">SearchHTMLStringPosition</span></a>
+<ul>
+<li class="toclevel-4 tocsection-26"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_9"><span class="tocnumber">3.2.12.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-27"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SaveToFile"><span class="tocnumber">3.2.13</span> <span class="toctext">SaveToFile</span></a>
+<ul>
+<li class="toclevel-4 tocsection-28"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_10"><span class="tocnumber">3.2.13.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-29"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SearchRegex"><span class="tocnumber">3.2.14</span> <span class="toctext">SearchRegex</span></a>
+<ul>
+<li class="toclevel-4 tocsection-30"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_11"><span class="tocnumber">3.2.14.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-31"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#SearchRegexPosition"><span class="tocnumber">3.2.15</span> <span class="toctext">SearchRegexPosition</span></a>
+<ul>
+<li class="toclevel-4 tocsection-32"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_12"><span class="tocnumber">3.2.15.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-33"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#IParentalControl"><span class="tocnumber">3.3</span> <span class="toctext">IParentalControl</span></a>
+<ul>
+<li class="toclevel-3 tocsection-34"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#NewConnection"><span class="tocnumber">3.3.1</span> <span class="toctext">NewConnection</span></a>
+<ul>
+<li class="toclevel-4 tocsection-35"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_13"><span class="tocnumber">3.3.1.1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-4 tocsection-36"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Proxy_variables"><span class="tocnumber">3.3.1.2</span> <span class="toctext">Proxy variables</span></a></li>
+<li class="toclevel-4 tocsection-37"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#More_parameters"><span class="tocnumber">3.3.1.3</span> <span class="toctext">More parameters</span></a></li>
+<li class="toclevel-4 tocsection-38"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Samples"><span class="tocnumber">3.3.1.4</span> <span class="toctext">Samples</span></a>
+<ul>
+<li class="toclevel-5 tocsection-39"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Redirect_to_a_proxy"><span class="tocnumber">3.3.1.4.1</span> <span class="toctext">Redirect to a proxy</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-40"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#DataBeforeSend"><span class="tocnumber">3.3.2</span> <span class="toctext">DataBeforeSend</span></a>
+<ul>
+<li class="toclevel-4 tocsection-41"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_14"><span class="tocnumber">3.3.2.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-42"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#DataBeforeReceive"><span class="tocnumber">3.3.3</span> <span class="toctext">DataBeforeReceive</span></a>
+<ul>
+<li class="toclevel-4 tocsection-43"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_15"><span class="tocnumber">3.3.3.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-44"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#ConnectionClosed"><span class="tocnumber">3.3.4</span> <span class="toctext">ConnectionClosed</span></a>
+<ul>
+<li class="toclevel-4 tocsection-45"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_16"><span class="tocnumber">3.3.4.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-46"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#HTTP_Parser"><span class="tocnumber">3.3.5</span> <span class="toctext">HTTP Parser</span></a>
+<ul>
+<li class="toclevel-4 tocsection-47"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Results_enum"><span class="tocnumber">3.3.5.1</span> <span class="toctext">Results enum</span></a></li>
+<li class="toclevel-4 tocsection-48"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#NewRequest"><span class="tocnumber">3.3.5.2</span> <span class="toctext">NewRequest</span></a>
+<ul>
+<li class="toclevel-5 tocsection-49"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_17"><span class="tocnumber">3.3.5.2.1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-5 tocsection-50"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Samples_2"><span class="tocnumber">3.3.5.2.2</span> <span class="toctext">Samples</span></a>
+<ul>
+<li class="toclevel-6 tocsection-51"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Redirect_a_site"><span class="tocnumber">3.3.5.2.2.1</span> <span class="toctext">Redirect a site</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-4 tocsection-52"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#NewReply"><span class="tocnumber">3.3.5.3</span> <span class="toctext">NewReply</span></a>
+<ul>
+<li class="toclevel-5 tocsection-53"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Parameters_18"><span class="tocnumber">3.3.5.3.1</span> <span class="toctext">Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4 tocsection-54"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#HTTP_101_response_code"><span class="tocnumber">3.3.5.4</span> <span class="toctext">HTTP 101 response code</span></a></li>
+<li class="toclevel-4 tocsection-55"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#How_to_get_HTML_data"><span class="tocnumber">3.3.5.5</span> <span class="toctext">How to get HTML data</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-56"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#COM_errors"><span class="tocnumber">4</span> <span class="toctext">COM errors</span></a>
+<ul>
+<li class="toclevel-2 tocsection-57"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Detecting_COM_interface_removal"><span class="tocnumber">4.1</span> <span class="toctext">Detecting COM interface removal</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-58"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Interop"><span class="tocnumber">5</span> <span class="toctext">Interop</span></a></li>
+<li class="toclevel-1 tocsection-59"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Common_pitfalls"><span class="tocnumber">6</span> <span class="toctext">Common pitfalls</span></a>
+<ul>
+<li class="toclevel-2 tocsection-60"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Multi_threading"><span class="tocnumber">6.1</span> <span class="toctext">Multi threading</span></a></li>
+<li class="toclevel-2 tocsection-61"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Not_understanding_what_lReplyOnlydoes"><span class="tocnumber">6.2</span> <span class="toctext">Not understanding what lReplyOnlydoes</span></a></li>
+<li class="toclevel-2 tocsection-62"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Modifying_HTTP_body_size"><span class="tocnumber">6.3</span> <span class="toctext">Modifying HTTP body size</span></a></li>
+<li class="toclevel-2 tocsection-63"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#Spending_too_much_time_inside_callbacks"><span class="tocnumber">6.4</span> <span class="toctext">Spending too much time inside callbacks</span></a></li>
+<li class="toclevel-2 tocsection-64"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;printable=yes.html#COM_client_failing_or_errors"><span class="tocnumber">6.5</span> <span class="toctext">COM client failing or errors</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Overview"> Overview </span></h1>
+<p>To work with the COM interface you need implement the interface PCProxyLib.IParentalControl and tell the Redirector via the API what is your interface, once your interface is registered you will start to receive traffic and be able to control it.
+</p>
+<h1> <span class="mw-headline" id="High_level_overview"> High level overview </span></h1>
+<p>The COM framework allows you to receive networking events from the SDK and do processing on them, the flow is:
+</p>
+<ol><li> Register your COM interface.
+</li><li> Receive NewConnection event (called per each new connection).
+</li><li> Tell the SDK if to allow/block the connection, if allow, decide which data processing you want (raw, HTTP Parser, both, none).
+</li><li> Receive data via relevant methods, depending on the processing type.
+</li><li> Receive ConnectionClose when the connection was closed.
+</li><li> End of work, remove your COM interface.
+</li></ol>
+<h1> <span class="mw-headline" id="API"> API </span></h1>
+<h2> <span class="mw-headline" id="SetInterface"> SetInterface </span></h2>
+<pre>
+SetParentalInterface(IParentalControl* pInt,
+		     long lNewConnectionsOnly,
+		     long lDisconnectOnError);
+</pre>
+<p>This function is used to tell the Redirector what is the class you are going to use:
+</p><p>pInt - The interface class that will receive all the data.
+</p><p>lNewConnectionsOnly - This will tell the Redirector if you want to receive connections that started before you sent your interface to the Redirector, sending true will mean that you will receive connections without seeing the function NewConnection first.
+</p><p>lDisconnectOnError - This will tell the Redirector if to stop calling the interface in case there's an error using it.
+</p><p>How to register the interface:
+</p>
+<pre>
+Dim dt As PCProxyLib.DataController = new PCProxyLib.DataController
+dt.SetInterface(your interface class,true,true)
+</pre>
+<h2> <span class="mw-headline" id="IDataContainer"> IDataContainer </span></h2>
+<p>This class is used to transfer data between the SDK to the application that uses COM, the reason this class is used is because there's a limitation on the size of a string you can transfer using COM.
+</p>
+<h3> <span class="mw-headline" id="GetSize"> GetSize </span></h3>
+<pre>
+GetSize([out,retval]long* lSize);
+</pre>
+<p>Get the size in bytes of the data.
+</p>
+<h3> <span class="mw-headline" id="RequestString"> RequestString </span></h3>
+<pre>
+RequestString(long lPosition,
+	      long lSize,
+	      [out,retval]BSTR* pData);
+</pre>
+<p>This functions gets the data in a string format.
+</p>
+<h4> <span class="mw-headline" id="Parameters"> Parameters </span></h4>
+<p>lPosition - Where to start getting the data.
+</p><p>lSize - Size of data to request.
+</p><p>pData - Data received.
+</p><p>If you send both lPosition and lSize as zero the function will give you the full string, unless the string size is greater then 100k, in that case it will throw an error.
+</p>
+<h3> <span class="mw-headline" id="RequestString64"> RequestString64 </span></h3>
+<pre>
+RequestString64(long lPosition,
+	        long lSize,
+	        [out,retval]BSTR* pData);
+</pre>
+<p>This functions gets the data in a base64 format, this is used in case the data is binary.
+</p>
+<h4> <span class="mw-headline" id="Parameters_2"> Parameters </span></h4>
+<p>lPosition - Where to start getting the data.
+</p><p>lSize - Size of data to request.
+</p><p>pData - Data received (Data received is usually twice the size because of the base64 encodings)
+</p><p>If you send both lPosition and lSize as zero the function will give you the full base64 string, unless the string size is greater then 100k, in that case it will throw an error.
+</p>
+<h3> <span class="mw-headline" id="SetDataFromString"> SetDataFromString </span></h3>
+<pre>
+SetDataFromString(BSTR bData);
+</pre>
+<p>This functions will change the data in the container and set it to the string you provide.
+</p>
+<h3> <span class="mw-headline" id="SetDataFromString64"> SetDataFromString64 </span></h3>
+<pre>
+SetDataFromString64(BSTR bData);
+</pre>
+<p>This functions will change the data in the container and set it to the data you provide using Base64.
+</p>
+<h3> <span class="mw-headline" id="ReplaceData"> ReplaceData </span></h3>
+<pre>
+HRESULT ReplaceData(long lPosition,
+                    BSTR bData);
+</pre>
+<p>This function will replace a data inside the string, the function only replaces existing data, if it's in the end of the data, it will not do an insert.
+</p>
+<h4> <span class="mw-headline" id="Parameters_3"> Parameters </span></h4>
+<p>lPosition - Position to start the replace.
+</p><p>bData - String to replace with.
+</p>
+<h3> <span class="mw-headline" id="InjectData"> InjectData </span></h3>
+<pre>
+HRESULT InjectData(long lPosition,
+                   BSTR bData);
+</pre>
+<p>This function will insert a data inside the string and push the existing data after the inserted string.
+</p>
+<h4> <span class="mw-headline" id="Parameters_4"> Parameters </span></h4>
+<p>lPosition - Position to start the insert.
+</p><p>bData - String to insert.
+</p>
+<h3> <span class="mw-headline" id="RemoveData"> RemoveData </span></h3>
+<pre>
+RemoveData(long lPosition,
+           long lSize);
+</pre>
+<p>This function will delete data from the string and move the remaining data back.
+</p>
+<h4> <span class="mw-headline" id="Parameters_5"> Parameters </span></h4>
+<p>lPosition - Position to start the delete.
+</p><p>lSize - Number of characters to delete.
+</p>
+<h3> <span class="mw-headline" id="SearchString"> SearchString </span></h3>
+<pre>
+SearchString(BSTR bStringToSearch,
+             long lIgnoreCase,
+             [out,retval]long* pPosition);
+</pre>
+<p>This function searches for a string inside the data.
+</p>
+<h4> <span class="mw-headline" id="Parameters_6"> Parameters </span></h4>
+<p>bStringToSearch - String to search for.
+</p><p>lIgnoreCase - set to 1 if you want the search to be case insensitive.
+</p><p>pPosition - Position of string found, -1 for not found.
+</p>
+<h3> <span class="mw-headline" id="SearchHTMLString"> SearchHTMLString </span></h3>
+<pre>
+SearchHTMLString(BSTR bStringToSearch,
+                 [out,retval]long* pPosition);
+</pre>
+<p>This function searches for a html string inside the data (it will ignore formatting that is legal to HTML, for example if the text contains &lt; head &gt;, searching for &lt;head&gt; will find it as well, it is case insensitive by default.
+</p>
+<h4> <span class="mw-headline" id="Parameters_7"> Parameters </span></h4>
+<p>bStringToSearch - String to search for.
+</p><p>pPosition - Position of string found, -1 for not found.
+</p>
+<h3> <span class="mw-headline" id="SearchStringPosition"> SearchStringPosition </span></h3>
+<pre>
+SearchStringPosition(BSTR bStringToSearch,
+                     long lIgnoreCase,
+                     long lStartFrom,
+                     [out,retval]long* pPosition);
+</pre>
+<p>This function searches for a string inside the data starting at a specific position.
+</p>
+<h4> <span class="mw-headline" id="Parameters_8"> Parameters </span></h4>
+<p>bStringToSearch - String to search for.
+</p><p>lIgnoreCase - set to 1 if you want the search to be case insensitive.
+</p><p>lStartFrom - Position to start the search from.
+</p><p>pPosition - Position of string found, -1 for not found.
+</p>
+<h3> <span class="mw-headline" id="SearchHTMLStringPosition"> SearchHTMLStringPosition </span></h3>
+<pre>
+SearchHTMLStringPosition(BSTR bStringToSearch,
+                         long lStartFrom,
+                         [out,retval]long* pPosition);
+</pre>
+<p>This function searches for a html string inside the data starting at a specific position (it will ignore formatting that is legal to HTML, for example if the text contains &lt; head &gt;, searching for &lt;head&gt; will find it as well, it is case insensitive by default).
+</p>
+<h4> <span class="mw-headline" id="Parameters_9"> Parameters </span></h4>
+<p>bStringToSearch - String to search for.
+</p><p>lStartFrom - Position to start the search from.
+</p><p>pPosition - Position of string found, -1 for not found.
+</p>
+<h3> <span class="mw-headline" id="SaveToFile"> SaveToFile</span></h3>
+<pre>
+SaveToFile(BSTR bFileName,
+           long lAppend,
+           long lInThread,
+           [out,retval]long* pResult);
+</pre>
+<p>This function saves the data into a file.
+</p>
+<h4> <span class="mw-headline" id="Parameters_10"> Parameters </span></h4>
+<p>bFileName - File name (full path required)
+</p><p>lAppend - 0 To overwrite the file, 1 to append to it
+</p><p>lInThread - 0 operation will be from current thread and execution in app will resume when file was written, 1 to execute it from a different thread, in this mode you don't have a way to know when the write have ended.
+</p><p>pResult - Result, 0 for failure, 1 for success.
+</p>
+<h3> <span class="mw-headline" id="SearchRegex"> SearchRegex </span></h3>
+<pre>
+SearchRegex(BSTR bStringToSearch,
+            [out,retval]long* pPosition);
+</pre>
+<p>This function searches for a regex inside the data.
+</p>
+<h4> <span class="mw-headline" id="Parameters_11"> Parameters </span></h4>
+<p>bStringToSearch - Regex to search for.
+</p><p>pPosition - Position of string found, -1 for not found.
+</p>
+<h3> <span class="mw-headline" id="SearchRegexPosition"> SearchRegexPosition </span></h3>
+<pre>
+SearchRegexPosition(BSTR bStringToSearch,
+                    long lStartFrom,
+                    [out,retval]long* pPosition);
+</pre>
+<p>This function searches for a regex inside the data starting at a specific position.
+</p>
+<h4> <span class="mw-headline" id="Parameters_12"> Parameters </span></h4>
+<p>bStringToSearch - Regex to search for.
+</p><p>lStartFrom - Position to start the search from.
+</p><p>pPosition - Position of string found, -1 for not found.
+</p>
+<h2> <span class="mw-headline" id="IParentalControl"> IParentalControl </span></h2>
+<p>This is the class you need to implement, the language you use will implement the skeleton for you, you just need to embedd your code.
+</p><p>How to implement the class in VB.Net:
+</p>
+<pre>
+Implements PCProxyLib.IParentalControl
+</pre>
+<h3> <span class="mw-headline" id="NewConnection"> NewConnection </span></h3>
+<pre>
+NewConnection(long lConnectionID,
+	      long lFromEncryption,
+	      long lPID,
+	      BSTR bProcessName,
+              BSTR bUsername,
+	      BSTR bDomain,
+	      BSTR bIPString,
+	      [in,out]long* lIP,
+	      [in,out]long* lPort,
+	      [in,out]long* lSSL,
+	      [in,out]long* lProxyModified,
+	      [in,out]IProxyType* lProxyType,
+	      [in,out]long* lProxyIP,
+	      [in,out]long* lProxyPort,
+	      [in,out]BSTR* pUsername,
+	      [in,out]BSTR* pPassword,
+	      BSTR bDNSEntry,
+	      [in,out]FilteringType* pFilteringType,
+	      [in,out]BSTR* bStringToStore,
+	      [out,retval]long* lAllow);
+</pre>
+<p>This function is called whenever a new connection was made to PCProxy. 
+</p>
+<h4> <span class="mw-headline" id="Parameters_13"> Parameters </span></h4>
+<p>The parameters are: 
+</p><p>lConnectionID – A unique ID that will be used to identify the current socket connection, it's important to note that for HTTP connections you can have multiple requests on the same connection.
+</p><p>lFromEncryption – In case the data was originally encrypted with SSL but decrypted with the SSL decryptors, this flag will be true. 
+</p><p>lPID - Process ID of the application that created the connection.
+</p><p>bProcessName - Name of the application that created the connection.
+</p><p>bUsername - The username of the application that created the connection.
+</p><p>bDomain - The domain of the application that created the connection.
+</p><p>bIPString - The destination IP that this session is trying to connect to, this in in form of a string, for example: "127.0.0.1".
+</p><p>lIP – The destination IP that this session is trying to connect to. The programmer can change this value and the session will connect to the new IP. 
+</p><p>lPort – The destination port that this session is trying to connect to. The programmer can change this value and the session will connect to the new port.
+</p><p>lSSL – Outputs this stream as SSL data (you will probably also need to change the port to 443).
+</p>
+<h4> <span class="mw-headline" id="Proxy_variables"> Proxy variables </span></h4>
+<p>lProxyModified - Set this flag to true in case you set or modified the proxy settings.
+</p>
+<pre>
+typedef enum _IProxyType
+{
+    iptHTTP,
+    iptHTTPConnect,
+    iptHTTPConnectSSL,
+    iptHTTPHybrid,
+    iptHTTPHybridSSL,
+    iptSocks4,
+    iptSocks5,
+    iptHTTPSSL,
+    iptSocks5TCPUDP,
+    iptRedirect,
+    iptRedirectBypass,
+    iptSSLSubst,
+    iptNone
+} IProxyType;
+</pre>
+<p><br />
+The proxy variables are in/out which means they will contain the current settings and you will be able to change them:
+</p><p>lProxyType - This will contain the type of proxy (if proxy is set), and you can change it. (you can see description of each proxy type here: <a href="index.php/Komodia's_Redirector_installation_guide.html#Proxy_type" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#Proxy_type</a>.
+</p><p>lProxyIP - The IP of the proxy.
+</p><p>lProxyPort - The port of the proxy.
+</p><p>pUsername - Proxy username if applicable.
+</p><p>pPassword - Proxy password if applicable.
+</p>
+<h4> <span class="mw-headline" id="More_parameters"> More parameters </span></h4>
+<p>bDNSEntry - Incase you have the <a href="http://www.komodia.com/wiki/index.php?title=DNS_Hijacker&amp;action=edit&amp;redlink=1" class="new" title="DNS Hijacker (page does not exist)">DNS Hijacker</a>, this will contain the DNS entry of the connection.
+</p>
+<pre>
+typedef enum _FilteringType
+{
+    ftNothing,
+    ftNothingDisableParental,
+    ftDataOnly,
+    ftParentalOnly,
+    ftParentalTextOnly,
+    ftDataAndParental,
+    ftParentalOnlyMinimal
+} FilteringType;
+</pre>
+<p>pFilteringType - Type of filtering you want for this connection:
+</p>
+<ul><li> ftNothing - You don't want to receive any more data on this connection.
+</li><li> ftNothingDisableParental - You don't want to receive any more data on this connection and if you have the HTTP Parser, it will disable it for this connection.
+</li><li> ftDataOnly - You want to receive only the data without doing HTTP parsing.
+</li><li> ftParentalOnly - You want to receive only the parsed HTTP data.
+</li><li> ftParentalTextOnly - You want to receive only text based parsed HTTP data (html files).
+</li><li> ftDataAndParental - You want to receive both raw data and parsed HTTP data (if possible).
+</li><li> ftParentalOnlyMinimal - Same as ftParentalOnly, but will not send the raw header and full URL to conserve CPU.
+</li></ul>
+<p>bStringToStore - You can store any info you want in this string and you will receive it all across the current connection.
+</p><p>On Windows 8/8.1 when using a WFP, in case there's a cascading proxy redirect, there may be an option to get the original application (on top of the proxy process that was redirected), and then bStringToStore contain that process name (you can still modify the string as you would when it was empty). 
+</p><p>lAllow - Do you want to allow this connection or block it.
+</p>
+<h4> <span class="mw-headline" id="Samples"> Samples </span></h4>
+<p>Samples are written in VB.Net
+</p>
+<h5> <span class="mw-headline" id="Redirect_to_a_proxy"> Redirect to a proxy </span></h5>
+<pre>
+lProxyIP = System.Net.IPAddress.Parse(&quot;127.0.0.1&quot;).Address 'On C#: lProxyIP = (int)System.Net.IPAddress.Parse(&quot;127.0.0.1&quot;).Address;
+lProxyPort = 1080
+lProxyModified = 1
+lProxyType = PCProxyLib._IProxyType.iptSocks5
+</pre>
+<p>This will redirect the connection to a SOCKS5 proxy located at: 127.0.0.1:1080
+</p><p>In VB.net there may be issues with converting signed to unsigned (for the IP address), this is a code that can do the conversion:
+</p>
+<pre>
+Dim bb() As Byte = System.BitConverter.GetBytes(System.Net.IPAddress.Parse(&quot;127.0.0.1&quot;).Address)
+Dim Myint = System.BitConverter.ToInt32(bb, 0)
+lProxyIP=Myint
+</pre>
+<h3> <span class="mw-headline" id="DataBeforeSend"> DataBeforeSend </span></h3>
+<pre>
+DataBeforeSend(long lConnectionID,
+	       [in,out]IDataContainer** pData,
+	       [in,out]long* lTerminateSession,
+	       [in,out]long* lNewBufferToReceive,
+	       [in,out]BSTR* bStringToStore,
+	       [out,retval]DataActionType* pAction);
+</pre>
+<p>This function is called whenever there's a new outgoing data, and you set the filtering to: ftDataOnly
+</p>
+<h4> <span class="mw-headline" id="Parameters_14"> Parameters </span></h4>
+<p>The parameters are: 
+</p><p>lConnectionID – A unique ID that will be used to identify the current socket connection, it's important to note that for HTTP connections you can have multiple requests on the same connection. 
+</p><p>pData - The outgoing data, you can also modify this data.
+</p><p>lTerminateSession – Set to 1 to terminate the session when this function exits (if you don't want the data to be sent, you need to clear it)
+</p><p>lNewBufferToReceive – Takes the contents of the new data and sends it to the application that initiated the session (used mostly for redirects). 
+</p><p>bStringToStore - This string is to save custom data across the connection, you can store any data you want inside.
+</p>
+<pre>
+typedef enum _DataActionType
+{
+    naAllowData,
+    naDataChanged
+} DataActionType;
+</pre>
+<p>pAction - Action to perform:
+</p>
+<ul><li> naAllowData - Data sent as it.
+</li><li> naDataChanged - Indicates you have modified the data.
+</li></ul>
+<h3> <span class="mw-headline" id="DataBeforeReceive"> DataBeforeReceive </span></h3>
+<pre>
+DataBeforeReceive(long lConnectionID,
+	          [in,out]IDataContainer** pData,
+	          [in,out]long* lTerminateSession,
+	          long lServerClosed,
+	          [in,out]BSTR* bStringToStore,
+	          [out,retval]DataActionType* pAction);
+</pre>
+<p>This function is called whenever there's a new incoming data, and you set the filtering to: ftDataOnly
+</p>
+<h4> <span class="mw-headline" id="Parameters_15"> Parameters </span></h4>
+<p>The parameters are: 
+</p><p>lConnectionID – A unique ID that will be used to identify the current socket connection, it's important to note that for HTTP connections you can have multiple requests on the same connection. 
+</p><p>pData - The outgoing data, you can also modify this data.
+</p><p>lTerminateSession – Set to 1 to terminate the session when this function exits (if you don't want the data to be received, you need to clear it).
+</p><p>lServerClosed – When this flag is set, it means that the remote server closed the connection and at this stage you have last chance to send data to the client side before the Redirector closes the connection. 
+</p><p>bStringToStore - This string is to save custom data across the connection, you can store any data you want inside.
+</p>
+<pre>
+typedef enum _DataActionType
+{
+    naAllowData,
+    naDataChanged
+} DataActionType;
+</pre>
+<p>pAction - Action to perform:
+</p>
+<ul><li> naAllowData - Data sent as it.
+</li><li> naDataChanged - Indicates you have modified the data.
+</li></ul>
+<h3> <span class="mw-headline" id="ConnectionClosed"> ConnectionClosed </span></h3>
+<pre>
+ConnectionClosed(long lConnectionID,
+		 long lError,
+		 BSTR bStringToStore);
+</pre>
+<p>This function is called when the connection was closed, and you set the filtering to: ftDataOnly or ftParentalOnly
+</p>
+<h4> <span class="mw-headline" id="Parameters_16"> Parameters </span></h4>
+<p>The parameters are: 
+</p><p>lConnectionID – A unique ID that will be used to identify the current socket connection, it's important to note that for HTTP connections you can have multiple requests on the same connection. 
+</p><p>lError - If the connection was closed because of an error, this will contain the Winsock error code.
+</p><p>bStringToStore - This string is to save custom data across the connection, you can store any data you want inside.
+</p>
+<h3> <span class="mw-headline" id="HTTP_Parser"> HTTP Parser </span></h3>
+<p>The following functions are part of the HTTP Parser.
+</p>
+<h4> <span class="mw-headline" id="Results_enum"> Results enum </span></h4>
+<p>This enum is used to define behavior with the data methods.
+</p>
+<pre>
+typedef enum _ActionType
+{
+    atNothing=0,
+    atBlock,
+    atRedirect,
+    atModifiedHeader,
+    atModifyBody,
+    atModifyBodyAndHeader,
+    atHTMLInString,
+    atDontDoParental,
+    atDontProcessPost,
+    atDontDoParentalAndDontProcessPost,
+    atSkip,
+    atModifyBodySDKAdjustHeader,
+    atBuildButDontAggregate,
+    atDefer,
+    atModifyDontProcessPostPayload,
+    atDontDoParentalAndDontProcessPostModify
+} ActionType;
+</pre>
+<h4> <span class="mw-headline" id="NewRequest"> NewRequest </span></h4>
+<pre>
+NewRequest(long lConnectionID,
+	   [in,out]IDataContainer** pHeader,
+	   BSTR bHeaderNoPost,
+	   BSTR bHost,
+	   BSTR bURL,
+	   BSTR bFullRequest,
+	   long lPartialPost,
+	   [in,out]BSTR* bRedirectTo,
+	   [in,out]BSTR* bStringToStore,
+	   [out,retval]ActionType* pAction);
+</pre>
+<p>This function is called whenever there's a new HTTP request, and you set the filtering to: ftParentalOnly
+</p><p>The function can be called twice per request in case of a post, if the POST data is fragmented then the function will be called and will give your the opportunity to tell the SDK not to accumulate the POST data.
+</p>
+<h5> <span class="mw-headline" id="Parameters_17"> Parameters </span></h5>
+<p>The parameters are:
+</p><p>lConnectionID - A unique ID that will be used to identify the current socket connection, it's important to note that for HTTP connections you can have multiple requests on the same connection. 
+</p><p>pHeader - The request header data, can be modified, in case the request is post and lPartialPost==0 then the post data will come in this parameter right after the header, the post data will start right after \r\n\r\n that terminates the header.
+</p><p>bHeaderNoPost - Contains the header, in case of a POST, it will not contain the POST data.
+</p><p>bHost - Host field from the request.
+</p><p>bURL - URL part of the request (i.e. /somefolder/somefile.php)
+</p><p>bFullRequest - Full URL request (i.e. www.komodia.com/somefolder/somefile.php)
+</p><p>lPartialPost - If set to 1, it means this is a POST and the full data didn't arrive yet.
+</p><p>bRedirectTo - If you want to redirect the request to another page, set this variable to that page (i.e. <a class="external free" href="http://www.google.com">http://www.google.com</a>)
+</p><p>bStringToStore - This string is to save custom data across the connection, you can store any data you want inside.
+</p><p>pAction - Action to perform: (this tells the SDK how to process the data)
+</p>
+<ul><li> atNothing - Do nothing, data will pass normally, in case of a POST, it will be accumulated.
+</li><li> atBlock - Block this request, the data will not be send, browser will timeout or try again.
+</li><li> atRedirect - Redirect the browser to the URL specified at bRedirectTo.
+</li><li> atModifiedHeader - Indicate the header was modified.
+</li><li> atDontDoParental - For this request, turn off the HTTP Parser, this will apply to the receive part, in case of POST, it will accumulate.
+</li><li> atDontProcessPost, - For this request, turn off the HTTP Parser, this will apply to the send part only, in case of POST.
+</li><li> atDontDoParentalAndDontProcessPost - Turn HTTP Parser off for both request and reply.
+</li><li> atSkip - Allow the SDK to decide which action to take (the SDK will only try to accumulate minimal amount of data needed).
+</li><li> atModifyDontProcessPostPayload - For this request, modify the POST header and turn off the HTTP Parser for the POST payload.
+</li><li> atDontDoParentalAndDontProcessPostModify- For this request, modify the POST header and turn off the HTTP Parser for the POST payload and POST reply.
+</li></ul>
+<h5> <span class="mw-headline" id="Samples_2"> Samples </span></h5>
+<p>Samples are written in VB.Net
+</p>
+<h6> <span class="mw-headline" id="Redirect_a_site"> Redirect a site </span></h6>
+<p>Redirect the site cnn.com to google.com:
+</p>
+<pre>
+If (LCase(bFullRequest).IndexOf(&quot;cnn.com&quot;))&lt;&gt;-1 then
+    bRedirectTo=&quot;http://www.google.com&quot;
+    NewRequest=PCProxyLib._ActionType.atRedirect
+Else
+    NewRequest=PCProxyLib._ActionType.atSkip
+End If
+</pre>
+<h4> <span class="mw-headline" id="NewReply"> NewReply </span></h4>
+<pre>
+NewReply(long lConnectionID,
+	 BSTR bRequestHeader,
+	 BSTR bFullRequestURL,
+	 BSTR bReplyHeader,
+	 BSTR bContentType,
+	 long lReplyOnly,
+	 [in,out]IDataContainer** pReplyHeader,
+	 [in,out]IDataContainer** pReplyBody,
+	 [in,out]BSTR* bRedirectTo,
+	 [in,out]BSTR* bStringToStore,
+	 [out,retval]ActionType* pAction);
+</pre>
+<p>This function is called whenever there's a new HTTP reply, and you set the filtering to: ftParentalOnly
+</p><p>The function can be called twice per reply in case the data was big and didn't arrive in one chunk, if the data is fragmented then the function will be called and will give your the opportunity to tell the SDK not to accumulate the data, in case you don't need to, usually when it's a big movie or a file.
+</p>
+<h5> <span class="mw-headline" id="Parameters_18"> Parameters </span></h5>
+<p>The parameters are:
+</p><p>lConnectionID - A unique ID that will be used to identify the current socket connection, it's important to note that for HTTP connections you can have multiple requests on the same connection. 
+</p><p>bRequestHeader - Contains the request header, in case of a POST, it will not contain the POST data.
+</p><p>bFullRequestURL - Full URL request (i.e. www.komodia.com/somefolder/somefile.php)
+</p><p>bReplyHeader - Header of the reply.
+</p><p>bContentType - Content type of the reply.
+</p><p>lReplyOnly - If the data was fragmented, and this reply contains the header only, this flag is set to 1.
+</p><p>pReplyHeader - The reply header data, can be modified.
+</p><p>pReplyBody - The reply data (will be set only if lReplyOnly is zero), can be modified.
+</p><p>bRedirectTo - If you want to redirect the request to another page, set this variable to that page (i.e. <a class="external free" href="http://www.google.com">http://www.google.com</a>)
+</p><p>bStringToStore - This string is to save custom data across the connection, you can store any data you want inside.
+</p><p>pAction - Action to perform: (this tells the SDK how to process the data)
+</p>
+<ul><li> atNothing - Do nothing, data will pass normally, in case of a big reply, it will be accumulated.
+</li><li> atBlock - Block this request, the data will not be send, browser will timeout or try again.
+</li><li> atRedirect - Redirect the browser to the URL specified at bRedirectTo.
+</li><li> atModifiedHeader - Indicate that the reply header was modified.
+</li><li> atModifyBody - Indicate that the reply body was modified (you are responsible to adjust the HTTP header)
+</li><li> atModifyBodyAndHeader - Indicate that the reply header and body was modified.
+</li><li> atHTMLInString - You want to reply with a HTML data that was stored in bRedirectTo (the SDK will build the header).
+</li><li> atDontDoParental - For this reply only, turn off the HTTP Parser.
+</li><li> atSkip - Allow the SDK to decide which action to take (the SDK will only try to accumulate minimal amount of data needed).
+</li><li> atModifyBodySDKAdjustHeader - This tells the SDK to adjust the header size field base on a modified body you have provided.
+</li></ul>
+<h4> <span class="mw-headline" id="HTTP_101_response_code"> HTTP 101 response code </span></h4>
+<p>You can read here: <a href="index.php/Komodia's_Redirector_DLL_framework_guide.html#HTTP_101_response_code" title="Komodia's Redirector DLL framework guide">Komodia's Redirector DLL framework guide#HTTP 101 response code</a> on how the HTTP Parser manages 101 response code.
+</p>
+<h4> <span class="mw-headline" id="How_to_get_HTML_data"> How to get HTML data </span></h4>
+<p>The HTTP Parser is built so you control which data to "hold" and which not to, to allow faster load rate, the sequence described here shows how to control the retrieval of HTML data:
+</p>
+<ol><li> NewRequest being called, indicating the browser made a web request, at this point you can either:
+<ol><li> Redirect it into another address using the atRedirect option.
+</li><li> Modify the header using the: atModifiedHeader, atHTMLInString options.
+</li><li> If you decide you don't want to inspect this request's reply, you can use: atDontDoParental, atDontDoParentalAndDontProcessPost.
+</li><li> If you do want to inspect the request's reply you need to return the flag atNothing.
+</li></ol>
+</li><li> NewReply being called, if the payload is big, you will only get the headers and have the flag lReplyOnly==1, at this point you can:
+<ol><li> Redirect it into another address using the atRedirect option.
+</li><li> Modify the header and/or body using the: atModifiedHeader, atHTMLInString, atModifyBodyAndHeader options.
+</li><li> If you decide you don't want to inspect this reply, you can use: atDontDoParental.
+</li><li> If you do want to inspect the request's reply you need to return the flag atNothing.
+</li></ol>
+</li><li> NewReply being called, with full payload, and the flag lReplyOnly==0, at this point you can:
+<ol><li> Redirect it into another address using the atRedirect option.
+</li><li> Modify the header and/or body using the: atModifiedHeader, atHTMLInString, atModifyBodyAndHeader options.
+</li><li> Let it go to the browser using thr atNothing flag.
+</li></ol>
+</li></ol>
+<p>It's possible to only receive one reply with lReplyOnly==0 in case the payload did manage to fit in a single call.
+</p>
+<h1> <span class="mw-headline" id="COM_errors"> COM errors </span></h1>
+<p>The SDK will treat COM errors according to the parameter in SetInterface:
+</p>
+<ol><li> lDisconnectOnError==0 - SDK will keep passing data to the COM interface, even if there are delays or errors on application side, if application is hanged or slowed down, this will affect network speed.
+</li><li> lDisconnectOnError==1 - SDK will remove interface to application on first COM error and will not send anymore data, this is to prevent situation where the application hangs or slows down.
+</li></ol>
+<h2> <span class="mw-headline" id="Detecting_COM_interface_removal"> Detecting COM interface removal </span></h2>
+<p>To detect the removal of your COM interface (only when lDisconnectOnError==1), you need to poll the COM method GetInstaceID, once the value is changed it means that your COM interface was removed and you need to register it again, preferably a new class.
+</p>
+<h1> <span class="mw-headline" id="Interop"> Interop </span></h1>
+<p>The SDK itself does not need .Net to operate, but when using VB.Net or C# to use the COM framework, the compiler generates Interop file for the COM library (it's a .Net requirement), and you might want to control the version of the Interop for compatability reasons.
+</p>
+<ol><li> Set the .Net version at your project setting.
+</li><li> Some VS versions are bugged and can't create lower version Interop, then you should resort to earlier VS versions just to create the Interop (<a class="external free" href="http://stackoverflow.com/questions/2659738/visual-studio-2010-tlbimp-generates-net-4-0-interops-in-2-0-projects">http://stackoverflow.com/questions/2659738/visual-studio-2010-tlbimp-generates-net-4-0-interops-in-2-0-projects</a>)
+</li></ol>
+<h1> <span class="mw-headline" id="Common_pitfalls"> Common pitfalls </span></h1>
+<h2> <span class="mw-headline" id="Multi_threading"> Multi threading </span></h2>
+<p>The callbacks calls are multi threaded, make sure that non thread safe code is protected with Mutex or Critical section.
+</p>
+<h2> <span class="mw-headline" id="Not_understanding_what_lReplyOnlydoes"> Not understanding what lReplyOnlydoes </span></h2>
+<p>lReplyOnly is the core of the HTTP reply processing, not using it will often lead to problems of not seeing HTTP responses.
+</p>
+<h2> <span class="mw-headline" id="Modifying_HTTP_body_size"> Modifying HTTP body size </span></h2>
+<p>When modifying the HTTP body size, it must be reflected in the header, this can be done by either using a flag that tells the SDK to adjust the header automatically (atModifyBodySDKAdjustHeader), or modify the header in the DLL and use a flag that indicates that the header has been modified (atModify).
+</p>
+<h2> <span class="mw-headline" id="Spending_too_much_time_inside_callbacks"> Spending too much time inside callbacks </span></h2>
+<p>The COM callbacks should not spend more then five seconds inside a callback, more then that can cause unexpected behavior (the true safe limit is 20 seconds, after 5 seconds inside a callback warnings will be written to the log)
+</p>
+<h2> <span class="mw-headline" id="COM_client_failing_or_errors"> COM client failing or errors </span></h2>
+<p>Incase of an error or freeze in the client, all traffic will be blocked, the solution can be to set the interface with lDisconnectOnError==1, this will mean that when the COM client freezes/errors out, the SDK removes the interface and the client will need to re register itself to get data.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 618/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key komod_wikidb:pcache:idhash:54-0!*!0!!en!*!* and timestamp 20150219084457 -->
+</div><div class="printfooter">
+Retrieved from "<a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;oldid=1333.html">http://www.komodia.com/wiki/index.php?title=Komodia%27s_Redirector_COM_framework_guide&amp;oldid=1333</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="index.php/Komodia's_Redirector_COM_framework_guide.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://www.komodia.com/wiki/index.php?title=Talk:Komodia%27s_Redirector_COM_framework_guide&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;action=edit.html" primary="1" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;action=history.html" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="http://www.komodia.com/wiki/index.php/User:46.165.222.245" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">46.165.222.245</a></li>
+				<li id="pt-anontalk"><a href="http://www.komodia.com/wiki/index.php/User_talk:46.165.222.245" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li>
+				<li id="pt-anonlogin"><a href="index.php@title=Special%253AUserLogin&amp;returnto=Komodia%2527s+Redirector+COM+framework+guide&amp;returntoquery=printable%253Dyes.html" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+<a href="index.php/Main_Page.html" style="background-image: url(http://www.komodia.com/images/logo.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index.php/Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-Official-homepage"><a href="../index.php.html">Official homepage</a></li>
+				<li id="n-recentchanges"><a href="index.php/Special%253ARecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://www.komodia.com/wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search Komodia [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="index.php/Special%253AWhatLinksHere/Komodia's_Redirector_COM_framework_guide.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="index.php/Special%253ARecentChangesLinked/Komodia's_Redirector_COM_framework_guide.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="index.php/Special%253ASpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="index.php@title=Komodia%2527s_Redirector_COM_framework_guide&amp;oldid=1333.html" title="Permanent link to this revision of the page">Permanent link</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 14 September 2014, at 15:12.</li>
+		<li id="viewcount">This page has been accessed 23,925 times.</li>
+		<li id="privacy"><a href="index.php/Komodia%253APrivacy_policy.html" title="Komodia:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="index.php/Komodia%253AAbout.html" title="Komodia:About">About Komodia</a></li>
+		<li id="disclaimer"><a href="index.php/Komodia%253AGeneral_disclaimer.html" title="Komodia:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest"], null, true);
+}</script>
+<script>if(window.mw){
+mw.loader.state({"site":"ready"});
+}</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6898822-1");
+pageTracker._trackPageview();
+</script><!-- Piwik -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.komodia.com/" : "http://piwik.komodia.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 6);
+piwikTracker.setDocumentTitle("");
+piwikTracker.setIgnoreClasses("image");
+
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+/* ]]> */
+</script><noscript><p><img src="http://piwik.komodia.com/piwik.php?idsite=6" style="border:0" alt=""/></p></noscript>
+<!-- /Piwik --><!-- Served in 0.179 secs. --></body></html>

@@ -1,0 +1,16 @@
+; You're seeing this file because you're using Mediawiki's External Editor feature.
+; This is probably because you selected use external editor in your preferences.
+; To edit normally, either disable that preference or go to the URL:
+; http://www.komodia.com/wiki/index.php?title=File:WatchdogRulesU.png&action=edit&externaledit=true&mode=file&internaledit=1
+; See http://www.mediawiki.org/wiki/Manual:External_editors for details.
+[Process]
+Type=Edit file
+Engine=MediaWiki
+Script=http://www.komodia.com/wiki/index.php
+Server=http://www.komodia.com
+Path=/wiki
+Special namespace=Special
+
+[File]
+Extension=png
+URL=http://www.komodia.com/wiki/images/2/2f/WatchdogRulesU.png

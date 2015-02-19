@@ -1,0 +1,115 @@
+/*
+Theme Name:		Komodia Custom Theme
+Version: 		1.0
+Author: 		John Mark
+*/
+
+/* Reset Browser Defaults */
+@import url( 'library/media/css/reset.css' );
+
+/* Apply base theme styles and colors */
+@import url( 'library/media/css/base.css' );
+
+/* Basic 2 Column Layout */
+@import url( 'library/media/layouts/2col-r.css' );
+
+/* Stylistic CSS Styles */
+@import url( 'library/media/css/screen.css' );
+
+/* These empty css selectors are temporarily here for compatiability with the WordPress theme repository checklist. */
+.aligncenter {} .alignleft {} .alignright {} .wp-caption {} .wp-caption-text {}
+body{background:#F5F5F5; margin:0; padding:0; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px;}
+a{color:#003366;}
+h1,h2,h3,h4,h5,h6{font-family:Georgia, "Times New Roman", Times, serif;}
+h1,h2,h3,ul{padding:0; margin:0;}
+li{margin:3px;}
+.container{width:1014px; margin:0 auto; background:#fff; padding:5px;}
+#logo-holder{float:left;}
+#menu-holder{float:right; width:420px;}
+.top-space{margin-top:0px;}
+#menu-holder ul{margin-top:10px;}
+#menu-holder ul li a{display:block;}
+#menu-holder ul li a:hover{color:#fff;}
+#menu-holder .submenu ul{margin:0;}
+#menu-holder .submenu li a{background:none; color:#515151;}
+#menu-holder .submenu li:hover{background:#c0d2eb;}
+#menu-holder .submenu li a:hover{color:#000;}
+#menu-holder .submenu li{float:none; margin:0;}
+#menu-holder a{background:url(images/down2.gif) no-repeat right center; padding-right:15px; color:#D1E6EB; text-decoration:none; font-weight:bold;}
+#menu-holder .menu-left{float:left; background:url(images/left-menu.jpg) no-repeat; width:9px; height:47px;}
+#menu-holder .menu-body{float:left; background:url(images/menu-rep.jpg) repeat-x; height:47px;}
+#menu-holder .menu-right{float:left; background:url(images/right-menu.jpg) no-repeat; width:11px; height:47px;}
+#menu-holder ul li{float:left; list-style:none; margin:5px 10px;}
+.submenu{background:#fff; position:absolute; border:1px #bbbbbb solid; display:none; min-width:180px; width:270px; z-index:1000;}
+.submenu li{border-bottom:1px #bbb solid; padding:0; margin:0;}
+.submenu li a{padding:5px; display:block;}
+.submenu ul{padding:0; margin:0;}
+
+.breadcrumb{padding:10px 0; padding-left:0px; font-size:14px; font-style:italic;}
+.banner{background:url(images/banner.jpg) no-repeat; height:270px;}
+.center{width:800px; margin:10px auto; margin-bottom:30px;}
+.banner ul{padding:0; margin:0;}
+.banner ul li{padding:25px 0; margin:0; padding-top:230px;}
+.banner ul li{float:left; list-style:none; width:380px; text-align:center;}
+.banner ul li a{padding:3px 50px; background:url(images/learn-more.jpg) no-repeat;}
+.banner ul li a:hover{background-position:0 -19px;}
+#cta{margin-top:20px; color:#4B4B4B; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#cta li{list-style:none; float:left; width:290px; margin:0 10px;}
+#cta table input{width:200px;}
+#cta li h2{border-bottom:2px #2e6bae dotted; padding:5px 0; color:#000; font-size:18px; background:url(http://www.komodia.com/wp-content/themes/wp-framework/images/icon.jpg) no-repeat right top; margin-bottom:10px; text-align:left; padding:10px 0;}
+#form{background:url(images/dl-bg.jpg) no-repeat 0px 10px; font-size:13px; margin-top:20px;}
+#form input[type=text]{width:230px;}
+#form input.sub-btn{background:url(images/download.jpg) no-repeat; width:86px; height:25px; border:none; cursor:pointer;}
+#welcome{background:url(images/welcome-bg.jpg) no-repeat 0px 10px; margin-top:20px;}
+#welcome p{text-align:justify;  color:#4B4B4B; font-size:13px;}
+#footer{background:url(images/footer-bg.jpg) repeat-x; padding-top:10px; padding-bottom:10px; margin-bottom:10px;}
+#fb{background:url(images/facebook_logo.png) no-repeat; padding-left:24px; padding-bottom:5px;}
+#footer p{float:left; margin:0; padding:0; color:#666666; font-size:11px;}
+#footer-menu{float:right;}
+#footer-menu ul{margin:0; padding:0;}
+#footer-menu ul li{margin:0 10px; list-style:none; float:left;}
+#footer-menu ul li a{text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+#footer-menu ul li a:hover{text-decoration:underline;}
+/*main*/
+#main{padding:20px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#4B4B4B; font-size:13px; padding-top:0;}
+#main .red-banner{background:url(images/banner-small.gif) no-repeat; width:566px; height:157px; margin:20px auto; text-align:center;}
+#main .red-banner a{background:url(images/learn-more.jpg) no-repeat; width:89px; height:21px; display:block; margin:0 auto; position:relative; top:130px;}
+#main .red-banner a:hover{background-position:0 -19px;}
+#main p{font-size:13px; width:100%; display:block;}
+#main small{font-size:11px; font-style:italic; margin-top:15px; padding-top:20px;}
+#main a{color:#000066; font-weight:bold; text-decoration:underline;}
+#main a:hover{color:#000033;}
+#main .tab-content{background:#eee; padding:5px; border:1px #999 solid; padding-top:20px;}
+#main .tab-content a{text-decoration:underline;}
+#main h5{font-size:16px; color:#333333; border-top:1px #003333 solid; border-bottom:1px #003333 solid; margin-top:25px; font-weight:bold;}
+#main ul{margin-left:30px; margin-bottom:20px;}
+#main .tab-menu{margin-top:20px;}
+#main .tab-menu ul{padding:0; margin:0;}
+#main .tab-menu li{list-style:none; float:left; margin:0; margin-right:2px; cursor:pointer;}
+#main .tab-menu li a{color:#000; background:#ddd; padding:5px 15px; display:block; text-decoration:none;}
+#main h3{font-size:20px; color:#000; border-bottom:2px #2f4c6e dotted; margin:5px 0; margin-bottom:20px; padding-bottom:10px;}
+#main h2{font-size:28px; margin:25px 0; text-align:center; color:#000099;}
+#main .products-holder{padding-left:190px; width:70%; margin:0 auto; margin-top:20px; padding-bottom:20px;}
+#main p{font-size:12px;}
+#main .line{border-left:3px #2E6BAE solid; padding-left:10px;}
+#main #prod-redirector{background:url(images/mini-logo1.jpg) no-repeat;}
+#main #prod-interceptor{background:url(images/mini-logo4.jpg) no-repeat;}
+#main #prod-lsp{background:url(images/mini-logo2.jpg) no-repeat;}
+#main #prod-ssl{background:url(images/mini-logo5.jpg) no-repeat;}
+#main #prod-pro{background:url(images/mini-logo3.jpg) no-repeat;}
+#main #prod-watchdog{background:url(images/mini-logo6.jpg) no-repeat;}
+#main td.desc{width:400px; font-size:10px;}
+#main h4{font-weight:bold; font-size:14px; padding:5px; font-style:italic; border-bottom:1px #333333 dashed;}
+#contact-holder{padding:10px; background:url(images/at.jpg) no-repeat; padding-left:250px; height:200px; margin-top:20px;}
+#blue-place{background:url(images/blue-place.jpg) repeat-x #485ee8; padding:5px 25px; width:350px; margin:15px auto; text-align:center;}
+#blue-place p{margin:0; color:#E1E1FF; font-family:Georgia, "Times New Roman", Times, serif; font-size:14px;}
+#blue-place p a{text-transform:uppercase; font-weight:bold; color:#000000; text-decoration:underline;}
+#blue-place p a:hover{color:#fff;}
+#download li{float:left; width:400px; list-style:none; border-left:3px #003366 solid; padding-left:30px; margin-top:20px;}
+#download li h6{font-size:14px; font-weight:bold; margin-bottom:15px;}
+#download p{font-size:12px;}
+#download p.descp{height:100px;}
+#lsp-samp a{text-decoration:none;}
+#lsp-samp h3{margin-top:20px;}
+#scanned-by{text-align:left; width:70px; float:right; margin-top:6px;}
+.clearer{clear:both; height:0; margin:0; padding:0;}

@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head profile="http://purl.org/uF/hAtom/0.1/ http://purl.org/uF/2008/03/">
+	
+	<title>Sniffer SDK/API, SSL decryption, and LSP SDK</title>
+
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="WordPress" />
+	<meta name="framework" content="WP Framework" />
+
+	<!-- Favicon: Browser + iPhone Webclip -->
+	<link rel="shortcut icon" href="wp-content/themes/wp-framework/images/favicon.jpg" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="wp-content/themes/wp-framework/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="wp-content/themes/wp-framework/library/media/css/print.css" type="text/css" media="print" />
+
+  	<!-- Links: RSS + Atom Syndication + Pingback etc. -->
+	<link rel="alternate" type="application/rss+xml" title="Komodia RSS Feed" href="feed/rss" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="feed/rss" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="feed/atom" />
+	<link rel="pingback" href="xmlrpc.php" />
+
+	<!-- Theme Hook -->
+    	<link rel="alternate" type="application/rss+xml" title="Komodia &raquo; Komodia&#8217;s Interceptor Comments Feed" href="products/komodias-interceptor/feed" />
+<link rel='stylesheet' id='really_simple_share_style-css'  href='wp-content/plugins/really-simple-facebook-twitter-share-buttons/style.css' type='text/css' media='all' />
+<!-- This site uses the Yoast Google Analytics plugin v5.2.7 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-34315916-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Yoast Google Analytics -->
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<link rel='shortlink' href='index.html@p=21.html' />
+
+<!-- All in One SEO Pack 2.2.3.1 by Michael Torbert of Semper Fi Web Design[245,316] -->
+<meta name="description"  content="SDK to perform stream sniffing for normal and SSL encrypted traffic" />
+
+<meta name="keywords"  content="interception, http interception, lsp, winsock lsp, sniffer, http sniffer" />
+
+<link rel="canonical" href="index.html@p=21.html" />
+<!-- /all in one seo pack -->
+	<script type="text/javascript">
+		function showSub(idname){
+			document.getElementById(idname).style.display = "block";
+		}
+		function hideSub(idname){
+			document.getElementById(idname).style.display = "none";
+		}
+	</script>
+<!--END head-->
+</head>
+<body onload="showTab('tab-intro');">
+<div class="container top-space">
+	<div id="header">
+    	<div id="logo-holder"><a href="index.php.html"><img src="wp-content/themes/wp-framework/images/logo.gif" alt="Komodia Logo" border="0" /></a></div>
+        <div id="menu-holder">
+        	<div class="menu-left">&nbsp;</div>
+        	<div class="menu-body">
+        	<ul>
+            	<li onmouseover="showSub('products')" onmouseout="hideSub('products')">
+                	<a href="index.php@page=products.html">Products</a>
+                    <div id="products" class="submenu">                    
+                     <ul>
+                    	<li><a href="index.php@page=redirector.html">Komodia's Redirector</a></li>
+                        
+                        <li><a href="index.php@page=ssl.html">Komodia's SSL Digestor</a></li>
+                        <li><a href="index.php@page=rlsp.html">Komodia's Advanced LSP Installer</a></li>
+                        <li><a href="products/komodias-watchdog/index.html">Komodia's Watchdog</a></li>
+			<li><a href="products/ios/index.html">Komodia's iOS SDK</a></li>
+			<li><a href="http://url.komodia.com">Komodia's classification service</a></li>
+			<li><a href=http://www.komodia.com/client-side-per-page-classification-sdk">Client side classification SDK</a></li>
+			<li><a href="parental-control-demo/index.html">Parental control demo</a></li>
+			<li><a href="ad-injection-sdk/index.html">Ad injection SDK</a></li>
+                    </ul>
+                    <div class="clearer"></div>
+                    </div>
+				</li>
+                <li onmouseover="showSub('lsp')" onmouseout="hideSub('lsp')">
+                	<a href="index.php@page=lsp.html">LSP</a>
+                    <div id="lsp" class="submenu">
+                    	<ul>
+                            <li><a href="index.php@page=lsp.html">LSP Guide</a></li>
+                            <li><a href="index.php@page=lspsamp.html">LSP Sample</a></li>
+			    <li><a href="challenges/index.html">LSP development challenges</a></li>
+			    <li><a href="index.php@page=ndis.html">NDIS Guide</a></li>
+			    <li><a href="index.php@page=wfp.html">WFP Guide</a></li>
+			    <li><a href="index.php@page=tdi.html">TDI Guide</a></li>
+			    <li><a href="dll-injection/index.html">DLL injection</a></li>
+
+						</ul>                            
+                    </div>
+                </li>
+                <li onmouseover="showSub('about')" onmouseout="hideSub('about')">
+                	<a href="index.html@p=2.html">About Us</a>
+                    <div id="about" class="submenu">
+                    	<ul>
+                        	<li><a href="index.html@p=2.html">Company Information</a></li>
+                            <li><a href="index.html@p=155.html">Portfolio</a></li>
+                            <li><a href="index.html@p=170.html">Services</a></li>
+                        </ul>
+                    </div>
+				</li>
+                <li><a href="index.php@page=newcontact.html" style="background:none;">Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="menu-right">&nbsp;</div>
+            <div class="clearer"></div>
+        </div>
+        <div id="scanned-by"></div>
+        <div class="clearer"></div>
+	</div>
+    <div class="center breadcrumb">
+    	<span>&raquo;<a href="index.php.html">Komodia</a> » Komodia&#8217;s Interceptor</span>
+    </div>		<script type="text/javascript">
+function showTab(tabid){
+	document.getElementById('tab-intro').style.display = "none";
+	document.getElementById('possible-usage').style.display = "none";
+	document.getElementById('why-sdk').style.display = "none";
+	document.getElementById('technical-details').style.display = "none";
+	document.getElementById('tab-manuals').style.display = "none";
+	document.getElementById('tab-pricing').style.display = "none";
+	
+	document.getElementById('mnu-tab-intro').style.background= "#ddd";
+	document.getElementById('mnu-possible-usage').style.background= "#ddd";
+	document.getElementById('mnu-why-sdk').style.background= "#ddd";
+	document.getElementById('mnu-technical-details').style.background= "#ddd";
+	document.getElementById('mnu-tab-manuals').style.background= "#ddd";
+	document.getElementById('mnu-tab-pricing').style.background= "#ddd";
+	
+	document.getElementById('mnu-tab-intro').style.color = "#000";
+	document.getElementById('mnu-possible-usage').style.color = "#000";
+	document.getElementById('mnu-why-sdk').style.color = "#000";
+	document.getElementById('mnu-technical-details').style.color = "#000";
+	document.getElementById('mnu-tab-manuals').style.color = "#000";
+	document.getElementById('mnu-tab-pricing').style.color = "#000";
+	
+	document.getElementById(tabid).style.display = "block";
+	document.getElementById('mnu-'+tabid).style.background= "#0080C0";
+	document.getElementById('mnu-'+tabid).style.color= "#fff";
+}
+</script>
+    <div id="main">
+    	<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+					        	<h3>What is Komodia&#8217;s Interceptor?</h3>
+<p><img class="alignleft size-full wp-image-22" style="margin: 5px;" title="128-logo-i" src="wp-content/themes/wp-framework/images/mini-logo4.jpg" alt="Komodia Interceptor" /></p>
+<p>Komodia&#8217;s Interceptor allows you to sniff normal and encrypted SSL traffic with a few simple clicks and a copy paste of our callback code into your application, unlike normal sniffers which shows packets, Komodia&#8217;s Interceptor works with assembled streams (if you need a solution that also modifies the traffic visit <a href="index.php@page=redirector.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodia-redirector/', 'Komodia&#8217;s Redirector']);" >Komodia&#8217;s Redirector</a> web page).</p>
+<h3>Product Information</h3>
+<div class="tab-menu">
+<ul>
+<li><a id="mnu-tab-intro" onclick="showTab('tab-intro')">Intro</a></li>
+<li><a id="mnu-possible-usage" onclick="showTab('possible-usage')">Possible Usage</a></li>
+<li><a id="mnu-why-sdk" onclick="showTab('why-sdk')">Why Use SDK?</a></li>
+<li><a id="mnu-technical-details" onclick="showTab('technical-details')">Technical Details</a></li>
+<li><a id="mnu-tab-manuals" onclick="showTab('tab-manuals')">Manuals</a></li>
+<li><a id="mnu-tab-pricing" onclick="showTab('tab-pricing')">Pricing</a></li>
+</ul>
+</div>
+<div class="clearer"></div>
+<div class="tab-content">
+<div id="tab-intro">
+<p>For the first time on the Internet you can purchase a robust and flexible Interception SDK that allows you to develop your network interception and sniffing application, with this SDK you would be able to perform the following using a few simple clicks and easy to use API:</p>
+<ul>
+<li><strong>Control</strong> which TCP traffic to intercept based on: applications, ports, and IPs.</li>
+<li><strong>Inspect and process</strong> the incoming and outgoing traffic that is captured with the rules you have defined.</li>
+<li>Works with assembled streams and not with packets.</li>
+</ul>
+<p>In addition the product has optional modules that allows you to:</p>
+<ul>
+<li><a href="index.html@p=13.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodias-ssl-decoderdigestor', 'SSL Decoder']);"  target="_blank">SSL Decoder</a> &#8211; <strong>Decrypt</strong> SSL data from Internet explorer and Firefox and allows you to receive the decrypted data.</li>
+<li>HTTP Parser &#8211; Parses <strong>HTTP traffic</strong> and gives you the HTTP data parsed (removing GZIP/Deflate encodings, chunked transfers, HTTP 100 responses).</li>
+<li><a href="index.html@p=29.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodias-watchdog', 'Kernel watchdog']);"  target="_blank">Kernel watchdog</a> &#8211; Protects the SDK from being removed/modified/stopped by unauthorized users. transfers, HTTP 100 responses).</li>
+</ul>
+</div>
+<div id="possible-usage">
+<p>With Komodia&#8217;s Interceptor SDK you can develop number of applications such as:</p>
+<ul>
+<li><strong>Logging application</strong>: Log the network traffic streams from an application or several application.</li>
+<li><strong>Outgoing traffic analyzers</strong>: Log the network traffic streams from  an application or several application for analasys, e.g. web site  visited, mail server used, confidential documents leaked, etc.</li>
+<li><strong>Incoming traffic analyers</strong>: Log the network traffic streams that arrives to your server applications, e.g. IIS, Apache, Squid.</li>
+<li><strong>SSL sniffing applications</strong>: Decrypts SSL sessions on the fly, and you receive them in plaintext, for example from online stock market websites.</li>
+</ul>
+</div>
+<div id="why-sdk">
+<p>There are many reasons why our clients chose Komodia&#8217;s Interceptor as their interception engine:</p>
+<ul>
+<li><strong>Instantly</strong> develop your application, the SDK doesn&#8217;t require network or Winsock LSP programming knowledge.</li>
+<li>Developing a similar product with all the features takes a skilled Winsock LSP and windows          programmer at least two months, don&#8217;t forget to add QA time on top of          this time frame. The cost of the SDK with IE and FF SSL decryption modules is <strong>only</strong> 1200$ (<a href="quotes/InterceptorQ.pdf" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/quotes/InterceptorQ.pdf', 'view price quote']);"  target="_blank">view price quote</a>).</li>
+<li><strong>Saves time</strong> you would have to deal with exotic or common LSP          problems – we have already done this for you. Komodia has fixed a wide          array of bugs reported by our clients and our clients&#8217; clients, thus          saving your precious time from being wasted on QA. (See our <a href="index.html@p=174.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/bugs-discovered', 'bugs']);"  target="_blank">bugs</a> page)</li>
+<li><strong>Tested</strong> in commercial releases. <strong>Saves you</strong> QA costs and allows you to focus on          developing and testing the real functionality of your product.</li>
+<li>Can          be used <strong>commercially</strong>. Similar &#8220;free&#8221; products come with no support and          with GPL licenses, or without any API to control, which makes them commercially unusable.</li>
+<li>14-day pre-purchase evaluation period, <strong>try before you buy</strong>.</li>
+<li>Phenomenal support, you receive either 30 or 60 days of support          after purchse (depending on the product and features purchased) which          includes: Counseling on the best way to ingerate our products with          yours, software update, reported bugs are usualy fixed within 24-48          hours.</li>
+<li><strong>Easy</strong> to interface with API, written using COM technology you can use any language to control the Interceptor.</li>
+<li>Most importantly: Get the Interceptor <strong>NOW</strong> and save at least four months of development and labor costs.</li>
+</ul>
+</div>
+<div id="technical-details">
+<div class="TabbedPanelsContent TabbedPanelsContentVisible" style="display: block;">
+<ul class="lspul lspli">
+<li>The Interceptor&#8217;s main service is COM-aware, written in C++, and can be  compiled with VS6 and above (needed only on the development machine).</li>
+<li>The TCP/IP Interceptor component is a <a href="index.html@p=131.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/lsp', 'Winsock LSP']);"  target="_blank">Winsock LSP</a>.</li>
+<li>The LSP is registered using our <a href="index.php@page=rlsp.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodias-advanced-lsp-installer/', 'Advanced LSP installer']);"  target="_blank">Advanced LSP installer</a>.</li>
+<li>Includes two control GUI samples written in VB and MFC using the COM interfaces that the service exports.</li>
+<li>Works on Windows 2000 / 2003 / 2008 / XP / Vista / Windows 7 and all 64 bit flavours.</li>
+<li>Allows you to interface with it via either C DLL or COM DLL (for C# and .Net applications).</li>
+</ul>
+</div>
+</div>
+<div id="tab-manuals">
+<p>Manuals :</p>
+<ul class="lspul lspli">
+<li>Komodia&#8217;s Interceptor <a href="wiki/index.php@title=Komodia%2527s_Interceptor_installation_guide.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/wiki/index.php?title=Komodia%27s_Interceptor_installation_guide', 'Installation manual']);"  target="_blank">Installation manual</a>.</li>
+<li>Komodia&#8217;s Interceptor <a href="wiki/index.php@title=Komodia%2527s_Interceptor.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/wiki/index.php?title=Komodia%27s_Interceptor', 'Wiki page']);"  target="_blank">Wiki page</a> which contains FAQ and more information.</li>
+</ul>
+</div>
+<div id="tab-pricing">
+<p style="margin: 0;"><a href="quotes/InterceptorQ.pdf" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/quotes/InterceptorQ.pdf', 'View the official quote']);"  target="_blank">View the official quote</a>, which includes prices for:</p>
+<p>Komodia&#8217;s Redirector source version costs 2700$ and comes with 60 days of support.</p>
+<ul class="lspul lspli">
+<li>Long term support.</li>
+<li>SSL Decryption module.</li>
+<li>HTTP Praser module.</li>
+</ul>
+</div>
+</div>
+<div id="_mcePaste" style="overflow: hidden; position: absolute; left: -10000px; top: 798px; width: 1px; height: 1px;"><a href="index.php@page=ssl.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/index.php?page=ssl.html', 'SSL Decoder/Digestor']);"  target="_blank">SSL Decoder/Digestor</a> &#8211; <strong>Decrypt</strong> SSL data, process it, modify it (if requried) and <strong>encrypt</strong> it back to SSL.</div>
+<div>
+<p><a href="index.php@page=newcontact.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/contact-us/', 'Contact us']);"  title="Contact us">Contact us</a> to receive your 14 days free trial.</p>
+</div>
+<div class='wpfblike' style='height: 40px;'><fb:like href='http://www.komodia.com/products/komodias-interceptor' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>            </div>
+</div>
+<script type="text/javascript">
+        //<![CDATA[
+        
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      
+      window.___gcfg = {lang: "en"};
+		  (function() {
+		    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+		    po.src = "https://apis.google.com/js/plusone.js";
+		    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+		  })();
+      
+        //]]>
+  		</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script><!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.komodia.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+<script type='text/javascript' src='https://platform.linkedin.com/in.js'></script>
+<script type='text/javascript' src='wp-includes/js/hoverIntent.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js'></script>
+<div id="footer" class="container">
+	<p>Copyright &copy; 2000-2013 Komodia Inc. All rights reserved.</p>
+    <div id="footer-menu">
+    	<ul>
+        	<li><a href="index.php@page=about.html">About Us</a></li>
+		 <li><a href="index.html@p=673.html">Press releases</a></li>
+		<li><a href="index.html@p=743.html">Newsletters</a></li>
+            <li><a href="index.html@p=701.html">Blogs</a></li>
+            <li><a href="wiki/index.php@title=Main_Page.html" target="_blank">Wiki</a></li>
+            <li><a href="videos/index.html">Videos</a></li>
+		<li><a href="wiki/index.php@title=Komodia%2527s_site_legal_information.html" target="_blank">Privacy</a></li>
+
+            <li><a id="fb" href="http://www.facebook.com/komodia#!/pages/Komodia/129677207087283" target="_blank">Visit Us on Facebook</a></li>
+        </ul>
+    </div>
+    <div class="clearer"></div>
+</div>
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 1/5 queries in 0.002 seconds using disk
+Object Caching 506/514 objects using disk
+
+ Served from: www.komodia.com @ 2014-12-20 00:12:58 by W3 Total Cache -->

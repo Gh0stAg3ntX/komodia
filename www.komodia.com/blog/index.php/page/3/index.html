@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Komodia&#039;s Winsock LSP products, network interception/modification and SSL decryption blog | Winsock LSP, Komodia and all in between - Part 3</title>
+
+<link rel="stylesheet" href="../../../wp-content/themes/default/style.css" type="text/css" media="screen" />
+<link rel="pingback" href="../../../xmlrpc.php" />
+
+
+
+<!-- All in One SEO Pack 2.2.5.1 by Michael Torbert of Semper Fi Web Design[297,399] -->
+<link rel='prev' href='../2/index.html' />
+<link rel='next' href='../4/index.html' />
+
+<link rel="canonical" href="http://www.komodia.com/blog/page/3/" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Komodia&#039;s Winsock LSP products, network interception/modification and SSL decryption blog &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Komodia&#039;s Winsock LSP products, network interception/modification and SSL decryption blog &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='../../../wp-content/plugins/yet-another-related-posts-plugin/style/widget.css@ver=4.1.1.css' type='text/css' media='all' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../xmlrpc.php@rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1.1" />
+<style type="text/css">
+.seo-tag-cloud {font-size: 1.0em; text-transform: none;}
+.seo-tag-cloud li {display: inline;}
+.seo-tag-cloud div {padding: 10px;}
+.seo-tag-cloud em {font-style: normal; font-size: 1.1em;}
+.seo-tag-cloud a {color: #8b00ff;}
+.seo-tag-cloud em a {color: #00a;}
+.seo-tag-cloud em em a {color: #00f;}
+.seo-tag-cloud em em em a {color: #0a0;}
+.seo-tag-cloud em em em em a {color: #0f0;}
+.seo-tag-cloud em em em em em a {color: #aa0;}
+.seo-tag-cloud em em em em em em a {color: #ff0;}
+.seo-tag-cloud em em em em em em em a {color: #aa4a00;}
+.seo-tag-cloud em em em em em em em em a {color: #ff7f00;}
+.seo-tag-cloud em em em em em em em em em a {color: #a00;}
+.seo-tag-cloud em em em em em em em em em em a {color: #f00;}
+.credit {font-size: 50%;}
+</style>
+	<script type="text/javascript">
+		function showSub(idname){
+			document.getElementById(idname).style.display = "block";
+		}
+		function hideSub(idname){
+			document.getElementById(idname).style.display = "none";
+		}
+	</script>
+<style type="text/css">
+.call_learn a{background:url(../../../../wp-content/themes/wp-framework/images/learn-more.jpg) no-repeat; display:block; height:21px; width:89px;}
+.call_learn a:hover{background-position:0 -19px;}
+</style>
+</head>
+<body class="home blog paged paged-3" onload="MM_preloadImages('http://www.komodia.com/images/download-over.jpg','http://www.komodia.com/images/learn_more_hover.gif')">
+<script type="text/javascript" src="http://www.komodia.com/blog/index.php/page/3/wthvideo/wthvideo6.js"></script>
+<div id="page">
+<div id="header" role="banner">
+	<div id="logo-holder"><a href="../../../../index.php.html"><img src="../../../wp-content/themes/default/images/logo.gif" alt="Logo" /></a></div>
+    <div id="menu-holder">
+        	<div class="menu-left">&nbsp;</div>
+        	<div class="menu-body">
+        	<ul>
+            	<li onmouseover="showSub('products')" onmouseout="hideSub('products')">
+                	<a href="../../../../index.php@page=products.html">Products</a>
+                    <div id="products" class="submenu">                    
+                     <ul>
+                    	<li><a href="../../../../index.php@page=redirector.html">Komodia Redirector</a></li>
+                        
+                        <li><a href="../../../../index.php@page=ssl.html">Komodia's SSL Digestor</a></li>
+                        <li><a href="../../../../index.php@page=rlsp.html">Komodia's Advanced LSP Installer</a></li>
+                        <li><a href="../../../../products/komodias-watchdog/index.html">Komodia's Watchdog</a></li>
+			<li><a href="../../../../products/ios/index.html">Komodia's iOS SDK</a></li>
+			<li><a href="http://url.komodia.com">Komodia's classification service</a></li>
+			<li><a href="../../../../parental-control-demo/index.html">Parental control demo</a></li>
+                    </ul>
+                    <div class="clearer"></div>
+                    </div>
+				</li>
+                <li onmouseover="showSub('lsp')" onmouseout="hideSub('lsp')">
+                	<a href="../../../../index.php@page=lsp.html">LSP</a>
+                    <div id="lsp" class="submenu">
+                    	<ul>
+                            <li><a href="../../../../index.php@page=lsp.html">LSP Guide</a></li>
+                            <li><a href="../../../../index.php@page=lspsamp.html">LSP Sample</a></li>
+			    <li><a href="../../../../challenges/index.html">LSP development challenges</a></li>
+			    <li><a href="../../../../index.php@page=ndis.html">NDIS Guide</a></li>
+			    <li><a href="../../../../index.php@page=wfp.html">WFP Guide</a></li>
+			    <li><a href="../../../../index.php@page=tdi.html">TDI Guide</a></li>
+			    <li><a href="../../../../dll-injection/index.html">DLL injection</a></li>
+
+						</ul>                            
+                    </div>
+                </li>
+                <li onmouseover="showSub('about')" onmouseout="hideSub('about')">
+                	<a href="../../../../index.html@p=2.html">About Us</a>
+                    <div id="about" class="submenu">
+                    	<ul>
+                        	<li><a href="../../../../index.html@p=2.html">Company Information</a></li>
+                            <li><a href="../../../../index.html@p=155.html">Portfolio</a></li>
+                            <li><a href="../../../../index.html@p=170.html">Services</a></li>
+                        </ul>
+                    </div>
+				</li>
+                <li><a href="../../../../index.php@page=newcontact.html" style="background:none;">Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="menu-right">&nbsp;</div>
+            <div class="clearer"></div>
+        </div>
+</div>
+<hr />
+
+<p id="breadcrumbs">&nbsp&nbsp&nbsp&nbsp&nbsp<a href="../../../../index.php.html">Home</a>&nbsp&raquo;&nbsp<strong>Blog</strong></p><script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<div class="call_to_action">
+<div class="call_head"> </div>
+<div class="call_learn">
+<a href="../../../../index.php@page=redirector.html">
+</a>
+</div>
+</div>
+	<div id="main">
+	<div id="content" class="narrowcolumn" role="main">
+
+	
+		<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+					
+			<div class="post-262 post type-post status-publish format-standard hentry category-firewall category-komodias-products category-winsock-lsp tag-firewall-source-for-vista tag-firewallsource-code-in-vista tag-komodia-redirector tag-komodias-redirector" id="post-262">
+				<h2><a href="../../2010/06/20/firewall-source-for-vista/trackback/index.html" rel="bookmark" title="Permanent Link to Firewall Source for Vista">Firewall Source for Vista</a></h2>
+				<small>June 20th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p>Are you looking for the <a href="../../../../index.php@page=redirector.html" target="_blank">firewall source code in Vista</a>?  What if I told you that you could have a LSP enabled firewall without writing any code?  Komodia&#8217;s Redirector is your true<a href="../../../../index.php@page=redirector.html" target="_blank"> firewall source for Vista </a>because the work is already accomplished for you.  Why spend so many hours on a firewall when it has already been done by Komodia?  Would not your time be better spent on other areas?  I believe so.  I think that you would appreciate the power and time-saving ease of <a href="../../../../index.php@page=redirector.html" target="_blank">Komodia&#8217;s Redirector </a>- and it cannot hurt to check it out!</p>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/20/firewall-source-for-vista/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/firewall-source-for-vista/index.html" rel="tag">firewall source for vista</a>, <a href="../../tag/firewallsource-code-in-vista/index.html" rel="tag">firewallsource code in vista</a>, <a href="../../tag/komodia-redirector/index.html" rel="tag">komodia redirector</a>, <a href="../../tag/komodias-redirector/index.html" rel="tag">Komodia's Redirector</a><br /> Posted in <a href="../../category/firewall/index.html" rel="category tag">Firewall</a>, <a href="../../category/komodias-products/index.html" rel="category tag">Komodia's products</a>, <a href="../../category/winsock-lsp/index.html" rel="category tag">Winsock LSP</a> |   <a href="../../2010/06/20/firewall-source-for-vista/trackback/index.html#respond" title="Comment on Firewall Source for Vista">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post-259 post type-post status-publish format-standard hentry category-winsock-lsp tag-32-bit-lsp tag-32bit-lsp tag-64-bit-lsp tag-64-bit-windows-socket-apis tag-64bit-lsp tag-fix-lsp-issues-for-vista tag-fix-lsp-problems-for-vista tag-lsp-problems" id="post-259">
+				<h2><a href="../../2010/06/20/fix-lsp-issues-for-vista-64-bit/trackback/index.html" rel="bookmark" title="Permanent Link to Fix LSP Issues For Vista: 64 Bit">Fix LSP Issues For Vista: 64 Bit</a></h2>
+				<small>June 20th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p>It is just amazing to me how popular 64 bit operating systems have become lately.  It can cause <a href="../../../../index.php@page=lsp.html" target="_blank">LSP problems </a>with Vista and <a href="../../../../index.php@page=lsp.html" target="_blank">64 bit Windows Socket APIs</a>.  Obviously, when you want to install LSP on a 64 bit operating system, you will need to install a 64 bit LSP.  Even when running on a 64 bit operating system, any 32 bit application will load both the DLLs and LSP in 32 bit.  Therefore, you must first install the 32 bit LSP.</p>
+<p>When you are running a 64 bit application, it will load the DLLs and LSP in 64 bit.  Both (32 &amp; 64) LSP stacks are kept and used by the 64 bit operating system &#8211; so you are going to need both 32 &amp; 64 installers.  Remember to always install the 32 bit LSP first before the 64 bit LSP.</p>
+<p>Hopefully, this will help you to <a href="../../../../index.php@page=lsp.html" target="_blank">fix LSP issues for Vista</a>.</p>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/20/fix-lsp-issues-for-vista-64-bit/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/32-bit-lsp/index.html" rel="tag">32 bit lsp</a>, <a href="../../tag/32bit-lsp/index.html" rel="tag">32bit lsp</a>, <a href="../../tag/64-bit-lsp/index.html" rel="tag">64 bit lsp</a>, <a href="../../tag/64-bit-windows-socket-apis/index.html" rel="tag">64 bit windows socket APIs</a>, <a href="../../tag/64bit-lsp/index.html" rel="tag">64bit lsp</a>, <a href="../../tag/fix-lsp-issues-for-vista/index.html" rel="tag">fix lsp issues for vista</a>, <a href="../../tag/fix-lsp-problems-for-vista/index.html" rel="tag">fix lsp problems for vista</a>, <a href="../../tag/lsp-problems/index.html" rel="tag">lsp problems</a><br /> Posted in <a href="../../category/winsock-lsp/index.html" rel="category tag">Winsock LSP</a> |   <a href="../../2010/06/20/fix-lsp-issues-for-vista-64-bit/trackback/index.html#respond" title="Comment on Fix LSP Issues For Vista: 64 Bit">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post-253 post type-post status-publish format-standard hentry category-winsock-lsp tag-how-to-write-lsp tag-layer-servive-provider-development tag-layered-service-provider-development" id="post-253">
+				<h2><a href="../../2010/06/18/how-to-write-lsp/trackback/index.html" rel="bookmark" title="Permanent Link to How To Write LSP">How To Write LSP</a></h2>
+				<small>June 18th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p>Friends, let&#8217;s be honest, there is NO easy way to write an LSP application on your own. An accurate figure that I have seen recently is 3 months; it takes 3 months to write an LSP application on your own.</p>
+<p>Now, I am not saying that this is impossible or even that you should not do it. I am just saying that <a href="../../../../index.php@page=lsp.html" target="_blank">layer service provider development</a> is difficult and not to be taken lightly.</p>
+<p>Fortunately for you and me, when we want to learn <a href="../../../../index.php@page=lsp.html" target="_blank">how to write LSP</a>, there is a resource like Komodia available.</p>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/18/how-to-write-lsp/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/how-to-write-lsp/index.html" rel="tag">how to write lsp</a>, <a href="../../tag/layer-servive-provider-development/index.html" rel="tag">layer servive provider development</a>, <a href="../../tag/layered-service-provider-development/index.html" rel="tag">layered service provider development</a><br /> Posted in <a href="../../category/winsock-lsp/index.html" rel="category tag">Winsock LSP</a> |   <a href="../../2010/06/18/how-to-write-lsp/trackback/index.html#respond" title="Comment on How To Write LSP">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post-244 post type-post status-publish format-standard hentry category-komodias-products category-ndis category-ssl category-winsock-lsp tag-does-lsp-layer-supports-port-blocking tag-hijacking-the-winsock-connect-function tag-komodia-answers tag-komodias-redirector tag-komodias-ssl-digestor tag-lsp-guide tag-ndis-guide tag-redirector tag-ssl-digestor tag-vista-64-anonymizer tag-winsock-modify-package" id="post-244">
+				<h2><a href="../../2010/06/10/you-have-questions-komodia-has-answers/trackback/index.html" rel="bookmark" title="Permanent Link to You Have Questions; Komodia Has Answers">You Have Questions; Komodia Has Answers</a></h2>
+				<small>June 10th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p>You have questions:</p>
+<ol>
+<li><a href="../../../../index.php@page=redirector.html" target="_blank">Does LSP layer supports port blocking?</a></li>
+<li>When <a href="../../../../index.php@page=redirector.html" target="_blank">hijacking the Winsock connect function</a>, what should I do next?</li>
+<li>How can I set up a <a href="../../../../index.php@page=redirector.html" target="_blank">Vista 64 anonymizer</a>?</li>
+<li>How do I intergrate a <a href="../../../../index.php@page=redirector.html" target="_blank">Winsock modify package </a>into my development?</li>
+</ol>
+<p>And Komodia has answers:</p>
+<ul>
+<li>Free <a href="../../../../index.php@page=lsp.html" target="_blank">LSP Guide </a>&amp; resource page</li>
+<li>Free <a href="../../../../index.php@page=ndis.html" target="_blank">NDIS Guide</a></li>
+<li>Komodia&#8217;s <a href="../../../../index.php@page=redirector.html" target="_blank">Redirector</a></li>
+<li>Komodia&#8217;s <a href="../../../../index.php@page=ssl.html" target="_blank">SSL Digestor</a></li>
+<li>and much more</li>
+</ul>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/10/you-have-questions-komodia-has-answers/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/does-lsp-layer-supports-port-blocking/index.html" rel="tag">does lsp layer supports port blocking</a>, <a href="../../tag/hijacking-the-winsock-connect-function/index.html" rel="tag">hijacking the winsock connect function</a>, <a href="../../tag/komodia-answers/index.html" rel="tag">komodia answers</a>, <a href="../../tag/komodias-redirector/index.html" rel="tag">Komodia's Redirector</a>, <a href="../../tag/komodias-ssl-digestor/index.html" rel="tag">komodia's ssl digestor</a>, <a href="../../tag/lsp-guide/index.html" rel="tag">lsp guide</a>, <a href="../../tag/ndis-guide/index.html" rel="tag">NDIS guide</a>, <a href="../../tag/redirector/index.html" rel="tag">Redirector</a>, <a href="../../tag/ssl-digestor/index.html" rel="tag">ssl digestor</a>, <a href="../../tag/vista-64-anonymizer/index.html" rel="tag">vista 64 anonymizer</a>, <a href="../../tag/winsock-modify-package/index.html" rel="tag">winsock modify package</a><br /> Posted in <a href="../../category/komodias-products/index.html" rel="category tag">Komodia's products</a>, <a href="../../category/ndis/index.html" rel="category tag">NDIS</a>, <a href="../../category/ssl/index.html" rel="category tag">SSL</a>, <a href="../../category/winsock-lsp/index.html" rel="category tag">Winsock LSP</a> |   <a href="../../2010/06/10/you-have-questions-komodia-has-answers/trackback/index.html#respond" title="Comment on You Have Questions; Komodia Has Answers">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post-247 post type-post status-publish format-standard hentry category-firewall category-winsock-lsp tag-firewall-source-code tag-firewall-source-code-in-vista tag-lsp-guide tag-lsp-resource-page" id="post-247">
+				<h2><a href="../../2010/06/10/the-firewall-source-code-in-vista/trackback/index.html" rel="bookmark" title="Permanent Link to The Firewall Source Code in Vista">The Firewall Source Code in Vista</a></h2>
+				<small>June 10th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p>Do you think that there is no way that you can write a based firewall for Vista?  Well, my friends, this may just be a lot easier than you think.  Get Komodia&#8217;s free LSP guide and <a href="../../../../index.php@page=lsp.html" target="_blank">view the resource page </a>for all the information about the <a href="../../../../index.php@page=lsp.html" target="_blank">firewall source code in Vista </a>and how you can use that for your own purposes.</p>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/10/the-firewall-source-code-in-vista/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/firewall-source-code/index.html" rel="tag">firewall source code</a>, <a href="../../tag/firewall-source-code-in-vista/index.html" rel="tag">firewall source code in vista</a>, <a href="../../tag/lsp-guide/index.html" rel="tag">lsp guide</a>, <a href="../../tag/lsp-resource-page/index.html" rel="tag">lsp resource page</a><br /> Posted in <a href="../../category/firewall/index.html" rel="category tag">Firewall</a>, <a href="../../category/winsock-lsp/index.html" rel="category tag">Winsock LSP</a> |   <a href="../../2010/06/10/the-firewall-source-code-in-vista/trackback/index.html#respond" title="Comment on The Firewall Source Code in Vista">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post-242 post type-post status-publish format-standard hentry category-hookingdetours category-ndis tag-ndis tag-ndis-hooking-source-code tag-ndis-passthru" id="post-242">
+				<h2><a href="../../2010/06/09/ndis-hooking-source-code-2/trackback/index.html" rel="bookmark" title="Permanent Link to NDIS Hooking Source Code">NDIS Hooking Source Code</a></h2>
+				<small>June 9th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p>Code hooking is a very good tool for the programmer &#8211; specifically when chasing down bugs.  When building your <a href="../../../../index.php@page=ndis.html" target="_blank">NDIS hooking source code</a>, be sure to visit Komodia&#8217;s free NDIS guide and resource page.  There is a lot of free &#8211; yet extremely valuable &#8211; information about all things NDIS.  This includes, but is not limited to, <a href="../../../../index.php@page=ndis.html" target="_blank">NDIS passthru </a>information, intermediate drivers, and protocol drivers.</p>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/09/ndis-hooking-source-code-2/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/ndis/index.html" rel="tag">NDIS</a>, <a href="../../tag/ndis-hooking-source-code/index.html" rel="tag">NDIS hooking source code</a>, <a href="../../tag/ndis-passthru/index.html" rel="tag">Ndis Passthru</a><br /> Posted in <a href="../../category/hookingdetours/index.html" rel="category tag">Hooking/Detours</a>, <a href="../../category/ndis/index.html" rel="category tag">NDIS</a> |   <a href="../../2010/06/09/ndis-hooking-source-code-2/trackback/index.html#respond" title="Comment on NDIS Hooking Source Code">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post-238 post type-post status-publish format-standard hentry category-ndis tag-free-ndis-guide tag-modify-ndis-passthru tag-ndis-64-bit-passthru" id="post-238">
+				<h2><a href="../../2010/06/09/ndis-64-bit-passthru-2/trackback/index.html" rel="bookmark" title="Permanent Link to NDIS 64 Bit Passthru">NDIS 64 Bit Passthru</a></h2>
+				<small>June 9th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p>When your goal is to <a href="../../../../index.php@page=ndis.html" target="_blank">modify NDIS passthru</a>, then you definitely want to visit Komodia&#8217;s free NDIS guide.  It is a free resource full of NDIS passthru information.  It includes both NDIS 32 bit and <a href="../../../../index.php@page=ndis.html" target="_blank">NDIS 64 bit passthru </a>information.</p>
+<p>So, please view the <a href="../../../../index.php@page=ndis.html" target="_blank">free NDIS guide here</a>.</p>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/09/ndis-64-bit-passthru-2/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/free-ndis-guide/index.html" rel="tag">free NDIS guide</a>, <a href="../../tag/modify-ndis-passthru/index.html" rel="tag">modify ndis passthru</a>, <a href="../../tag/ndis-64-bit-passthru/index.html" rel="tag">ndis 64 bit passthru</a><br /> Posted in <a href="../../category/ndis/index.html" rel="category tag">NDIS</a> |   <a href="../../2010/06/09/ndis-64-bit-passthru-2/trackback/index.html#respond" title="Comment on NDIS 64 Bit Passthru">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post-236 post type-post status-publish format-standard hentry category-komodias-products category-winsock-lsp tag-layered-service-provider-redirect-to-a-html-page tag-winsock-modify-html-request" id="post-236">
+				<h2><a href="../../2010/06/08/layered-service-provider-redirect-to-a-html-page-2/trackback/index.html" rel="bookmark" title="Permanent Link to Layered Service Provider Redirect to a HTML Page">Layered Service Provider Redirect to a HTML Page</a></h2>
+				<small>June 8th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p>If you want to have the <a href="../../../../index.php@page=redirector.html" target="_blank">layered service provider redirect to a HTML page</a>, it can be done.  Winsock LSP enabled devices can do so many things for you, but often times you spend a great deal of time writing code for the smaller details.  That is where Komodia&#8217;s products come into play.  The Redirector can provide you with a multitude of functions without you ever having to write a single line of code.  How great is that?  Using a <a href="../../../../index.php@page=redirector.html" target="_blank">Winsock modify html request </a>is not so much difficult as it is tedious and time consuming.  Wouldn&#8217;t you really rather spend your time writing the more important code?</p>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/08/layered-service-provider-redirect-to-a-html-page-2/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/layered-service-provider-redirect-to-a-html-page/index.html" rel="tag">layered service provider redirect to a html page</a>, <a href="../../tag/winsock-modify-html-request/index.html" rel="tag">winsock modify html request</a><br /> Posted in <a href="../../category/komodias-products/index.html" rel="category tag">Komodia's products</a>, <a href="../../category/winsock-lsp/index.html" rel="category tag">Winsock LSP</a> |   <a href="../../2010/06/08/layered-service-provider-redirect-to-a-html-page-2/trackback/index.html#respond" title="Comment on Layered Service Provider Redirect to a HTML Page">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post-234 post type-post status-publish format-standard hentry category-winsock-lsp tag-rebuild-lsp-vista tag-vista-layered-service-provider-install" id="post-234">
+				<h2><a href="../../2010/06/08/problems-with-vista-layered-service-provider-install/trackback/index.html" rel="bookmark" title="Permanent Link to Problems With Vista Layered Service Provider Install">Problems With Vista Layered Service Provider Install</a></h2>
+				<small>June 8th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p>Windows Vista has been reeking havoc on LSP users since its beginning.  There are some subtle differences that must be considered when making a <a href="../../../../index.php@page=lsp.html" target="_blank">Vista layered service provider install</a>.  Komodia has a section in the free LSP resource page dedicated just to Vista LSP difficulties.  You may just <a href="../../../../index.php@page=lsp.html" target="_blank">rebuild LSP Vista </a>- but before you take any action, be sure to check out the free guide.</p>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/08/problems-with-vista-layered-service-provider-install/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/rebuild-lsp-vista/index.html" rel="tag">rebuild LSP vista</a>, <a href="../../tag/vista-layered-service-provider-install/index.html" rel="tag">vista layered service provider install</a><br /> Posted in <a href="../../category/winsock-lsp/index.html" rel="category tag">Winsock LSP</a> |   <a href="../../2010/06/08/problems-with-vista-layered-service-provider-install/trackback/index.html#respond" title="Comment on Problems With Vista Layered Service Provider Install">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post-232 post type-post status-publish format-standard hentry category-winsock-lsp tag-layered-service-protocol tag-lsp tag-redirecting-winsock-sockets tag-winsock-sockets" id="post-232">
+				<h2><a href="../../2010/06/07/what-is-layered-service-protocol/trackback/index.html" rel="bookmark" title="Permanent Link to What is Layered Service Protocol?">What is Layered Service Protocol?</a></h2>
+				<small>June 7th, 2010 <!-- by chris --></small>
+
+				<div class="entry">
+					<p><a href="../../../../index.php@page=lsp.html" target="_blank">Layered Service Protocol </a>is another lesser used acronym for LSP and is often used interchangeably with Layered Service Provider.  LSP is simply a DLL using Winsock APIs to place itself inside the communication stack.  Once it is there, it can interact with the communication by reading, intercepting, and even modifying the data.</p>
+<p>There are so many things that can be done with LSP.  You can do anything from simply tracking bugs to <a href="../../../../index.php@page=lsp.html" target="_blank">redirecting winsock sockets</a>.  The sky is the limit with LSP.</p>
+<p>Chris</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/06/07/what-is-layered-service-protocol/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>				</div>
+
+				<p class="postmetadata">Tags: <a href="../../tag/layered-service-protocol/index.html" rel="tag">layered service protocol</a>, <a href="../../tag/lsp/index.html" rel="tag">LSP</a>, <a href="../../tag/redirecting-winsock-sockets/index.html" rel="tag">redirecting winsock sockets</a>, <a href="../../tag/winsock-sockets/index.html" rel="tag">winsock sockets</a><br /> Posted in <a href="../../category/winsock-lsp/index.html" rel="category tag">Winsock LSP</a> |   <a href="../../2010/06/07/what-is-layered-service-protocol/trackback/index.html#respond" title="Comment on What is Layered Service Protocol?">No Comments &#187;</a></p>
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="../4/index.html" >&laquo; Older Entries</a></div>
+			<div class="alignright"><a href="../2/index.html" >Newer Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+
+	<div id="sidebar" role="complementary">
+		<ul>
+			<li id="categories-3" class="widget widget_categories"><h2 class="widgettitle">Categories</h2><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="14">dns interception&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="19">Firewall&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="61">Hooking/Detours&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="5">Komodia&#8217;s products&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="31">NDIS&nbsp;&nbsp;(14)</option>
+	<option class="level-0" value="39">Parental control&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="57">Rants&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="33">Sniffers&nbsp;&nbsp;(7)</option>
+	<option class="level-0" value="4">SSL&nbsp;&nbsp;(7)</option>
+	<option class="level-0" value="18">TDI&nbsp;&nbsp;(11)</option>
+	<option class="level-0" value="25">Technology&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="32">WFP&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="3">Winsock LSP&nbsp;&nbsp;(68)</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+	var dropdown = document.getElementById("cat");
+	function onCatChange() {
+		if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
+			location.href = "http://www.komodia.com/blog/?cat="+dropdown.options[dropdown.selectedIndex].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+/* ]]> */
+</script>
+
+</li><li id="seo_tag_cloud" class="widget seo_tag_cloud_widget"><h2 class="widgettitle">Tag Cloud</h2><div class="seo-tag-cloud">
+	<span><em><em><a href="../../tag/c/index.html" title="C++: 4 topics" rel="tag">C++</a></em></em></span>
+<span><a href="../../tag/chunked-transfer/index.html" title="Chunked transfer: 2 topics" rel="tag">Chunked transfer</a></span>
+<span><em><a href="../../tag/detours/index.html" title="Detours: 3 topics" rel="tag">Detours</a></em></span>
+<span><a href="../../tag/dns-interception/index.html" title="dns interception: 2 topics" rel="tag">dns interception</a></span>
+<span><a href="../../tag/firewall/index.html" title="Firewall: 2 topics" rel="tag">Firewall</a></span>
+<span><em><a href="../../tag/fix-lsp-issues-for-vista/index.html" title="fix lsp issues for vista: 3 topics" rel="tag">fix lsp issues for vista</a></em></span>
+<span><em><em><em><em><em><a href="../../tag/free-lsp-guide/index.html" title="free LSP guide: 6 topics" rel="tag">free LSP guide</a></em></em></em></em></em></span>
+<span><em><em><a href="../../tag/free-ndis-guide/index.html" title="free NDIS guide: 4 topics" rel="tag">free NDIS guide</a></em></em></span>
+<span><em><em><a href="../../tag/free-winsock-lsp-guide/index.html" title="free winsock lsp guide: 4 topics" rel="tag">free winsock lsp guide</a></em></em></span>
+<span><a href="../../tag/gzip/index.html" title="GZIP: 2 topics" rel="tag">GZIP</a></span>
+<span><a href="../../tag/hooking/index.html" title="Hooking: 2 topics" rel="tag">Hooking</a></span>
+<span><a href="../../tag/hooks/index.html" title="Hooks: 2 topics" rel="tag">Hooks</a></span>
+<span><em><a href="../../tag/how-to-write-an-lsp/index.html" title="how to write an lsp: 3 topics" rel="tag">how to write an lsp</a></em></span>
+<span><em><a href="../../tag/how-to-write-lsp/index.html" title="how to write lsp: 3 topics" rel="tag">how to write lsp</a></em></span>
+<span><a href="../../tag/inflate/index.html" title="Inflate: 2 topics" rel="tag">Inflate</a></span>
+<span><a href="../../tag/install-layered-service-provider/index.html" title="install layered service provider: 2 topics" rel="tag">install layered service provider</a></span>
+<span><em><em><a href="../../tag/intercept/index.html" title="Intercept: 4 topics" rel="tag">Intercept</a></em></em></span>
+<span><em><em><em><a href="../../tag/komodias-redirector/index.html" title="Komodia&#039;s Redirector: 5 topics" rel="tag">Komodia's Redirector</a></em></em></em></span>
+<span><a href="../../tag/layered-service-protocol/index.html" title="layered service protocol: 2 topics" rel="tag">layered service protocol</a></span>
+<span><em><a href="../../tag/layered-service-provider/index.html" title="Layered Service Provider: 3 topics" rel="tag">Layered Service Provider</a></em></span>
+<span><em><em><em><em><em><em><em><em><a href="../../tag/lsp/index.html" title="LSP: 11 topics" rel="tag">LSP</a></em></em></em></em></em></em></em></em></span>
+<span><em><a href="../../tag/lsp-guide/index.html" title="lsp guide: 3 topics" rel="tag">lsp guide</a></em></span>
+<span><em><em><em><em><em><em><em><a href="../../tag/ndis/index.html" title="NDIS: 10 topics" rel="tag">NDIS</a></em></em></em></em></em></em></em></span>
+<span><a href="../../tag/ndis-filter/index.html" title="NDIS Filter: 2 topics" rel="tag">NDIS Filter</a></span>
+<span><em><a href="../../tag/ndis-guide/index.html" title="NDIS guide: 3 topics" rel="tag">NDIS guide</a></em></span>
+<span><em><a href="../../tag/ndis-im/index.html" title="NDIS IM: 3 topics" rel="tag">NDIS IM</a></em></span>
+<span><em><em><a href="../../tag/ndis-passthru/index.html" title="Ndis Passthru: 4 topics" rel="tag">Ndis Passthru</a></em></em></span>
+<span><a href="../../tag/nsp/index.html" title="NSP: 2 topics" rel="tag">NSP</a></span>
+<span><a href="../../tag/parental-control/index.html" title="Parental control: 2 topics" rel="tag">Parental control</a></span>
+<span><a href="../../tag/rebuild-lsp-vista/index.html" title="rebuild LSP vista: 2 topics" rel="tag">rebuild LSP vista</a></span>
+<span><em><em><em><a href="../../tag/redirector/index.html" title="Redirector: 5 topics" rel="tag">Redirector</a></em></em></em></span>
+<span><a href="../../tag/sdch/index.html" title="SDCH: 2 topics" rel="tag">SDCH</a></span>
+<span><em><em><em><a href="../../tag/sdk/index.html" title="SDK: 5 topics" rel="tag">SDK</a></em></em></em></span>
+<span><em><em><a href="../../tag/sniffer/index.html" title="Sniffer: 4 topics" rel="tag">Sniffer</a></em></em></span>
+<span><a href="../../tag/sniffers/index.html" title="Sniffers: 2 topics" rel="tag">Sniffers</a></span>
+<span><em><a href="../../tag/ssl/index.html" title="SSL: 3 topics" rel="tag">SSL</a></em></span>
+<span><a href="../../tag/tcp/index.html" title="TCP: 2 topics" rel="tag">TCP</a></span>
+<span><em><a href="../../tag/tcp-stream-sniffer/index.html" title="TCP stream Sniffer: 3 topics" rel="tag">TCP stream Sniffer</a></em></span>
+<span><em><em><em><em><em><em><a href="../../tag/tdi/index.html" title="TDI: 7 topics" rel="tag">TDI</a></em></em></em></em></em></em></span>
+<span><a href="../../tag/tdi-filter/index.html" title="TDI Filter: 2 topics" rel="tag">TDI Filter</a></span>
+<span><a href="../../tag/vista-layered-service-provider-install/index.html" title="vista layered service provider install: 2 topics" rel="tag">vista layered service provider install</a></span>
+<span><em><em><em><a href="../../tag/wfp/index.html" title="WFP: 5 topics" rel="tag">WFP</a></em></em></em></span>
+<span><a href="../../tag/what-is-lsp-protocol/index.html" title="what is lsp protocol: 2 topics" rel="tag">what is lsp protocol</a></span>
+<span><a href="../../tag/what-is-winsock-provider/index.html" title="what is winsock provider: 2 topics" rel="tag">what is winsock provider</a></span>
+<span><a href="../../tag/windows-xp/index.html" title="Windows XP: 2 topics" rel="tag">Windows XP</a></span>
+<span><em><em><em><em><em><em><a href="../../tag/winsock/index.html" title="Winsock: 7 topics" rel="tag">Winsock</a></em></em></em></em></em></em></span>
+<span><a href="../../tag/winsock-block/index.html" title="winsock block: 2 topics" rel="tag">winsock block</a></span>
+<span><em><em><em><em><em><em><em><em><em><em><a href="../../tag/winsock-lsp/index.html" title="Winsock LSP: 24 topics" rel="tag">Winsock LSP</a></em></em></em></em></em></em></em></em></em></em></span>
+<span><a href="../../tag/winsock-lsp-to-work-with-other-software/index.html" title="winsock lsp to work with other software: 2 topics" rel="tag">winsock lsp to work with other software</a></span>
+<span><em><a href="../../tag/winsock-modify-html-request/index.html" title="winsock modify html request: 3 topics" rel="tag">winsock modify html request</a></em></span></div>
+</li><li id="linkcat-2" class="widget widget_links"><h2 class="widgettitle">Blogroll</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="../../../index.html@p=312.html">Site map</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-217" class="widget widget_links"><h2 class="widgettitle">LSP Development</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="../../../../index.php.html" title="Komodia&#8217;s homepage" target="_top">LSP</a></li>
+
+	</ul>
+</li>
+<li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>		<ul>
+	<li><a href='../../2013/02/index.html'>February 2013</a></li>
+	<li><a href='../../2012/09/index.html'>September 2012</a></li>
+	<li><a href='../../2012/06/index.html'>June 2012</a></li>
+	<li><a href='../../2011/11/index.html'>November 2011</a></li>
+	<li><a href='../../2010/10/index.html'>October 2010</a></li>
+	<li><a href='../../2010/06/index.html'>June 2010</a></li>
+	<li><a href='../../2010/05/index.html'>May 2010</a></li>
+	<li><a href='../../2010/04/index.html'>April 2010</a></li>
+	<li><a href='../../2010/03/index.html'>March 2010</a></li>
+		</ul>
+</li>		</ul>
+	</div>
+
+</div>
+
+<hr />
+<div id="footer" role="contentinfo">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+	<p style="text-align:left;">Copyright &copy; 2000-2013 Komodia Inc. All rights reserved. <a href="../../feed/index.html" style="margin-left:520px;">Subscribe to RSS Feed</a></p>
+</div>
+</div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.komodia.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 5]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced (Requested URI is rejected)
+Database Caching using disk
+Object Caching 1130/1246 objects using disk
+
+ Served from: www.komodia.com @ 2015-02-19 19:17:38 by W3 Total Cache -->

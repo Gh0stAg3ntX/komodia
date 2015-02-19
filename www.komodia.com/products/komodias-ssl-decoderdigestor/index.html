@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head profile="http://purl.org/uF/hAtom/0.1/ http://purl.org/uF/2008/03/">
+	
+	<title>SSL sniffing/hijacking and SSL decrypting SDK</title>
+
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="WordPress" />
+	<meta name="framework" content="WP Framework" />
+
+	<!-- Favicon: Browser + iPhone Webclip -->
+	<link rel="shortcut icon" href="../../wp-content/themes/wp-framework/images/favicon.jpg" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="../../wp-content/themes/wp-framework/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="../../wp-content/themes/wp-framework/library/media/css/print.css" type="text/css" media="print" />
+
+  	<!-- Links: RSS + Atom Syndication + Pingback etc. -->
+	<link rel="alternate" type="application/rss+xml" title="Komodia RSS Feed" href="../../feed/rss" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="../../feed/rss" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../../feed/atom" />
+	<link rel="pingback" href="../../xmlrpc.php" />
+
+	<!-- Theme Hook -->
+    	<link rel="alternate" type="application/rss+xml" title="Komodia &raquo; Komodia&#8217;s SSL Decoder/Digestor Comments Feed" href="feed" />
+<link rel='stylesheet' id='really_simple_share_style-css'  href='../../wp-content/plugins/really-simple-facebook-twitter-share-buttons/style.css' type='text/css' media='all' />
+<!-- This site uses the Yoast Google Analytics plugin v5.2.7 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-34315916-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Yoast Google Analytics -->
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php@rsd" />
+<link rel='shortlink' href='../../index.html@p=13.html' />
+
+<!-- All in One SEO Pack 2.2.3.1 by Michael Torbert of Semper Fi Web Design[245,325] -->
+<meta name="description"  content="SDK to decrypt SSL based traffic" />
+
+<meta name="keywords"  content="ssl, ssl decryption, ssl decrypt, ssl decryptor, ssl sniffer, ssl sdk" />
+
+<link rel="canonical" href="../../index.html@p=13.html" />
+<!-- /all in one seo pack -->
+	<script type="text/javascript">
+		function showSub(idname){
+			document.getElementById(idname).style.display = "block";
+		}
+		function hideSub(idname){
+			document.getElementById(idname).style.display = "none";
+		}
+	</script>
+<!--END head-->
+</head>
+<body >
+<div class="container top-space">
+	<div id="header">
+    	<div id="logo-holder"><a href="../../index.php.html"><img src="../../wp-content/themes/wp-framework/images/logo.gif" alt="Komodia Logo" border="0" /></a></div>
+        <div id="menu-holder">
+        	<div class="menu-left">&nbsp;</div>
+        	<div class="menu-body">
+        	<ul>
+            	<li onmouseover="showSub('products')" onmouseout="hideSub('products')">
+                	<a href="../../index.php@page=products.html">Products</a>
+                    <div id="products" class="submenu">                    
+                     <ul>
+                    	<li><a href="../../index.php@page=redirector.html">Komodia's Redirector</a></li>
+                        
+                        <li><a href="../../index.php@page=ssl.html">Komodia's SSL Digestor</a></li>
+                        <li><a href="../../index.php@page=rlsp.html">Komodia's Advanced LSP Installer</a></li>
+                        <li><a href="../komodias-watchdog/index.html">Komodia's Watchdog</a></li>
+			<li><a href="../ios/index.html">Komodia's iOS SDK</a></li>
+			<li><a href="http://url.komodia.com">Komodia's classification service</a></li>
+			<li><a href=http://www.komodia.com/client-side-per-page-classification-sdk">Client side classification SDK</a></li>
+			<li><a href="../../parental-control-demo/index.html">Parental control demo</a></li>
+			<li><a href="../../ad-injection-sdk/index.html">Ad injection SDK</a></li>
+                    </ul>
+                    <div class="clearer"></div>
+                    </div>
+				</li>
+                <li onmouseover="showSub('lsp')" onmouseout="hideSub('lsp')">
+                	<a href="../../index.php@page=lsp.html">LSP</a>
+                    <div id="lsp" class="submenu">
+                    	<ul>
+                            <li><a href="../../index.php@page=lsp.html">LSP Guide</a></li>
+                            <li><a href="../../index.php@page=lspsamp.html">LSP Sample</a></li>
+			    <li><a href="../../challenges/index.html">LSP development challenges</a></li>
+			    <li><a href="../../index.php@page=ndis.html">NDIS Guide</a></li>
+			    <li><a href="../../index.php@page=wfp.html">WFP Guide</a></li>
+			    <li><a href="../../index.php@page=tdi.html">TDI Guide</a></li>
+			    <li><a href="../../dll-injection/index.html">DLL injection</a></li>
+
+						</ul>                            
+                    </div>
+                </li>
+                <li onmouseover="showSub('about')" onmouseout="hideSub('about')">
+                	<a href="../../index.html@p=2.html">About Us</a>
+                    <div id="about" class="submenu">
+                    	<ul>
+                        	<li><a href="../../index.html@p=2.html">Company Information</a></li>
+                            <li><a href="../../index.html@p=155.html">Portfolio</a></li>
+                            <li><a href="../../index.html@p=170.html">Services</a></li>
+                        </ul>
+                    </div>
+				</li>
+                <li><a href="../../index.php@page=newcontact.html" style="background:none;">Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="menu-right">&nbsp;</div>
+            <div class="clearer"></div>
+        </div>
+        <div id="scanned-by"></div>
+        <div class="clearer"></div>
+	</div>
+    <div class="center breadcrumb">
+    	<span>&raquo;<a href="../../index.php.html">Komodia</a> » Komodia&#8217;s SSL Decoder/Digestor</span>
+    </div>		<script type="text/javascript">
+</script>
+    <div id="main">
+    	<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+					        	<p><img class="alignleft size-full wp-image-22" style="margin: 5px;" title="128-logo-i" src="../../wp-content/themes/wp-framework/images/mini-logo5.jpg" alt="Komodia Interceptor" /></p>
+<p>Our advanced SSL hijacker SDK is a brand new technology that allows you to access data that was encrypted using SSL and perform on the fly SSL decryption. The hijacker uses Komodia&#8217;s Redirector platform to allow you easy access to the data and the ability to modify, redirect, block, and record the data without triggering the target browser&#8217;s certification warning.</p>
+<h3>This unique technology opens the door to number of exciting possibilities:</h3>
+<ul>
+<li>Parental control: Filter SSL data based on keywords and URI &#8211; unlike current SSL filtering, which is based on IPs.</li>
+<li>Secure anonymizer: strip data revealing information from SSL traffic.</li>
+<li>Spam filtering: Filter encrypted Outlook mail sessions.</li>
+<li>Traffic monitoring: Track surfing activities containing encrypted data (Current tracking products can only report IPs.)</li>
+<li>Stream sniffing: Sniff encrypted network activity.</li>
+</ul>
+<h3>Technical Details:</h3>
+<ul>
+<li>Uses <a href="../../index.php@page=redirector.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodia-redirector/', 'Komodia&#8217;s Redirector']);" >Komodia&#8217;s Redirector</a> platform.</li>
+<li>Intercepts application using either LSP or browser specific component (like BHO), depending on the project requirements.</li>
+</ul>
+<h3>Technical information:</h3>
+<p>The SSL Digestor and it works for most SSL aware applications (it works for all the browsers), it also works on 64bit environments, the Digestor performs some extra manipulations on the session certificate but in a way the browser is not alerting the user, regardless, the session&#8217;s data always remain the same. You can read how it works exactly: <a href="../../wiki/index.php@title=SSL_Digestor.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/wiki/index.php?title=SSL_Digestor', 'How SSL Digestor works']);" >How SSL Digestor works</a>.</p>
+<h3>Visual overview</h3>
+<p>The following illustration shows Komodia Redirector being used for web content inspection (this is only one scenario out of many).</p>
+<p>Regular operation without Komodia&#8217;s SSL hijacker.</p>
+<div style="border: 1px dashed #dddddd; padding: 15px; width: 586px;"><img class="size-full wp-image-102 alignnone" title="SSL1" src="../../wp-content/uploads/2010/12/SSL1.jpg" alt="" width="586" height="325" /></div>
+<ul>
+<li>Internet explorer connects to a web server on port 443 using SSL. The data is encrypted.</li>
+<li>Internet explorer and the web server communicate directly.</li>
+</ul>
+<p style="margin-top: 20px;">Operation with Komodia&#8217;s SSL hijacker</p>
+<div style="border: 1px dashed #dddddd; padding: 15px; width: 575px;"><a href="../../wp-content/uploads/2010/12/SSL21.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/wp-content/uploads/2010/12/SSL21.jpg', '']);" ><img class="alignnone size-full wp-image-111" title="SSL2" src="../../wp-content/uploads/2010/12/SSL21.jpg" alt="" width="575" height="717" /></a></div>
+<ul>
+<li>Internet explorer connects to a web server on port 443 using SSL. The data is encrypted.</li>
+<li>Komodia&#8217;s SSL hijacker intercepts the communication and redirects it to Komodia&#8217;s Redirector. The channel between the SSL hijacker and the Redirector is encrypted.</li>
+<li>At this stage, Komodia&#8217;s Redirector can shape the traffic, block it, or redirect it to another website.</li>
+<li>Communication between the Redirector and the website is encrypted using SSL.</li>
+<li>All data received from the website can be again modified and/or blocked. When data manipulation is done, it is forwarded again to Internet explorer.</li>
+<li>The browser displays the SSL lock, and the session will not display any &#8220;Certificate warnings&#8221;.</li>
+</ul>
+<div style="margin:10px 0;">
+<p><a href="../../komodias-redirector-free-14-days-trial-request-form/index.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/komodias-redirector-free-14-days-trial-request-form/', 'Contact us']);"  title="Request trial">Contact us</a> to receive your 14 days free trial.</p>
+</div>
+<h3>Pricing</h3>
+<p>The SSL Decoder or SSL Digestor are modules that use <a href="../../index.php@page=redirector.html" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/products/komodia-redirector/', 'Komodia&#8217;s Redirector']);" >Komodia&#8217;s Redirector</a> and are priced on top of the Redirector&#8217;s price</p>
+<p>You can view the Redirector&#8217;s price quote and optionsl SSL modules <a href="../../quotes/RedirectorQ.pdf" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://www.komodia.com/quotes/RedirectorQ.pdf', 'here']);"  target="_new">here</a>.</p>
+<p><small>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/) This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)</small></p>
+<div class='wpfblike' style='height: 40px;'><fb:like href='http://www.komodia.com/products/komodias-ssl-decoderdigestor' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div>            </div>
+</div>
+<script type="text/javascript">
+        //<![CDATA[
+        
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      
+      window.___gcfg = {lang: "en"};
+		  (function() {
+		    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+		    po.src = "https://apis.google.com/js/plusone.js";
+		    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+		  })();
+      
+        //]]>
+  		</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script><!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.komodia.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+<script type='text/javascript' src='https://platform.linkedin.com/in.js'></script>
+<script type='text/javascript' src='../../wp-includes/js/hoverIntent.min.js'></script>
+<script type='text/javascript' src='../../wp-includes/js/comment-reply.min.js'></script>
+<div id="footer" class="container">
+	<p>Copyright &copy; 2000-2013 Komodia Inc. All rights reserved.</p>
+    <div id="footer-menu">
+    	<ul>
+        	<li><a href="../../index.php@page=about.html">About Us</a></li>
+		 <li><a href="../../index.html@p=673.html">Press releases</a></li>
+		<li><a href="../../index.html@p=743.html">Newsletters</a></li>
+            <li><a href="../../index.html@p=701.html">Blogs</a></li>
+            <li><a href="../../wiki/index.php@title=Main_Page.html" target="_blank">Wiki</a></li>
+            <li><a href="../../videos/index.html">Videos</a></li>
+		<li><a href="../../wiki/index.php@title=Komodia%2527s_site_legal_information.html" target="_blank">Privacy</a></li>
+
+            <li><a id="fb" href="http://www.facebook.com/komodia#!/pages/Komodia/129677207087283" target="_blank">Visit Us on Facebook</a></li>
+        </ul>
+    </div>
+    <div class="clearer"></div>
+</div>
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 1/7 queries in 0.003 seconds using disk
+Object Caching 504/516 objects using disk
+
+ Served from: www.komodia.com @ 2014-12-19 16:21:30 by W3 Total Cache -->

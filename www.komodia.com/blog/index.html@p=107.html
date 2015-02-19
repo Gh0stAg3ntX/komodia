@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Windows seven hook Winsock | Komodia's Winsock LSP and network interception Blog</title>
+
+<link rel="stylesheet" href="wp-content/themes/default/style.css" type="text/css" media="screen" />
+<link rel="pingback" href="xmlrpc.php" />
+
+
+
+<!-- All in One SEO Pack 2.2.5.1 by Michael Torbert of Semper Fi Web Design[297,435] -->
+<meta name="description"  content="Windows seven hook Winsock can be performed in number of ways: Using Komodia's Code Hook. Using Winsock LSP Barak" />
+
+<meta name="keywords"  content="detours,hooks,winsock lsp,hooking/detours" />
+
+<link rel="canonical" href="index.php/2010/05/13/windows-seven-hook-winsock/trackback/index.html" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Komodia&#039;s Winsock LSP products, network interception/modification and SSL decryption blog &raquo; Feed" href="index.php/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Komodia&#039;s Winsock LSP products, network interception/modification and SSL decryption blog &raquo; Comments Feed" href="index.php/comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Komodia&#039;s Winsock LSP products, network interception/modification and SSL decryption blog &raquo; Windows seven hook Winsock Comments Feed" href="index.php/2010/05/13/windows-seven-hook-winsock/feed/index.html" />
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/widget.css@ver=4.1.1.css' type='text/css' media='all' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Winsock hooking' href='index.php/2010/05/08/winsock-hooking/trackback/index.html' />
+<link rel='next' title='Vista default LSPs' href='index.php/2010/05/13/vista-default-lsps/trackback/index.html' />
+<meta name="generator" content="WordPress 4.1.1" />
+<link rel='shortlink' href='index.html@p=107.html' />
+<style type="text/css">
+.seo-tag-cloud {font-size: 1.0em; text-transform: none;}
+.seo-tag-cloud li {display: inline;}
+.seo-tag-cloud div {padding: 10px;}
+.seo-tag-cloud em {font-style: normal; font-size: 1.1em;}
+.seo-tag-cloud a {color: #8b00ff;}
+.seo-tag-cloud em a {color: #00a;}
+.seo-tag-cloud em em a {color: #00f;}
+.seo-tag-cloud em em em a {color: #0a0;}
+.seo-tag-cloud em em em em a {color: #0f0;}
+.seo-tag-cloud em em em em em a {color: #aa0;}
+.seo-tag-cloud em em em em em em a {color: #ff0;}
+.seo-tag-cloud em em em em em em em a {color: #aa4a00;}
+.seo-tag-cloud em em em em em em em em a {color: #ff7f00;}
+.seo-tag-cloud em em em em em em em em em a {color: #a00;}
+.seo-tag-cloud em em em em em em em em em em a {color: #f00;}
+.credit {font-size: 50%;}
+</style>
+	<script type="text/javascript">
+		function showSub(idname){
+			document.getElementById(idname).style.display = "block";
+		}
+		function hideSub(idname){
+			document.getElementById(idname).style.display = "none";
+		}
+	</script>
+<style type="text/css">
+.call_learn a{background:url(../wp-content/themes/wp-framework/images/learn-more.jpg) no-repeat; display:block; height:21px; width:89px;}
+.call_learn a:hover{background-position:0 -19px;}
+</style>
+</head>
+<body class="single single-post postid-107 single-format-standard" onload="MM_preloadImages('http://www.komodia.com/images/download-over.jpg','http://www.komodia.com/images/learn_more_hover.gif')">
+<script type="text/javascript" src="http://www.komodia.com/blog/index.php/2010/05/13/windows-seven-hook-winsock/wthvideo/wthvideo6.js"></script>
+<div id="page">
+<div id="header" role="banner">
+	<div id="logo-holder"><a href="../index.php.html"><img src="wp-content/themes/default/images/logo.gif" alt="Logo" /></a></div>
+    <div id="menu-holder">
+        	<div class="menu-left">&nbsp;</div>
+        	<div class="menu-body">
+        	<ul>
+            	<li onmouseover="showSub('products')" onmouseout="hideSub('products')">
+                	<a href="../index.php@page=products.html">Products</a>
+                    <div id="products" class="submenu">                    
+                     <ul>
+                    	<li><a href="../index.php@page=redirector.html">Komodia Redirector</a></li>
+                        
+                        <li><a href="../index.php@page=ssl.html">Komodia's SSL Digestor</a></li>
+                        <li><a href="../index.php@page=rlsp.html">Komodia's Advanced LSP Installer</a></li>
+                        <li><a href="../products/komodias-watchdog/index.html">Komodia's Watchdog</a></li>
+			<li><a href="../products/ios/index.html">Komodia's iOS SDK</a></li>
+			<li><a href="http://url.komodia.com">Komodia's classification service</a></li>
+			<li><a href="../parental-control-demo/index.html">Parental control demo</a></li>
+                    </ul>
+                    <div class="clearer"></div>
+                    </div>
+				</li>
+                <li onmouseover="showSub('lsp')" onmouseout="hideSub('lsp')">
+                	<a href="../index.php@page=lsp.html">LSP</a>
+                    <div id="lsp" class="submenu">
+                    	<ul>
+                            <li><a href="../index.php@page=lsp.html">LSP Guide</a></li>
+                            <li><a href="../index.php@page=lspsamp.html">LSP Sample</a></li>
+			    <li><a href="../challenges/index.html">LSP development challenges</a></li>
+			    <li><a href="../index.php@page=ndis.html">NDIS Guide</a></li>
+			    <li><a href="../index.php@page=wfp.html">WFP Guide</a></li>
+			    <li><a href="../index.php@page=tdi.html">TDI Guide</a></li>
+			    <li><a href="../dll-injection/index.html">DLL injection</a></li>
+
+						</ul>                            
+                    </div>
+                </li>
+                <li onmouseover="showSub('about')" onmouseout="hideSub('about')">
+                	<a href="../index.html@p=2.html">About Us</a>
+                    <div id="about" class="submenu">
+                    	<ul>
+                        	<li><a href="../index.html@p=2.html">Company Information</a></li>
+                            <li><a href="../index.html@p=155.html">Portfolio</a></li>
+                            <li><a href="../index.html@p=170.html">Services</a></li>
+                        </ul>
+                    </div>
+				</li>
+                <li><a href="../index.php@page=newcontact.html" style="background:none;">Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="menu-right">&nbsp;</div>
+            <div class="clearer"></div>
+        </div>
+</div>
+<hr />
+
+<p id="breadcrumbs">&nbsp&nbsp&nbsp&nbsp&nbsp<a href="../index.php.html">Home</a>&nbsp&raquo;&nbsp<a href="../blog.1.html">Blog</a> &raquo; <strong>Windows seven hook Winsock</strong></p><link rel="stylesheet" href="http://www.komodia.com/blog/index.php/2010/05/13/windows-seven-hook-winsock/style.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://www.komodia.com/blog/index.php/2010/05/13/windows-seven-hook-winsock/jmenu/chromestyle.css" />
+<script type="text/javascript" src="http://www.komodia.com/blog/index.php/2010/05/13/windows-seven-hook-winsock/jmenu/chrome.js"></script>
+<script type="text/javascript" src="http://www.komodia.com/blog/index.php/2010/05/13/windows-seven-hook-winsock/menu.js"></script>
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<!--	<img src="http://www.komodia.com/blog/wp-content/themes/default/images/banner-small.gif" align="absmiddle" style="padding-left:100px" /> -->
+   <div class="call_to_action">
+<div class="call_head"> </div>
+<div class="call_learn">
+<a onmouseover="MM_swapImage('Image3','','http://www.komodia.com/images/learn_more_hover.gif',1)" onmouseout="MM_swapImgRestore()" href="../index.php@page=redirector.html">
+</a>
+</div>
+</div>
+	<div id="main">
+	<div id="content" class="widecolumn" role="main" style="width:600px;">
+
+	<div id='fb-root'></div>
+					<script type='text/javascript'>
+						window.fbAsyncInit = function()
+						{
+							FB.init({appId: null, status: true, cookie: true, xfbml: true});
+						};
+						(function()
+						{
+							var e = document.createElement('script'); e.async = true;
+							e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+							document.getElementById('fb-root').appendChild(e);
+						}());
+					</script>	
+					
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="index.php/2010/05/08/winsock-hooking/trackback/index.html" rel="prev">Winsock hooking</a></div>
+			<div class="alignright"><a href="index.php/2010/05/13/vista-default-lsps/trackback/index.html" rel="next">Vista default LSPs</a> &raquo;</div>
+		</div>
+
+		<div class="post-107 post type-post status-publish format-standard hentry category-hookingdetours category-winsock-lsp tag-detours tag-hooks tag-winsock-lsp" id="post-107">
+			<h2>Windows seven hook Winsock</h2>
+
+			<div class="entry">
+				<p><a href="../index.php@page=lsp.html">Windows seven hook Winsock</a> can be performed in number of ways:</p>
+<ul>
+<li>Using <a href="http://hook.komodia.com/">Komodia&#8217;s Code Hook</a>.</li>
+<li>Using <a href="../index.php@page=lsp.html">Winsock LSP</a></li>
+</ul>
+<p>Barak</p>
+<div class='wpfblike' ><fb:like href='http://www.komodia.com/blog/index.php/2010/05/13/windows-seven-hook-winsock/' layout='standard' show_faces='true' width='400' action='like' colorscheme='light' send='false' /></div><div class='yarpp-related'>
+<p>Related posts:</p><ol>
+<li><a href="index.php/2010/05/02/hook-winsock-api/trackback/index.html" rel="bookmark" title="Hook Winsock API">Hook Winsock API </a></li>
+<li><a href="index.php/2010/04/28/lsp-hook/trackback/index.html" rel="bookmark" title="LSP hook">LSP hook </a></li>
+<li><a href="index.php/2010/03/30/intercept-dns-port/trackback/index.html" rel="bookmark" title="Intercept DNS port">Intercept DNS port </a></li>
+</ol>
+</div>
+
+								<p>Tags: <a href="index.php/tag/detours/index.html" rel="tag">Detours</a>, <a href="index.php/tag/hooks/index.html" rel="tag">Hooks</a>, <a href="index.php/tag/winsock-lsp/index.html" rel="tag">Winsock LSP</a></p>
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Thursday, May 13th, 2010 at 2:25 am						and is filed under <a href="index.php/category/hookingdetours/index.html" rel="category tag">Hooking/Detours</a>, <a href="index.php/category/winsock-lsp/index.html" rel="category tag">Winsock LSP</a>.
+						You can follow any responses to this entry through the <a href='index.php/2010/05/13/windows-seven-hook-winsock/feed/index.html'>RSS 2.0</a> feed.
+
+													You can <a href="index.php/2010/05/13/windows-seven-hook-winsock/trackback/index.html#respond">leave a response</a>, or <a href="index.php/2010/05/13/windows-seven-hook-winsock/trackback/index.html" rel="trackback">trackback</a> from your own site.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	<div class="comments">
+		<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=204206976275632&amp;xfbml=1"></script><fb:comments href="http://www.komodia.com/blog/index.php/2010/05/13/windows-seven-hook-winsock/" num_posts="5" width="600"></fb:comments>
+	</div>
+
+	
+	</div>
+	</div>
+
+<hr />
+<div id="footer" role="contentinfo">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+	<p style="text-align:left;">Copyright &copy; 2000-2013 Komodia Inc. All rights reserved. <a href="index.php/feed/index.html" style="margin-left:520px;">Subscribe to RSS Feed</a></p>
+</div>
+</div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.komodia.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 5]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+<link rel='stylesheet' id='yarppRelatedCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/related.css@ver=4.1.1.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js@ver=4.1.1'></script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced (Requested URI is rejected)
+Database Caching 1/12 queries in 0.006 seconds using disk
+Object Caching 573/587 objects using disk
+
+ Served from: www.komodia.com @ 2015-02-19 19:28:37 by W3 Total Cache -->

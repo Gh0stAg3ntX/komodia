@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Komodia's Redirector DLL framework guide - Komodia</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.20.4" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Komodia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="../api.php@action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="Komodia Atom feed" href="../index.php@title=Special%253ARecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="../load.php@debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;%252A.css" />
+<!--[if IE 6]><link rel="stylesheet" href="/wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: komod_wikidb:resourceloader:filter:minify-css:7:dffa96a73b1be9b0dae7e17005fcc939 */</style>
+
+<script src="../load.php@debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;%252A"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Komodia\'s_Redirector_DLL_framework_guide","wgTitle":"Komodia\'s Redirector DLL framework guide","wgCurRevisionId":1430,"wgArticleId":35,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Komodia\'s_Redirector_DLL_framework_guide","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+/* cache key: komod_wikidb:resourceloader:filter:minify-js:7:c89fc005766e312c555f83b307d08d63 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Komodia_s_Redirector_DLL_framework_guide skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading"><span dir="auto">Komodia's Redirector DLL framework guide</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From Komodia</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="Komodia's_Redirector_DLL_framework_guide.html#column-one">navigation</a>, <a href="Komodia's_Redirector_DLL_framework_guide.html#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page covers the programming aspects of <a href="Komodia's_Redirector.html" title="Komodia's Redirector">Komodia's Redirector</a> product when writing a DLL to extend the Redirector’s functionality, this option is good for you if you know C/C++ and you want to have best performance without the need to modify the product's source code (this works also with binary products)
+</p><p>There are two extra options to extend the Redirector:
+</p>
+<ul><li> Modify the source code directly inside the class: CClientCustomizations (it's similar to the DLL interface), you also need to uncomment this line: #define SERVICE_CUSTOM_EXTENSIONS inside KomodiaProduct.h
+</li><li> Use the <a href="Komodia's_Redirector_COM_framework_guide.html" title="Komodia's Redirector COM framework guide">Komodia's Redirector COM framework guide</a> to extend the Redirector via a COM aware language such as: VB.Net/C#/Delphi
+</li></ul>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Komodia's_Redirector_DLL_framework_guide.html#Downloading_the_samples"><span class="tocnumber">1</span> <span class="toctext">Downloading the samples</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Komodia's_Redirector_DLL_framework_guide.html#Setting_the_Redirector_to_work_with_the_DLL"><span class="tocnumber">2</span> <span class="toctext">Setting the Redirector to work with the DLL</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="Komodia's_Redirector_DLL_framework_guide.html#Working_with_the_samples"><span class="tocnumber">3</span> <span class="toctext">Working with the samples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="Komodia's_Redirector_DLL_framework_guide.html#PCProxyDLL_-_Bare_framework"><span class="tocnumber">3.1</span> <span class="toctext">PCProxyDLL - Bare framework</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="Komodia's_Redirector_DLL_framework_guide.html#PCProxyDLL_-_Redirect_host_or_url"><span class="tocnumber">3.2</span> <span class="toctext">PCProxyDLL - Redirect host or url</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="Komodia's_Redirector_DLL_framework_guide.html#Host_redirection"><span class="tocnumber">3.2.1</span> <span class="toctext">Host redirection</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="Komodia's_Redirector_DLL_framework_guide.html#Google_safe_search"><span class="tocnumber">3.2.2</span> <span class="toctext">Google safe search</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="Komodia's_Redirector_DLL_framework_guide.html#PCProxyDLL_-_Add_headers"><span class="tocnumber">3.3</span> <span class="toctext">PCProxyDLL - Add headers</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="Komodia's_Redirector_DLL_framework_guide.html#PCProxyDLL_-_Redirect_host_or_URL_with_HTTP_Parser"><span class="tocnumber">3.4</span> <span class="toctext">PCProxyDLL - Redirect host or URL with HTTP Parser</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="Komodia's_Redirector_DLL_framework_guide.html#PCProxyDLL_-_Modify_body_based_on_header"><span class="tocnumber">3.5</span> <span class="toctext">PCProxyDLL - Modify body based on header</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="Komodia's_Redirector_DLL_framework_guide.html#PCProxyDLL_-_Bare_framework_.28with_accept_support.29"><span class="tocnumber">3.6</span> <span class="toctext">PCProxyDLL - Bare framework (with accept support)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="Komodia's_Redirector_DLL_framework_guide.html#DLL_Functions"><span class="tocnumber">4</span> <span class="toctext">DLL Functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="Komodia's_Redirector_DLL_framework_guide.html#PCInitialize"><span class="tocnumber">4.1</span> <span class="toctext">PCInitialize</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="Komodia's_Redirector_DLL_framework_guide.html#PCUninitialize"><span class="tocnumber">4.2</span> <span class="toctext">PCUninitialize</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="Komodia's_Redirector_DLL_framework_guide.html#Deallocate"><span class="tocnumber">4.3</span> <span class="toctext">Deallocate</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="Komodia's_Redirector_DLL_framework_guide.html#Context_variable"><span class="tocnumber">4.4</span> <span class="toctext">Context variable</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="Komodia's_Redirector_DLL_framework_guide.html#Example"><span class="tocnumber">4.4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-18"><a href="Komodia's_Redirector_DLL_framework_guide.html#NewConnection"><span class="tocnumber">4.5</span> <span class="toctext">NewConnection</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="Komodia's_Redirector_DLL_framework_guide.html#HandleProxyHTTPConnect"><span class="tocnumber">4.6</span> <span class="toctext">HandleProxyHTTPConnect</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="Komodia's_Redirector_DLL_framework_guide.html#DataBeforeSend"><span class="tocnumber">4.7</span> <span class="toctext">DataBeforeSend</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="Komodia's_Redirector_DLL_framework_guide.html#DataBeforeReceive"><span class="tocnumber">4.8</span> <span class="toctext">DataBeforeReceive</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="Komodia's_Redirector_DLL_framework_guide.html#ConnectionClosed"><span class="tocnumber">4.9</span> <span class="toctext">ConnectionClosed</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="Komodia's_Redirector_DLL_framework_guide.html#DLLQueryData"><span class="tocnumber">4.10</span> <span class="toctext">DLLQueryData</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="Komodia's_Redirector_DLL_framework_guide.html#DLLSetFunctions"><span class="tocnumber">4.11</span> <span class="toctext">DLLSetFunctions</span></a>
+<ul>
+<li class="toclevel-3 tocsection-25"><a href="Komodia's_Redirector_DLL_framework_guide.html#Get_flag"><span class="tocnumber">4.11.1</span> <span class="toctext">Get flag</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="Komodia's_Redirector_DLL_framework_guide.html#Set_flag"><span class="tocnumber">4.11.2</span> <span class="toctext">Set flag</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="Komodia's_Redirector_DLL_framework_guide.html#Save_data"><span class="tocnumber">4.11.3</span> <span class="toctext">Save data</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-28"><a href="Komodia's_Redirector_DLL_framework_guide.html#TCP_Accept_methods"><span class="tocnumber">4.12</span> <span class="toctext">TCP Accept methods</span></a>
+<ul>
+<li class="toclevel-3 tocsection-29"><a href="Komodia's_Redirector_DLL_framework_guide.html#NewAccept"><span class="tocnumber">4.12.1</span> <span class="toctext">NewAccept</span></a></li>
+<li class="toclevel-3 tocsection-30"><a href="Komodia's_Redirector_DLL_framework_guide.html#DataBeforeSendA"><span class="tocnumber">4.12.2</span> <span class="toctext">DataBeforeSendA</span></a></li>
+<li class="toclevel-3 tocsection-31"><a href="Komodia's_Redirector_DLL_framework_guide.html#DataBeforeReceiveA"><span class="tocnumber">4.12.3</span> <span class="toctext">DataBeforeReceiveA</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-32"><a href="Komodia's_Redirector_DLL_framework_guide.html#Threading_model"><span class="tocnumber">5</span> <span class="toctext">Threading model</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="Komodia's_Redirector_DLL_framework_guide.html#CHTTPHelper"><span class="tocnumber">6</span> <span class="toctext">CHTTPHelper</span></a>
+<ul>
+<li class="toclevel-2 tocsection-34"><a href="Komodia's_Redirector_DLL_framework_guide.html#Overview"><span class="tocnumber">6.1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="Komodia's_Redirector_DLL_framework_guide.html#FilterHTTPHeader"><span class="tocnumber">6.2</span> <span class="toctext">FilterHTTPHeader</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="Komodia's_Redirector_DLL_framework_guide.html#ChangeHTTPHeader"><span class="tocnumber">6.3</span> <span class="toctext">ChangeHTTPHeader</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="Komodia's_Redirector_DLL_framework_guide.html#InsertSpecialField"><span class="tocnumber">6.4</span> <span class="toctext">InsertSpecialField</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="Komodia's_Redirector_DLL_framework_guide.html#GetFinalStruct"><span class="tocnumber">6.5</span> <span class="toctext">GetFinalStruct</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-39"><a href="Komodia's_Redirector_DLL_framework_guide.html#HTTP_Parser_add_on_module"><span class="tocnumber">7</span> <span class="toctext">HTTP Parser add on module</span></a>
+<ul>
+<li class="toclevel-2 tocsection-40"><a href="Komodia's_Redirector_DLL_framework_guide.html#Integration_with_existing_DLL_functions"><span class="tocnumber">7.1</span> <span class="toctext">Integration with existing DLL functions</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="Komodia's_Redirector_DLL_framework_guide.html#Architecture"><span class="tocnumber">7.2</span> <span class="toctext">Architecture</span></a></li>
+<li class="toclevel-2 tocsection-42"><a href="Komodia's_Redirector_DLL_framework_guide.html#CHTTPHeader"><span class="tocnumber">7.3</span> <span class="toctext">CHTTPHeader</span></a>
+<ul>
+<li class="toclevel-3 tocsection-43"><a href="Komodia's_Redirector_DLL_framework_guide.html#Feed_.2F_ForceFeed"><span class="tocnumber">7.3.1</span> <span class="toctext">Feed / ForceFeed</span></a></li>
+<li class="toclevel-3 tocsection-44"><a href="Komodia's_Redirector_DLL_framework_guide.html#GetHeaderString_.2F_GetHeaderStringCase"><span class="tocnumber">7.3.2</span> <span class="toctext">GetHeaderString / GetHeaderStringCase</span></a></li>
+<li class="toclevel-3 tocsection-45"><a href="Komodia's_Redirector_DLL_framework_guide.html#IsRequest"><span class="tocnumber">7.3.3</span> <span class="toctext">IsRequest</span></a></li>
+<li class="toclevel-3 tocsection-46"><a href="Komodia's_Redirector_DLL_framework_guide.html#GetHost"><span class="tocnumber">7.3.4</span> <span class="toctext">GetHost</span></a></li>
+<li class="toclevel-3 tocsection-47"><a href="Komodia's_Redirector_DLL_framework_guide.html#GetResponseCode"><span class="tocnumber">7.3.5</span> <span class="toctext">GetResponseCode</span></a></li>
+<li class="toclevel-3 tocsection-48"><a href="Komodia's_Redirector_DLL_framework_guide.html#GetURL"><span class="tocnumber">7.3.6</span> <span class="toctext">GetURL</span></a></li>
+<li class="toclevel-3 tocsection-49"><a href="Komodia's_Redirector_DLL_framework_guide.html#GetFullAddress"><span class="tocnumber">7.3.7</span> <span class="toctext">GetFullAddress</span></a></li>
+<li class="toclevel-3 tocsection-50"><a href="Komodia's_Redirector_DLL_framework_guide.html#SetHeader"><span class="tocnumber">7.3.8</span> <span class="toctext">SetHeader</span></a></li>
+<li class="toclevel-3 tocsection-51"><a href="Komodia's_Redirector_DLL_framework_guide.html#DeleteHeader"><span class="tocnumber">7.3.9</span> <span class="toctext">DeleteHeader</span></a></li>
+<li class="toclevel-3 tocsection-52"><a href="Komodia's_Redirector_DLL_framework_guide.html#GetHeaderData"><span class="tocnumber">7.3.10</span> <span class="toctext">GetHeaderData</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-53"><a href="Komodia's_Redirector_DLL_framework_guide.html#HTTP_Parser_functions"><span class="tocnumber">8</span> <span class="toctext">HTTP Parser functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-54"><a href="Komodia's_Redirector_DLL_framework_guide.html#HTTPRequestBeforeSend"><span class="tocnumber">8.1</span> <span class="toctext">HTTPRequestBeforeSend</span></a></li>
+<li class="toclevel-2 tocsection-55"><a href="Komodia's_Redirector_DLL_framework_guide.html#HTTPRequestBeforeReceive"><span class="tocnumber">8.2</span> <span class="toctext">HTTPRequestBeforeReceive</span></a>
+<ul>
+<li class="toclevel-3 tocsection-56"><a href="Komodia's_Redirector_DLL_framework_guide.html#HTML_Element_injection"><span class="tocnumber">8.2.1</span> <span class="toctext">HTML Element injection</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-57"><a href="Komodia's_Redirector_DLL_framework_guide.html#HTTP_101_response_code"><span class="tocnumber">8.3</span> <span class="toctext">HTTP 101 response code</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-58"><a href="Komodia's_Redirector_DLL_framework_guide.html#Common_pitfalls"><span class="tocnumber">9</span> <span class="toctext">Common pitfalls</span></a>
+<ul>
+<li class="toclevel-2 tocsection-59"><a href="Komodia's_Redirector_DLL_framework_guide.html#Multi_threading"><span class="tocnumber">9.1</span> <span class="toctext">Multi threading</span></a></li>
+<li class="toclevel-2 tocsection-60"><a href="Komodia's_Redirector_DLL_framework_guide.html#Dependencies"><span class="tocnumber">9.2</span> <span class="toctext">Dependencies</span></a></li>
+<li class="toclevel-2 tocsection-61"><a href="Komodia's_Redirector_DLL_framework_guide.html#Not_understanding_what_bHeaderCheck_does"><span class="tocnumber">9.3</span> <span class="toctext">Not understanding what bHeaderCheck does</span></a></li>
+<li class="toclevel-2 tocsection-62"><a href="Komodia's_Redirector_DLL_framework_guide.html#Modifying_HTTP_body_size"><span class="tocnumber">9.4</span> <span class="toctext">Modifying HTTP body size</span></a></li>
+<li class="toclevel-2 tocsection-63"><a href="Komodia's_Redirector_DLL_framework_guide.html#Crashes.2FMemory_corruption"><span class="tocnumber">9.5</span> <span class="toctext">Crashes/Memory corruption</span></a></li>
+<li class="toclevel-2 tocsection-64"><a href="Komodia's_Redirector_DLL_framework_guide.html#Spending_too_much_time_inside_callbacks"><span class="tocnumber">9.6</span> <span class="toctext">Spending too much time inside callbacks</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Downloading_the_samples"> Downloading the samples </span></h1>
+<p>You can download the samples from: <a class="external text" href="../../PCProxyDLL.zip">Komodia's DLL Framework sample</a>, keep in mind that you need the trial or full version of <a href="Komodia's_Redirector.html" title="Komodia's Redirector">Komodia's Redirector</a> to work with the samples.
+</p>
+<h1> <span class="mw-headline" id="Setting_the_Redirector_to_work_with_the_DLL"> Setting the Redirector to work with the DLL </span></h1>
+<p>You can view how to set the Redirector to work with the DLL here: <a href="Komodia's_Redirector_installation_guide.html#DLL_control" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#DLL_control</a>.
+</p>
+<h1> <span class="mw-headline" id="Working_with_the_samples"> Working with the samples </span></h1>
+<p>We provided a number of samples with a direct refrences to what needs changing which makes creating your application very easy. Of course we recommend on reading this guide, but to get started just modify the lines we marked out.
+</p><p>There is much more you can do with the framework that is not contained in the samples, the samples are the scenarios that is most used by our clients.
+</p>
+<h2> <span class="mw-headline" id="PCProxyDLL_-_Bare_framework"> PCProxyDLL - Bare framework </span></h2>
+<p>This sample is a minimum bare, it doesn't do anything, just compiles.
+</p>
+<h2> <span class="mw-headline" id="PCProxyDLL_-_Redirect_host_or_url"> PCProxyDLL - Redirect host or url </span></h2>
+<h3> <span class="mw-headline" id="Host_redirection"> Host redirection </span></h3>
+<p>This sample redirects a connection based on the host or URL, you need to modify the following code snippest which is located inside PCProxyDLL.cpp at line 319:
+</p>
+<pre>
+if (pContext &amp;&amp; //This checks that we are inside a new request, and not inside an existing request
+    aHeader.Feed(pData,
+	         dwDataSize))
+	{
+		//Get information about the session
+		std::string sHost;
+		sHost=aHeader.GetHost();
+
+		//Get the resource
+		std::string sResource;
+		sResource=aHeader.GetFullAddress();
+
+		//Should we send a redirect?
+		if (stristr(sHost.c_str(),
+			    &quot;cnn.com&quot;) ||
+		    stristr(sHost.c_str(),
+			    &quot;amazon.com&quot;))
+		{
+			//Build a redirect
+			std::string sRedirect;
+			
+			//Is it a SSL redirect?
+			if (!pContext-&gt;bSSL)
+				sRedirect=BuildRedirectReply(&quot;http://www.google.com&quot;,true,true);
+			else
+				sRedirect=BuildRedirectReply(&quot;https://gmail.google.com&quot;,true,true);
+
+			//Send it back to the user
+			*pNewBuffer=new char[sRedirect.size()];
+			memcpy(*pNewBuffer,
+				   sRedirect.c_str(),
+				   sRedirect.size());
+			rNewDataSize=sRedirect.size();
+			rNewBufferToReceive=true;
+			rTerminateSession=true;
+
+			//Done
+			return true;
+		}
+</pre>
+<ul><li> On line 390-393 you can check the host or you can also check the full URL by comparing the variable sResource.
+</li><li> On line 396-415 you perform the actual redirect, based if it's HTTP or HTTPS.
+</li></ul>
+<h3> <span class="mw-headline" id="Google_safe_search"> Google safe search </span></h3>
+<pre>
+                        //Lets say we want to modify the outgoing request and not redirect it (this is another feature
+			//which is not related to the redirect code)
+			if (stristr(sHost.c_str(),
+				    &quot;google.com&quot;))
+			{
+				//Lets add a safe strict option
+				std::string sNewRequest;
+
+				//Which params are we parsing?
+				if (bFed)
+					sNewRequest=BuildNewSafeRequest(&amp;(pContext-&gt;aData[0]),
+									pContext-&gt;aData.size());
+				else
+					sNewRequest=BuildNewSafeRequest(pData,
+									dwDataSize);
+
+				//Did we get a request
+				if (!sNewRequest.empty())
+				{
+					//Replace it
+					//Send it back to the user
+					*pNewBuffer=new char[sNewRequest.size()];
+					memcpy(*pNewBuffer,
+					       sNewRequest.c_str(),
+					       sNewRequest.size());
+					rNewDataSize=sNewRequest.size();
+					
+					//Done
+					return true;
+				}
+			}
+</pre>
+<p>Another feature is the ability to force google safe search, you can see the actual code on line 420-447.
+</p>
+<h2> <span class="mw-headline" id="PCProxyDLL_-_Add_headers"> PCProxyDLL - Add headers </span></h2>
+<p>This samples adds and removes headers from the outgoing HTTP data, taken from line 133:
+</p>
+<pre>
+if (pContext &amp;&amp;
+    pContext-&gt;bNewRequest &amp;&amp; //This checks that we are inside a new request, and not inside an existing request
+    IsHTTP(pData,
+ 	   dwDataSize))
+	{
+		//The request can fragment and we don't want to be here per fragment, but per request
+		pContext-&gt;bNewRequest=false;
+
+		//Here we build the filter
+		//These fileds are just for the sake for demonstration
+		//Please change them to reflect your own fields
+		CHTTPHelper aHelper;
+		
+		//Each method can be called multiple times
+		//Fields to change
+		//Uncomment the next code, keep in mind that it may cause problems with
+		//Sites that are based on your browser
+		aHelper.ChangeHTTPHeader(&quot;user-agent&quot;,&quot;Blank agent&quot;);
+
+		//Fields to add
+		aHelper.InsertSpecialField(&quot;X-Redirector&quot;,&quot;Just a value&quot;);
+
+		//Fields to remove
+		aHelper.FilterHTTPHeader(&quot;Refer&quot;);
+
+		//Build the struct
+		//Don't call this function unless you want to have a filter
+		//Or have a filter override
+		rManipulations=aHelper.GetFinalStruct();
+
+		//Done
+		return false;
+	}
+</pre>
+<ul><li> On line 150 the code modifies the "user-agent" field to contain the value of: "Blank agent".
+</li><li> On line 153 the code adds a custom header field called: "X-Redirector".
+</li><li> On line 156 the code deletes the refer header field.
+</li></ul>
+<h2> <span class="mw-headline" id="PCProxyDLL_-_Redirect_host_or_URL_with_HTTP_Parser"> PCProxyDLL - Redirect host or URL with HTTP Parser </span></h2>
+<p>This samples redirects based on host and URL, please note that this DLL works only if the Redirector has the optional HTTP Parser.
+</p><p>Taken from line 142:
+</p>
+<pre>
+        CHTTPHeader aHeader;
+	if (aHeader.Feed(pHeader,
+			 dwHeaderSize))
+	{
+		//We can get some usefull information at this stage
+		//Host
+		std::string sHost(aHeader.GetHost());
+
+		//URI
+		std::string sURI(aHeader.GetURL());
+
+		//The full address
+		std::string sFullAddress(aHeader.GetFullAddress());
+
+		//Save the host in the session data
+		if (pData &amp;&amp;
+		    pData-&gt;sHost.empty())
+		    pData-&gt;sHost=sHost;
+
+		//Lets say we want to build a redirect based on the request
+		//We need to make sure that we are not redirecting over and over
+		//The site we are redirecting to
+		//This code performs it
+		if (!stristr(sHost.c_str(),
+			     &quot;komodia.com&quot;) &amp;&amp;
+		    stristr(sHost.c_str(),
+		  	    &quot;google.com&quot;) &amp;&amp;
+		    stristr(sURI.c_str(),
+		   	    &quot;porn&quot;))
+		{
+			//Redirect to address, always in the form of http://website
+			std::string sRedirectTo;
+			sRedirectTo=&quot;http://www.komodia.com&quot;;
+
+			//Save the data
+			*ppNewHeader=new char[sRedirectTo.size()+1];
+			memcpy(*ppNewHeader,
+				   sRedirectTo.c_str(),
+				   sRedirectTo.size()+1);
+
+			//Set size
+			rNewHeaderSize=sRedirectTo.size()+1;
+
+			//Let Redirector know that this is a redirect
+			return dhrRedirect;
+		}
+	}
+</pre>
+<ul><li> On line 165-170 the code checks for Google web site and "porn" keyword.
+</li><li> On line 174 the code set the redirection to Komodia's web site.
+</li></ul>
+<h2> <span class="mw-headline" id="PCProxyDLL_-_Modify_body_based_on_header"> PCProxyDLL - Modify body based on header </span></h2>
+<p>The sample modifies the returns HTML body based on the existance of a header, keep in mind it's possible to just modify the body without testing for the header like in the sample. Taken from line 161:
+</p>
+<pre>
+if (bHeaderCheck)
+	{
+		//Try to parse the header
+		CHTTPHeader aHeader;
+		if (aHeader.Feed(pHeader,
+				 dwHeaderSize))
+		{
+			//We can get some usefull information at this stage
+			//Response code
+			DWORD dwResponseCode(aHeader.GetResponseCode());
+
+			//Try to get the content type
+			std::string sContentType(aHeader.GetHeaderString(&quot;content-type&quot;));
+
+			//Now there are some content we don't want to perform parental control on
+			//Of course you can change these settings
+			//These settings are just for sample sake
+			//For these kind of files (.swf, .zip, .exe) filtering should be performed at the level of HTTPRequestBeforeSend
+			if (strstr(sContentType.c_str(),
+				   &quot;image/&quot;) ||
+			    strstr(sContentType.c_str(),
+				   &quot;video/&quot;) ||
+			    strstr(sContentType.c_str(),
+				   &quot;audio/&quot;) ||
+			   strstr(sContentType.c_str(),
+			          &quot;application/&quot;))
+				//Don't do parental
+				return dhrDontDoParental;
+		}
+	}
+	else
+	{
+		//Try to parse the header
+		CHTTPHeader aHeader;
+		if (aHeader.Feed(pHeader,
+				 dwHeaderSize))
+		{
+			//Check if we have a certain header
+			if (strstr(aHeader.GetHeaderString(&quot;connection&quot;).c_str(),
+					                   &quot;keep-alive&quot;))
+			{
+				//Lets modify the body
+				std::string sNewBody=&quot;&lt;html&gt;&lt;body&gt;Just a body&lt;/body&gt;&lt;/html&gt;&quot;;
+				*ppNewData=new char[sNewBody.length()];
+				memcpy(*ppNewData,
+				       sNewBody.c_str(),
+				       sNewBody.length());
+
+				//Set the size
+				rNewDataSize=sNewBody.length();
+
+				//Done
+				return dhrModify;
+			}
+		}
+	}
+</pre>
+<ul><li> On the first line the code tests at which part is it, it's possible that the reply is long and you might know from the header alone if you need this reply or not, so if we only have the header the code tests for multimedia file types and if it matches then this reply will not be processed. You can modify this section to exclude or include your types.
+</li><li> If it's the full reply (else part) then the code inserts the header to the header class, and then checks the connection header (you can modify it to any header you want, or remove this test all together), and if it's true it creates a new body. Although the sample doesn't use the old body, you can file the data of the body inside the variable pData.
+</li></ul>
+<h2> <span class="mw-headline" id="PCProxyDLL_-_Bare_framework_.28with_accept_support.29"> PCProxyDLL - Bare framework (with accept support) </span></h2>
+<p>This sample is a minimum bare that also support incoming connections (this is used for <a href="http://www.komodia.com/wiki/index.php?title=Komodia%27s_Advanced_Redirector&amp;action=edit&amp;redlink=1" class="new" title="Komodia's Advanced Redirector (page does not exist)">Komodia's Advanced Redirector</a>, it doesn't do anything, just compiles.
+</p>
+<h1> <span class="mw-headline" id="DLL_Functions"> DLL Functions </span></h1>
+<p>The DLL exposes seven functions for PCProxy to use. PCProxy performs a sanity check on the DLL when loading it. If one of the functions is missing, PCProxy will not load the DLL.
+</p>
+<h2> <span class="mw-headline" id="PCInitialize"> PCInitialize </span></h2>
+<pre>
+bool _stdcall PCInitialize();
+</pre>
+<p>This function is called after the DLL is loaded and passes the sanity check. All user-specific initializations, such as creating threads and global variables, should be here.
+</p><p>If the return value is false, the DLL will be unloaded and PCProxy will not use it.
+</p>
+<h2> <span class="mw-headline" id="PCUninitialize"> PCUninitialize </span></h2>
+<pre>
+void _stdcall PCUninitialize();
+</pre>
+<p>This function is called before PCProxy unloads the DLL. It is not called if Initialize returned a false value. All uninitializations should be performed here.
+</p>
+<h2> <span class="mw-headline" id="Deallocate"> Deallocate </span></h2>
+<pre>
+void _stdcall Deallocate(char* pData);
+</pre>
+<p>This function is called to deallocate data that the DLL has allocated. The reason for this function is that different types of compilers and languages use different types of allocation and deallocation commands. Thus, PCProxy will deallocate data allocated by the DLL using this method.
+</p><p>In the sample we use a C++ array delete:
+</p>
+<pre>
+delete [] pData;
+</pre>
+<h2> <span class="mw-headline" id="Context_variable"> Context variable </span></h2>
+<p>The context variable is seen accross the calls that start with NewConnection where the user should set it to hold a custom number or struct to store data which will be used in the other calls that belong to the same session. The usage of the context is optional.
+</p><p>The sequence is:
+</p>
+<ol><li> NewConnection - Set the context.
+</li><li> DataBeforeSend, DataBeforeReceive, HTTPRequestBeforeSend, HTTPRequestBeforeReceive - Use the context.
+</li><li> ConnectionClosed - Release the context's resources.
+</li></ol>
+<h3> <span class="mw-headline" id="Example"> Example </span></h3>
+<p>Lets say this is your structure:
+</p>
+<pre>
+typedef struct _DLLData
+{
+    DWORD dwPID;
+    std::wstring sAppName;
+} DLLData;
+</pre>
+<p>Then inside NewConnection you would:
+</p>
+<pre>
+//Build the data
+DLLData* pAppData=new DLLData;
+pAppData-&gt;dwPID=pPInformation.ulPID;
+pAppData-&gt;sAppName=std::wstring((wchar_t*)pPInformation.pProcessName);
+
+//Save the data
+rContext=(ContextDWORD*)pAppData;
+</pre>
+<p>Then inside the sub functions you can access that struct by doing:
+</p>
+<pre>
+DLLData* pAppData=(DLLData*)rContext;
+</pre>
+<p>Also don't forget to delete it on ConnectionClose:
+</p>
+<pre>
+DLLData* pAppData=(DLLData*)rContext;
+delete pAppData;
+</pre>
+<h2> <span class="mw-headline" id="NewConnection"> NewConnection </span></h2>
+<pre>
+bool _stdcall NewConnection(ContextDWORD&amp; rContext,
+			    bool bFromEncryption,
+			    unsigned long usListeningPort,
+			    unsigned long&amp; rIP,
+			    unsigned short&amp; rPort,
+			    const ProcessInformation&amp; pPInformation,
+			    bool&amp; rEnableSSL,
+			    bool&amp; rSSLSwitch,
+			    bool&amp; bFreezeReceive,
+			    const char* pPeekData,
+			    unsigned long ulPeekDataSize,
+			    unsigned long&amp; rWaitMoreData,
+			    ProxyInformation&amp; rProxyInformation,
+                            const char* pDNSEntry);
+</pre>
+<p>This function is called whenever a new connection was made to PCProxy.
+</p><p>The parameters are:
+</p><p>rContext – A DWORD to be used across all functions that are called for this connection. The best practice is to allocate a struct with all necessary connection-specific information, and store its address inside this variable.
+</p><p>On Windows 8/8.1 when using a WFP, in case there's a cascading proxy redirect, there may be an option to get the original application (on top of the proxy process that was redirected), and then rContext would be a pointer to a wide string containing that process name (you can still modify the context as you would when it was zero).
+</p><p>In case the connection intercepted was part of HTTP Connect instead of rContext==0, it will contain a char* string pointing as the HTTP Connect command.
+</p><p>Because it's possible to get a context from the SDK, in the default sample the context structure contains a reserved variable with zero value, to allow to know if the context came from the SDK or created from the DLL.
+</p><p>bFromEncryption – In case the data was originally encrypted with SSL but decrypted with the SSL decryptors, this flag will be true.
+</p><p>usListeningPort – The port of the socket that accepted the connection inside the Redirector (currently it will be 12344 or 12346).
+</p><p>rIP – The destination IP that this session is trying to connect to. The programmer can change this value and the session will connect to the new IP.
+</p><p>rPort – The destination port that this session is trying to connect to. The programmer can change this value and the session will connect to the new port.
+</p><p>pPInformation – Contains information about the calling process, the structure definition is:
+</p>
+<pre>
+typedef struct _ProcessInformation
+{
+	unsigned long		ulPID;
+	const unsigned short*	pProcessName;
+	const unsigned short*	pDomain;
+	const unsigned short*	pUsername;
+} ProcessInformation;
+</pre>
+<p>The reason the strings are unsigned short* and not char* is because they are unicode, they can easily be converted to std using:
+</p>
+<pre>
+std::wstring sProcessName((wchar_t*)pPInformation.pProcessName);
+</pre>
+<p>rEnableSSL – Outputs this stream as SSL data (the port will usually be changed to 443).
+</p><p>rSSLSwitch – Set to true to notify that you might change this connection to SSL at a later stage, but not now. Useful for proxies.
+</p><p>bFreezeReceive – Set to true to tell the Redirector not to send you any client data for processing until you are ready. Useful when negotiating with a 3rd party proxy.
+</p><p>pPeekData – This buffer contains data “peeked” from the client, which means for example that in a web request this can contain the actual request before making any connection, this is useful when wanting to make connecting decisions based on the traffic type.
+</p><p>rWaitMoreData – This flag sets the timeout in milliseconds to wait before invoking this function again, more information on this in a few paragraphs below.
+</p><p>rProxyInformation – Contains the proxy information, in case there’s a global proxy defined, the structure will hold this data, it is also possible to modify the struct to disable the proxy, enable a proxy, and of course set the proxy settings, this setting is per connection.
+</p><p>The structure definition:
+</p>
+<pre>
+typedef enum _DLLProxyType
+{
+	dptHTTP,
+	dptHTTPConnect,
+	dptHTTPConnectSSL,
+	dptHTTPHybrid,
+	dptHTTPHybridSSL,
+	dptSocks4,
+	dptSocks5
+} DLLProxyType;
+</pre>
+<p>You can see what each value means here: <a href="Komodia's_Redirector_installation_guide.html#Proxy_type" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#Proxy_type</a>.
+</p>
+<pre>
+typedef struct _ProxyInformation
+{
+	bool		bUsingProxy;
+	DLLProxyType	aProxyType;
+	char*		pUsername;
+	char*		pPassword;
+	unsigned long	ulIP;
+	unsigned short	usPort;
+} ProxyInformation;
+</pre>
+<p>Return value:
+True – Allow this session
+False – Reject this session
+</p><p>Sample code:
+</p>
+<pre>
+//Allow only port 80
+if (usPort!=80)
+    return false;
+else
+    return true;
+</pre>
+<p>This code allows only port 80 sessions through. Keep in mind that it only blocks sessions that are intercepted by the LSP according to the rules you set.
+</p><p>Sample code for redirecting all port 80 sessions to SSL:
+</p>
+<pre>
+//Is it HTTP port?
+if (rPort==80)
+{
+	//Change port to HTTPS
+	rPort=443;
+
+	//Enable the SSL
+	rEnableSSL=true;
+}
+</pre>
+<p>Sample code for saving session specific information inside the context variable:
+</p>
+<pre>
+//Defined at global scope
+typedef struct _DLLData
+{
+	DWORD			dwIP;
+	Unsigned short	usPort;
+} DLLData;
+
+//This part goes into the function
+DLLData* pDLLData=new DLLData;
+pDLLData-&gt;dwIP=rIP;
+pDLLData-&gt;usPort=rPort;
+
+//Store the struct at context level
+rContext=(DWORD)pDLLData;
+
+//Some code
+
+//Done
+return true;
+</pre>
+<p>Inside the sample DLL (the one with the code), this function contains code that detects whether the session is HTTP and if so, it waits until it has the complete session.
+</p>
+<h2> <span class="mw-headline" id="HandleProxyHTTPConnect"> HandleProxyHTTPConnect </span></h2>
+<pre>
+bool _stdcall HandleProxyHTTPConnect(const char* pConnectString,
+				     char** ppNewString,
+				     ContextDWORD dwContext)
+</pre>
+<p>This function is called after the Redirector creates the HTTP Connect clause, it allows you to modify the content of it, and usually it is done to add custom authentication parameters.
+</p><p>pConnectString – Original connection clause (null terminated)
+</p><p>ppNewString – If the string is changed, the new string (null terminated) will be allocated into this variable (by you)
+</p><p>dwContext – The DLL-specific context that was created at the NewConnection function
+</p><p>Return value:
+True – Clause was modified
+False – Clause wasn’t modified
+</p>
+<h2> <span class="mw-headline" id="DataBeforeSend"> DataBeforeSend </span></h2>
+<pre>
+bool _stdcall DataBeforeSend(const char* pData,
+			     DWORD dwDataSize,
+			     char** pNewBuffer, 
+			     DWORD&amp; rNewDataSize,
+			     bool&amp; rTerminateSession,
+			     bool&amp; rNewBufferToReceive,
+                             OutgoingDataManipulations&amp; rManipulations
+			     ContextDWORD dwContext);
+</pre>
+<p>This function is called before sending the data to the final destination. For example, HTTP requests are seen at this stage, keep in mind that TCP is stream based which means that data comes in chunks, therefore HTTP requests can be chunked across multiple calls, there are number of ways to make sure you receive a complete web request:
+</p>
+<ol><li> Use the code inside NewConnection (under the DLL sample) which waits until it has the complete web request, and then you will receive the complete request here.
+</li><li> Use HTTP Parser add-on module, which does this for you transparently, you, can see how the HTTP Parser add-on module works later in this manual.
+</li><li> In case you want to do perform header manipulation such as removing/modifying/adding fields, you don’t need the complete request, you can just use the built in filtering solution that does that for you (sample code is inside the DLL sample)
+</li></ol>
+<p>The parameters are:
+</p><p>pData – The data to process.
+</p><p>dwDataSize – The size of data to process.
+</p><p>pNewBuffer – If the data is modified, this will hold the modified data. Must be allocated by the programmer, since the proxy will delete it.
+</p><p>rNewDataSize – If the data is modified, this will hold the modified data size.
+</p><p>rTerminateSession – Set to true to terminate the session when this function exits (if you don't want the data to be sent, you need to clear it).
+</p><p>rNewBufferToReceive – Takes the contents of the new data and sends it to the application that initiated the session (used mostly for redirects).
+</p><p>rManipulations – This structure contains the manipulations you want to employ on a HTTP header, of course this is optional. You don’t use this structure directly, instead you use a helper class called CHTTPHelper which is described later in this document.
+</p><p>dwContext – The DLL-specific context that was created at the NewConnection function.
+</p><p>Return value:
+True – Data was modified.
+False – Data wasn’t modified.
+</p><p>The flag rTerminateSession is not affected by the return value. You can terminate the session without changing the data that you received inside pData.
+</p><p>Sample code to redirect the web traffic into a different site:
+</p>
+<pre>
+        //Check that we are port 80
+	//Get socket data from the context
+	DLLData* pDLLData=(DLLData*)dwContext;
+
+	//Set terminate to false, just in case
+	rTerminateSession=false;
+
+	//Check we are port 80
+	if (pDLLData-&gt;usPort==80 &amp;&amp;
+	    pDLLData-&gt;dwIP!=inet_addr(&quot;64.118.87.10&quot;)) //This is our web site address
+	{
+		//Our quote
+		std::string sQuote;
+		sQuote='&quot;';
+
+		//Build a new string
+		std::string sTmp;
+		sTmp+=&quot;&lt;html&gt;&lt;head&gt;&lt;META HTTP-EQUIV=&quot;+sQuote+&quot;Refresh&quot;+sQuote+&quot; CONTENT=&quot;+sQuote+&quot;0;URL=&quot;;
+		sTmp+=&quot;http://www.komodia.com&quot;;
+		sTmp+=sQuote+&quot;&gt;&lt;/head&gt;&lt;/html&gt;&quot;;
+
+		//Convert the size
+		char aTmp[11];
+		itoa(sTmp.size(),
+			 aTmp,
+			 10);
+
+		//HTML header
+		std::string sHeader;
+		sHeader=&quot;HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n&quot;;
+		sHeader+=&quot;Content-Encoding: text/html\r\n&quot;;
+		sHeader+=&quot;Content-Length: &quot;;
+		sHeader+=aTmp;
+		sHeader+=&quot;\r\n\r\n&quot;;
+		sHeader+=sTmp;
+		
+		//Our size
+		rNewDataSize=sHeader.size();
+		
+		//Allocate new buffer
+		*pNewBuffer=new char[rNewDataSize];
+		memcpy(*pNewBuffer,
+			   sHeader.c_str(),
+			   sHeader.size());
+		
+		//Send to client
+		rNewBufferToReceive=true;
+
+		//Terminate the session
+		rTerminateSession=true;
+
+		//Set to change
+		return true;
+	}
+	else
+		return false;
+</pre>
+<p>In this code we get the session information, and then redirect every session that will connect to port 80 to Komodia’s website using HTML redirection. The code compares the destination IP of the current session to the IP of Komodia’s website and if the addresses matches there will be no redirection, this to avoid redirection loops.
+</p><p>Inside the sample DLL this functions contains code that modifies the header, in this case, it modifies the user-agent field, adds a new fields called “X-Redirector” and deletes the field “refer”:
+</p>
+<pre>
+        //Do we have a context?
+	ContextData* pContext;
+	pContext=(ContextData*)dwContext;
+
+	//This code adds HTTP manipulations
+	//This code also make sure to set the filter once per request, because a request can come in many times
+	//Because it is fragmented
+	//Is this HTTP?
+	if (pContext &amp;&amp;
+		pContext-&gt;bNewRequest &amp;&amp; //This checks that we are inside a new request, and not inside an existing request
+		IsHTTP(pData,
+			   dwDataSize))
+	{
+		//The request can fragment and we don't want to be here per fragment, but per request
+		pContext-&gt;bNewRequest=false;
+
+		//Here we build the filter
+		//These fileds are just for the sake for demonstration
+		//Please change them to reflect your own fields
+		CHTTPHelper aHelper;
+		
+		//Each method can be called multiple times
+		//Fields to change
+		//Uncomment the next code, keep in mind that it may cause problems with
+		//Sites that are based on your browser
+		aHelper.ChangeHTTPHeader(&quot;user-agent&quot;,&quot;Blank agent&quot;);
+
+		//Fields to add
+		aHelper.InsertSpecialField(&quot;X-Redirector&quot;,&quot;Just a value&quot;);
+
+		//Fields to remove
+		aHelper.FilterHTTPHeader(&quot;Refer&quot;);
+
+		//Build the struct
+		//Don't call this function unless you want to have a filter
+		//Or have a filter override
+		rManipulations=aHelper.GetFinalStruct();
+
+		//Done
+		return false;
+	}
+
+	//Done
+	return false; 
+</pre>
+<p>This is the sample code taken from the DLL, the class used here CHTTPHelper is documented later in this chapter.
+</p>
+<h2> <span class="mw-headline" id="DataBeforeReceive"> DataBeforeReceive </span></h2>
+<pre>
+bool _stdcall DataBeforeReceive(const char* pData,
+				DWORD dwDataSize,
+				char** pNewBuffer,
+				DWORD&amp; rNewDataSize,
+				bool&amp; rTerminateSession,
+				bool&amp; rThawReceiveFreeze,
+				bool&amp; rEnableSSL,
+				bool bServerClosed,
+				ContextDWORD dwContext);
+</pre>
+<p>This function is called before sending the data back to the application that initiated the session. Any answer from a web server will be caught by this function, keep in mind that answers comes in fragmented, if you need HTTP answers to come in complete and/or decoded you might consider using the HTTP Parser add-on that is documented later in this chapter.
+</p><p>The parameters are:
+</p><p>pData – The data to process.
+</p><p>dwDataSize – Size of data to process.
+</p><p>pNewBuffer – If the data is modified, this will hold the modified data. It must be allocated by the programmer, since the proxy will delete it.
+</p><p>rNewDataSize – If the data is modified, this will hold the modified data size.
+</p><p>rTerminateSession – Set to true to terminate the session when this function exits (if you don't want the data to be received, you need to clear it).
+</p><p>rThawReceiveFreeze – Set to true to allow Redirector to process data from the client that was held due to the bFreezeReceive flag in the function NewConnection.
+</p><p>rEnableSSL – Set to true to switch to SSL session. This can be set only if the flag rSSLSwitch was set during the NewConnection method call.
+</p><p>bServerClosed – When this flag is set, it means that the remote server closed the connection and at this stage you have last chance to send data to the client side before the Redirector closes the connection.
+</p><p>dwContext – DLL-specific context that was created at the NewConnection function.
+</p><p>Return value:
+True – Data was modified.
+False – Data was not modified.
+</p><p>The flag rTerminateSession is not affected by the return value. You can terminate the session without changing the data that you received inside pData.
+</p>
+<h2> <span class="mw-headline" id="ConnectionClosed"> ConnectionClosed </span></h2>
+<pre>
+void _stdcall ConnectionClosed(bool bError,
+			       DWORD dwContext);
+</pre>
+<p>This function is called when the session has ended.
+</p><p>bError – Indicates whether the session ended because of an error (failed connection attempt), or because the remote side ended the connection.
+</p><p>This is the place to release the dwContext if it was allocated. Sample code:
+</p>
+<pre>
+delete (DLLData*)dwContext;
+</pre>
+<h2> <span class="mw-headline" id="DLLQueryData"> DLLQueryData </span></h2>
+<pre>
+char* _stdcall DLLQueryData(const char* pData)
+</pre>
+<p>This function is optional (it doesn't have to be exported), it allows you to send/receive data to/from the DLL via the COM interface.
+</p><p>pData - Data sent from COM
+</p><p>Return value:
+Data to return back to the COM call.
+</p><p>The COM call to initiate this method is: CDataController::FeedDLL
+</p>
+<pre>
+HRESULT FeedDLL(BSTR bData,[out,retval]BSTR* pDataBack)
+</pre>
+<p>bData - Data to send to the DLL.
+pDataBack - Data received from the DLL.
+</p>
+<h2> <span class="mw-headline" id="DLLSetFunctions"> DLLSetFunctions </span></h2>
+<pre>
+void _stdcall DLLSetFunctions(const FunctionsStruct* pFuncs)
+</pre>
+<p>This function is optional (it doesn't have to be exported), if it's defined it will be called before the DLL initialize method (PCInitialize).
+</p>
+<ul><li> Important - Make sure the functions is defined in the DLL .DEF file.
+</li></ul>
+<p>pFuncs - Contains the functions to get/set flags and save data.
+</p><p>Structure definition:
+</p>
+<pre>
+//Return value of get flag
+#define GET_FLAG_BUFFER_OVERFLOW -1
+#define GET_FLAG_NO_RESULT 0
+#define GET_FLAG_OK_RESULT 1
+
+//Flag manipulation functions
+typedef int (_stdcall *PGetFlagInformation)(const wchar_t* pIndex,
+					    wchar_t* pValue,
+					    DWORD dwValueStringSize);
+
+typedef void (_stdcall *PSetFlagInformation)(const wchar_t* pIndex,
+					     const wchar_t* pValue);
+
+typedef void (_stdcall *PSaveInformation)();
+
+//Structure with Redirector specific functions
+typedef struct _FunctionsStruct
+{
+	DWORD			dwFunctionCount;
+	PGetFlagInformation	pGetFlagInformation;
+	PSetFlagInformation     pSetFlagInformation;
+	PSaveInformation	pSaveInformation;
+} FunctionsStruct;
+</pre>
+<h3> <span class="mw-headline" id="Get_flag"> Get flag </span></h3>
+<pre>
+        //Here can use the flags
+	//For example lets get the Unique GUID
+	unsigned short usTmp[256]=L&quot;&quot;;
+	if (pFuncs-&gt;pGetFlagInformation &amp;&amp;
+		(*pFuncs-&gt;pGetFlagInformation)(L&quot;userguid&quot;,usTmp,256)==GET_FLAG_OK_RESULT)
+	{
+		//The GUID is inside usTmp
+	}
+</pre>
+<h3> <span class="mw-headline" id="Set_flag"> Set flag </span></h3>
+<pre>
+        //Now we can set some custom var
+	if (pFuncs-&gt;pSetFlagInformation)
+		(*pFuncs-&gt;pSetFlagInformation)(L&quot;myvar&quot;,L&quot;myvalue&quot;);
+</pre>
+<h3> <span class="mw-headline" id="Save_data"> Save data </span></h3>
+<pre>
+        //We can also save the data
+	(*pFuncs-&gt;pSaveInformation)();
+</pre>
+<h2> <span class="mw-headline" id="TCP_Accept_methods"> TCP Accept methods </span></h2>
+<p>The Accept methods are used only with the Advanced Redirector module with LSP only, they receive incoming TCP connections.
+</p>
+<h3> <span class="mw-headline" id="NewAccept"> NewAccept </span></h3>
+<pre>
+bool _stdcall NewAccept(ContextDWORD&amp; rContext,
+		        const ProcessInformation&amp; pPInformation,
+			unsigned long ulRemoteIP,
+			unsigned short usRemotePort,
+			unsigned long ulLocalIP,
+			unsigned short usLocalPort);
+</pre>
+<p>This function is called whenever a new incoming connection was made to PCProxy.
+</p><p>The parameters are:
+</p><p>rContext – A DWORD to be used across all functions that are called for this connection.
+</p><p>pPInformation – Contains information about the calling process.
+</p><p>ulRemoteIP - IP of the remote connection.
+</p><p>usRemotePort - Port of the remote connection.
+</p><p>ulLocalIP - IP of the local server this connection was connected to.
+</p><p>usLocalPort - Port of the local server this connection was connected to.
+</p><p>Return value:
+True – Allow this session
+False – Reject this session
+</p>
+<h3> <span class="mw-headline" id="DataBeforeSendA"> DataBeforeSendA </span></h3>
+<pre>
+bool _stdcall DataBeforeSendA(const char* pData,
+			      DWORD dwDataSize,
+			      char** pNewBuffer, 
+			      DWORD&amp; rNewDataSize,
+			      bool&amp; rTerminateSession,
+			      bool&amp; rNewBufferToReceive,
+                              ContextDWORD dwContext);
+</pre>
+<p>This function is called before sending the data to the final destination (from server to client).
+</p><p>The parameters are:
+</p><p>pData – The data to process.
+</p><p>dwDataSize – The size of data to process.
+</p><p>pNewBuffer – If the data is modified, this will hold the modified data. Must be allocated by the programmer, since the proxy will delete it.
+</p><p>rNewDataSize – If the data is modified, this will hold the modified data size.
+</p><p>rTerminateSession – Set to true to terminate the session when this function exits (if you don't want the data to be sent, you need to clear it).
+</p><p>rNewBufferToReceive – Takes the contents of the new data and sends it to the application that initiated the session (used mostly for redirects).
+</p><p>dwContext – The DLL-specific context that was created at the NewConnection function.
+</p><p>Return value:
+True – Data was modified.
+False – Data wasn’t modified.
+</p><p>The flag rTerminateSession is not affected by the return value. You can terminate the session without changing the data that you received inside pData.
+</p>
+<h3> <span class="mw-headline" id="DataBeforeReceiveA"> DataBeforeReceiveA </span></h3>
+<pre>
+bool _stdcall DataBeforeReceiveA(const char* pData,
+				 DWORD dwDataSize,
+				 char** pNewBuffer,
+				 DWORD&amp; rNewDataSize,
+				 bool&amp; rTerminateSession,
+				 bool bServerClosed,
+				 ContextDWORD dwContext);
+</pre>
+<p>This function is called before sending the data back from the server to remote process that initiated the session. 
+</p><p>The parameters are:
+</p><p>pData – The data to process.
+</p><p>dwDataSize – Size of data to process.
+</p><p>pNewBuffer – If the data is modified, this will hold the modified data. It must be allocated by the programmer, since the proxy will delete it.
+</p><p>rNewDataSize – If the data is modified, this will hold the modified data size.
+</p><p>rTerminateSession – Set to true to terminate the session when this function exits (if you don't want the data to be received, you need to clear it).
+</p><p>bServerClosed – When this flag is set, it means that the local server closed the connection and at this stage you have last chance to send data to the client side before the Redirector closes the connection.
+</p><p>dwContext – DLL-specific context that was created at the NewConnection function.
+</p><p>Return value:
+True – Data was modified.
+False – Data was not modified.
+</p><p>The flag rTerminateSession is not affected by the return value. You can terminate the session without changing the data that you received inside pData.
+</p>
+<h1> <span class="mw-headline" id="Threading_model"> Threading model </span></h1>
+<p>Calls to NewConnection come from different threads.
+Calls to DataBeforeReceive for a specific connection are always from the same thread.
+Calls to DataBeforeSend for a specific connection are always from the same thread, but not the same thread as that of DataBeforeReceive.
+</p>
+<h1> <span class="mw-headline" id="CHTTPHelper"> CHTTPHelper </span></h1>
+<p>This class is used to create HTTP filtering, e.g. Adding, modifying and removing HTTP header fields.
+</p><p>Inside the PCProxySample DLL sample there’s a usage of this class in the correct context. This section will go over the four main functions of the class.
+</p>
+<h2> <span class="mw-headline" id="Overview"> Overview </span></h2>
+<p>When adding parameters to the functions don’t add the ‘:’:
+</p><p>Correct: “Connection”
+Incorrect: “Connection:”
+</p><p>And never terminate the strings with \r\n
+</p><p>Correct: “Some data”
+Incorrect: “Some data\r\n”
+</p><p>Headers are case insensitive, data is case sensitive.
+</p>
+<h2> <span class="mw-headline" id="FilterHTTPHeader"> FilterHTTPHeader </span></h2>
+<pre>
+void FilterHTTPHeader(const std::string&amp; rHeader);
+</pre>
+<p>Use this function to add name of headers to remove from the request, a sample header would be “If-Modified-Since” removing this field will not allow server to give you cached result.
+</p>
+<h2> <span class="mw-headline" id="ChangeHTTPHeader"> ChangeHTTPHeader </span></h2>
+<pre>
+void ChangeHTTPHeader(const std::string&amp; rHeader,
+		      const std::string&amp; rNew);
+</pre>
+<p>Use this function to change data of a specific header, for example:
+</p>
+<pre>
+ChangeHTTPHeader(“user-agent”,
+		 “Some agent”);
+</pre>
+<p>The filter will only modify existing headers, if the header isn’t in the request it will not be added.
+</p>
+<h2> <span class="mw-headline" id="InsertSpecialField"> InsertSpecialField </span></h2>
+<pre>
+void InsertSpecialField(const std::string&amp; rField,
+			const std::string&amp; rData);
+</pre>
+<p>Use this function to add a field to the request, the field will be added only if it doesn’t exist in the original request:
+</p>
+<pre>
+InsertSpecialField(“X-Redirector”,
+		   “Some data”);
+</pre>
+<p>If you want to make sure a field always exists with a value you want but you’re no sure whether this field always appear, you can set the filter to delete the header field and then insert your field.
+</p>
+<h2> <span class="mw-headline" id="GetFinalStruct"> GetFinalStruct </span></h2>
+<pre>
+OutgoingDataManipulations GetFinalStruct(bool bOverideProxy=false,
+				         bool bOveridGlobal=false)const;
+</pre>
+<p>This is the function that converts all the data you entered into a struct the Redirector can use.
+</p><p>Parameters:
+</p><p>bOverideProxy  - Set to true to disable HTTP proxy and HTTP hybrid proxy filtering (which adjusts the request from normal request to a proxy request)
+</p><p>bOveridGlobal – Set to true to disable global HTTP filtering (which you set via the console)
+</p>
+<h1> <span class="mw-headline" id="HTTP_Parser_add_on_module"> HTTP Parser add on module </span></h1>
+<h2> <span class="mw-headline" id="Integration_with_existing_DLL_functions"> Integration with existing DLL functions </span></h2>
+<p>When working with <a href="http://www.komodia.com/wiki/index.php?title=HTTP_Parser&amp;action=edit&amp;redlink=1" class="new" title="HTTP Parser (page does not exist)">HTTP Parser</a>, you may still want to handle non HTTP data therefore all functions that part of the regular DLL extension are still active when using parental control module, you may choose to use them or not, it’s up to you.
+</p>
+<h2> <span class="mw-headline" id="Architecture"> Architecture </span></h2>
+<p>After a connection is being made (after NewConnection was called) the Redirector assembles the outgoing request (e.g. GET / HTTP/1.1) and when it’s complete (incase of a POST request, when it contains all the POST data) the Redirector calls the function HTTPRequestBeforeSend so it can perform analysis on the outgoing request, keep in mind that during the assembly of the request the method DataBeforeSend is called per chunk, but if you choose to work with the HTTP Parser module you can just ignore it (ignoring=not performing any operation at that level)
+</p><p>At this stage you have number of options available to you:
+</p>
+<ul><li> Do nothing (dhrNothing) – Request will be aggregated at will be sent normally at the end, you should try to call this return value the less you can.
+</li><li> Don’t perform parental on this request/reply (dhrDontDoParental) – Incase you know that you have no need to further parse this specific request/reply, the answer received will not be parsed with the parental control add-on, if there will be a request made after this one in the same socket connection, the process will start again (the don’t perform parental control is good for one request only)
+</li><li> Block the connection (dhrBlock) – The request is not sent and the connection is closed.
+</li><li> Redirect the connection to a different URL (dhrRedirect) – You specify a URL you want the browser to be redirected to, e.g. if you specify <a class="external free" href="../../index.php.html">http://www.komodia.com</a> the session will be redirected to Komodia’s web site.
+</li><li> Modify (dhrModify) – You modify the header and maybe the body to contain custom data, with this return value it's your responsibility to make sure that the header data matches the body data (for example if body is larger, the content-size should match the new size)
+</li><li> Return HTML (dhrReturnHTML) – The Redirector will take your HTML, wrap it with HTTP header and will send it back to the browser, while discarding the original request, this is good for custom block pages.
+</li><li> Return HTML and header (dhrReturnHTMLAndHeader) – You specify the HTML and HTML header to return back to the browser, while discarding the original request, this is good for block pages.
+</li><li> Tell the SDK to choose what to do (dhrSkip) - The default behaviour is only to do dhrNothing for HTMLs that require processing.
+</li><li> Defer the decision (dhrDefer) - When receiving a partial reply (bServerCheck==true) you might want to make a decision later, but not wait until you receive the entire data, returning this value means that the next chunk of data received you will be called again with bServerCheck==true, you can defer the reply until you receive the full reply, at that point you must make a decision.
+</li><li> return dhrModifyBodySDKAdjustHeader - This will tell the SDK that you only modified the HTML data, and the SDK will adjust the header to match the new data.
+</li></ul>
+<p>Return values valid only for HTTPRequestBeforeSend:
+</p>
+<ul><li> Don't process post (dhrDontProcessPost) - Inside HTTP you may get only the header for a post, but the post is too long and you might not need it (for example email upload), returning this value means that the Redirector will not try and build the post output.
+</li><li> Don't process post and don't do parental (dhrDontDoParentalAndDontProcessPost) - Same as above, but will also perform the same result as dhrDontDoParental.
+</li><li> Only modify the header but don't process the post payload (dhrModifyDontProcessPostPayload) - This is used in case you only want to modify the post header, but don't care about the data itself, and don't want to wait for the entire data to be uploaded.
+</li><li> Only modify the header but don't process the post payload and not the reply as well (dhrDontDoParentalAndDontProcessPostModify) - This is used in case you only want to modify the post header, but don't care about the data itself, and don't want to wait for the entire data to be uploaded, and you don't care about the result reply.
+</li></ul>
+<p>Return values valid only for HTTPRequestBeforeReceive:
+</p>
+<ul><li> dhrStartInject, dhrPayloadInjected, dhrPayloadInjectedBuildButDontAggregate are described here: <a href="Komodia's_Redirector_DLL_framework_guide.html#HTML_Element_injection" title="Komodia's Redirector DLL framework guide">Komodia's Redirector DLL framework guide#HTML Element injection</a>.
+</li></ul>
+<p>Parsing of the header is done via a helper class called CHTTPHeader.
+</p>
+<h2> <span class="mw-headline" id="CHTTPHeader"> CHTTPHeader </span></h2>
+<p>This class is used to help you work with HTTP headers, although the Redirector gives you complete requests/replies, you still want to do some inspection on them, this class helps you by parsing the requests/replies and give you methods to easily get and modify the data you want.
+</p>
+<h3> <span class="mw-headline" id="Feed_.2F_ForceFeed"> Feed / ForceFeed </span></h3>
+<p>This two functions are used to give the class the raw data, the difference between Feed and ForceFeed is that Feed is sequential, which means that you can give it sequential fragmented chunks of the header, unlike ForceFeed that clears previous content and start from the beginning, our case we can use either methods, return value is true for indication we have a complete header and false for not having a complete header, usage example:
+</p>
+<pre>
+CHTTPHeader aHeader;
+if (aHeader.Feed(pHeader,
+	         dwHeaderSize))
+{
+    //Do something
+}
+</pre>
+<h3> <span class="mw-headline" id="GetHeaderString_.2F_GetHeaderStringCase"> GetHeaderString / GetHeaderStringCase </span></h3>
+<p>After we got a parsed header we want to start inspecting the contents, this two functions get the data of the specific HTTP headers (the only difference is that GetHeaderStringCase preserves the case of the data), for example, lets look at this simple HTTP request:
+</p>
+<pre>
+GET /index.php HTTP/1.1
+User-agent: Mozilla Firefox
+Connection: Keep-alive
+Host: www.google.com
+</pre>
+<p>Now lets get the value of connection (without preserving case), keep in mind that all requests are made in lower case (we are assuming we continue from the last example):
+</p>
+<pre>
+std::string sConnection(aHeader.GetHeaderString(“connection”));
+</pre>
+<h3> <span class="mw-headline" id="IsRequest"> IsRequest </span></h3>
+<pre>
+bool IsRequest()const;
+</pre>
+<p>This function will return true if the parsed header was a HTTP request and false if it was a HTTP reply.
+</p>
+<h3> <span class="mw-headline" id="GetHost"> GetHost </span></h3>
+<pre>
+std::string GetHost()const;
+</pre>
+<p>This function will give us the host of the request (relevant to requests only).
+</p>
+<h3> <span class="mw-headline" id="GetResponseCode"> GetResponseCode </span></h3>
+<pre>
+unsigned short GetResponseCode()const;
+</pre>
+<p>This function returns the HTTP response code (relevant to replies only)
+</p>
+<h3> <span class="mw-headline" id="GetURL"> GetURL </span></h3>
+<pre>
+const std::string&amp; GetURL()const;
+</pre>
+<p>This function returns the URL of the request, in our example it would be /index.php
+</p>
+<h3> <span class="mw-headline" id="GetFullAddress"> GetFullAddress </span></h3>
+<pre>
+const std::string&amp; GetFullAddress()const;
+</pre>
+<p>This function returns the full address of the request, in our example it would be: <a class="external free" href="http://www.google.com/index.php">http://www.google.com/index.php</a>
+</p>
+<h3> <span class="mw-headline" id="SetHeader"> SetHeader </span></h3>
+<pre>
+void SetHeader(const std::string&amp; rHeader,
+	       const std::string&amp; rData);
+</pre>
+<p>This function is used to modify the header, in case the header given exists it will be changed, if the header do not exist, it will be added with the specified value, for example changing our header connection type (rHeader is case insensitive):
+</p>
+<pre>
+aHeader.SetHeader(“connection”,”close”);
+</pre>
+<h3> <span class="mw-headline" id="DeleteHeader"> DeleteHeader </span></h3>
+<pre>
+void DeleteHeader(const std::string&amp; rHeader);
+</pre>
+<p>This function will delete a header from the request/reply (if it exists, rHeader is case insensitive)
+</p>
+<h3> <span class="mw-headline" id="GetHeaderData"> GetHeaderData </span></h3>
+<pre>
+DataVector GetHeaderData(DWORD dwStart=0)const;
+</pre>
+<p>Get the data of the header as a vector of chars, this data will include all the changes we have performed on the header.
+</p>
+<h1> <span class="mw-headline" id="HTTP_Parser_functions"> HTTP Parser functions </span></h1>
+<p>There are two functions to implement when using the <a href="http://www.komodia.com/wiki/index.php?title=HTTP_Parser&amp;action=edit&amp;redlink=1" class="new" title="HTTP Parser (page does not exist)">HTTP Parser</a>.
+</p><p>The returned enum definition:
+</p>
+<pre>
+typedef enum _DLLHTTPResult
+{
+	dhrNothing=0,
+	dhrBlock,
+	dhrRedirect,
+	dhrModify,
+	dhrReturnHTML,
+	dhrReturnHTMLAndHeader,
+	dhrDontDoParental,
+	dhrDontProcessPost,
+	dhrDontDoParentalAndDontProcessPost,
+	dhrSkip,
+	dhrModifyBodySDKAdjustHeader,
+	dhrDefer,
+        dhrModifyDontProcessPostPayload,
+	dhrDontDoParentalAndDontProcessPostModify,
+        dhrBuildButDontAggregate,
+	dhrDefer,
+	dhrWaitForCategory,
+	dhrDontDoParentalAndModify,
+	dhrStartInject,
+	dhrPayloadInjected,
+	dhrPayloadInjectedBuildButDontAggregate
+} DLLHTTPResult;
+</pre>
+<h2> <span class="mw-headline" id="HTTPRequestBeforeSend"> HTTPRequestBeforeSend </span></h2>
+<pre>
+DLLHTTPResult _stdcall HTTPRequestBeforeSend(const char* pHeader,
+					     DWORD dwHeaderSize,
+					     char** ppNewHeader,
+					     DWORD&amp; rNewHeaderSize,
+					     bool bPartialPost,
+					     DWORD dwContext);
+</pre>
+<p>This function is called when an outgoing request is ready to be inspected.
+</p><p>The parameters are:
+</p><p>pHeader – The pointer containing the header data, in case the request is post and bPartialPost==0 then the post data will come in this parameter right after the header, the post data will start right after \r\n\r\n that terminates the header.
+</p><p>dwHeaderSize – Size of the header in bytes.
+</p><p>ppNewHeader – If you need to return data to the Redirector, in case of modify or redirect, you need to allocate the data and give it to this pointer.
+</p><p>rNewHeaderSize – Size of the new data or redirect address.
+</p><p>bPartialPost - If this flag is true, it means that the current info is just the header of a post, but there's no post data, this allows you the ability to tell the SDK not to aggregate any post data for this connection when returning dhrDontProcessPost.
+</p><p>dwContext – DLL-specific context that was created at the NewConnection function.
+</p><p>Return value:
+</p><p>Action to take with this request, you can look what each value means under the <a href="Komodia's_Redirector_DLL_framework_guide.html#Architecture" title="Komodia's Redirector DLL framework guide">Komodia's Redirector DLL framework guide#Architecture</a> section.
+</p><p>Sample code taken from the DLL:
+</p>
+<pre>
+//Take the context
+ContextData* pData;
+pData=(ContextData*)dwContext;
+
+//At this stage we have a complete header
+//It's easiest to work with the supplied class
+//For header parsing
+//Give it to the header
+CHTTPHeader aHeader;
+if (aHeader.Feed(pHeader,
+		     dwHeaderSize))
+{
+	//We can get some usefull information at this stage
+	//Host
+	std::string sHost(aHeader.GetHost());
+
+	//URI
+	std::string sURI(aHeader.GetURL());
+
+	//The full address
+	std::string sFullAddress(aHeader.GetFullAddress());
+
+//Save the host in the session data
+	if (pData &amp;&amp;
+	    pData-&gt;sHost.empty())
+pData-&gt;sHost=sHost;
+</pre>
+<p>This code snipest parses the header and extracts basic data we can use, now lets perform a redirect:
+</p>
+<pre>
+//Lets say we want to build a redirect based on the request
+//We need to make sure that we are not redirecting over and over
+//The site we are redirecting to
+//This code performs it
+if (!strstr(sHost.c_str(),
+		&quot;komodia.com&quot;) &amp;&amp;
+   &#160;!strstr(sHost.c_str(),
+		&quot;google&quot;))
+{
+//Redirect to address, always in the form of http://website
+	std::string sRedirectTo;
+	sRedirectTo=&quot;http://www.komodia.com&quot;;
+
+	//Save the data
+	*ppNewHeader=new char[sRedirectTo.size()+1];
+	memcpy(*ppNewHeader,
+		 sRedirectTo.c_str(),
+		 sRedirectTo.size()+1);
+
+	//Set size
+	rNewHeaderSize=sRedirectTo.size()+1;
+
+	//Let Redirector know that this is a redirect
+	return dhrRedirect;
+}
+</pre>
+<h2> <span class="mw-headline" id="HTTPRequestBeforeReceive"> HTTPRequestBeforeReceive </span></h2>
+<pre>
+DLLHTTPResult _stdcall HTTPRequestBeforeReceive(const char* pHeader,
+						DWORD dwHeaderSize,
+						char** ppNewHeader,
+						DWORD&amp; rNewHeaderSize,
+						const char* pData,
+						DWORD dwDataSize,
+						char** ppNewData,
+						DWORD&amp; rNewDataSize,
+						bool bHeaderCheck,
+						DWORD dwContext);
+</pre>
+<p>This function is called when an incoming request is ready to be inspected so you can decide if you want to do something with it right now (instead of waiting for the download to complete), it is then called again when it contain the full HTTP data (data is in the buffers, the browser didn’t receive it yet), the data is parsed, even if the original was Gzip encoding of chunked transfer encoding, you still receive plain text and the returned headers are modified automatically to accommodate for this change.
+</p><p>The parameters are:
+</p><p>pHeader – The pointer containing the header data
+</p><p>dwHeaderSize – Size of the header in bytes.
+</p><p>ppNewHeader – If you need to return data to the Redirector, in case of modify or redirect, you need to allocate the data and give it to this pointer.
+</p><p>rNewHeaderSize – Size of the new data or redirect address.
+</p><p>pData – The pointer containing the actual data (HTML usually)
+</p><p>dwDataSize – Size of the data in bytes.
+</p><p>ppNewData – If you need to return new data to the Redirector, in case of modify or redirect, you need to allocate the data and give it to this pointer.
+</p><p>rNewDataSize - Size of the new data.
+</p><p>bHeaderCheck – This flag is true when this call is with header only and data is still downloading, keep in mind that if the Redirector managed to get the complete reply (header+data) in one call, this method will be called only once (with this flag false). When the flag is false it means that this is the complete reply.
+</p><p>dwContext – DLL-specific context that was created at the NewConnection function.
+</p><p>Return value:
+</p><p>Action to take with this reply, you can look what each value means under the <a href="Komodia's_Redirector_DLL_framework_guide.html#Architecture" title="Komodia's Redirector DLL framework guide">Komodia's Redirector DLL framework guide#Architecture</a> section.
+</p><p>It's important to note that when the bHeaderCheck==true the header supplied will be the original header and there might be data inside the data pointer, which is the partial data received so far, but bHeaderCheck==false, the header might be a modified header because the SDK removes some encoding header fields.
+</p><p>Sample code taken from the DLL:
+</p>
+<pre>
+//Is this a header check (gives us change to determine what we are receiving, in case it's a big file
+//we might not want to process it
+//Header check means that we have a complete header, but not all the data
+if (bHeaderCheck)
+{
+	//Try to parse the header
+	CHTTPHeader aHeader;
+	if (aHeader.Feed(pHeader,
+		     dwHeaderSize))
+	{
+		//We can get some usefull information at this stage
+		//Response code
+		DWORD dwResponseCode(aHeader.GetResponseCode());
+
+		//Try to get the content type
+		std::string sContentType(aHeader.GetHeaderString(&quot;content-type&quot;));
+
+		//Now there are some content we don't want to perform parental control on
+		//Of course you can change these settings
+		//These settings are just for sample sake
+		//For these kind of files (.swf, .zip, .exe) filtering should be performed at the level of HTTPRequestBeforeSend
+		if (strstr(sContentType.c_str(),
+			     &quot;image/&quot;) ||
+		    strstr(sContentType.c_str(),
+			     &quot;video/&quot;) ||
+		    strstr(sContentType.c_str(),
+			     &quot;audio/&quot;) ||
+		    strstr(sContentType.c_str(),
+			     &quot;application/&quot;))
+			//Don't do parental
+			return dhrDontDoParental;
+		}
+	}
+</pre>
+<p>This code snipest checks the reply while we still haven’t got the data, and checks the content-type, if it’s media files usually we don’t need to hold them in buffer (because they are large files mostly) and in case of parental control if they should be rejected it should be done at the stage of HTTPRequestBeforeSend.
+</p><p>Now lets perform a redirect in this stage (after we got all the data):
+</p>
+<pre>
+else
+{
+        //Take the host from the session data
+	std::string sHost;
+
+	//Do we have session data?
+	if (pContextData)
+		sHost=pContextData-&gt;sHost;
+
+	//Uncomment the next command to disable the redirect sample
+	//return dhrNothing;
+
+	//At this stage we have a full request, for those we didn't disable
+	//Lets say we want to perform a filtering here
+	//We need to make sure that we are not redirecting over and over
+	//The site we are redirecting to
+	//This code performs it
+	if (!strstr(sHost.c_str(),
+			&quot;komodia.com&quot;) &amp;&amp;
+	   &#160;!strstr(sHost.c_str(),
+			&quot;google&quot;))
+	{
+			//Redirect to address, always in the form of http://website
+		std::string sRedirectTo;
+		sRedirectTo=&quot;http://www.komodia.com&quot;;
+
+		//Save the data
+		*ppNewHeader=new char[sRedirectTo.size()+1];
+		memcpy(*ppNewHeader,
+		 	 sRedirectTo.c_str(),
+			 sRedirectTo.size()+1);
+
+		//Set size
+		rNewHeaderSize=sRedirectTo.size()+1;
+
+		//Let Redirector know that this is a redirect
+		return dhrRedirect;
+	}
+}
+</pre>
+<h3> <span class="mw-headline" id="HTML_Element_injection"> HTML Element injection </span></h3>
+<p>There are two ways to inject HTML elements, first one is getting the entire page then modifying it, the second one is mostly used to inject JavaScript above or below the &lt;head&gt; or &lt;body&gt; element, and there's a special mode to allow injection while streaming the data, this allows for faster load times.
+</p><p>This method of injection can be done only at the receive stage if the page has not arrived completely (if it did, just modify it)
+</p><p>Sequence:
+</p>
+<ol><li> Call to HTTPRequestBeforeReceive with bHeaderCheck==true and no data, if you want or think you want to inject to this page then return dhrStartInject, this will start the inject process, but at the end you will not have to inject.
+</li><li> There will be calls to HTTPRequestBeforeReceive with bHeaderCheck==true and partial data inside pData variable, you can inspect the data and see if you can inject, if there's not enough data to make a decision you can return dhrStartInject to be called again with more data. You can make any other calls like dhrDontDoParental to tell the SDK you don't care about this reply anymore. Also it is possible that while waiting, you got the full page, and HTTPRequestBeforeReceive will be called with bHeaderCheck==false, so here you modify it regularly and not with the inject methods.
+</li><li> When you found the data you want to inject to, you put the modified data (including the injection) inside ppNewData, and return dhrPayloadInjected or dhrPayloadInjectedBuildButDontAggregate.
+</li><li> If you called dhrPayloadInjected the SDK will stop calling you anymore for this reply and will send the new reply with the injection to the browser
+</li><li> If you called dhrPayloadInjectedBuildButDontAggregate the SDK will perform the injection and call you one last time with the full data, this data will be read only, you will not be able to do any modification on it (also the data will not include the injection).
+</li></ol>
+<h2> <span class="mw-headline" id="HTTP_101_response_code"> HTTP 101 response code </span></h2>
+<p>When a parser sees a <a class="external text" href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes">HTTP 101 response code</a> it will send the reply header in the HTTP reply callback, it might supply data or not, at that stage you can block the connection or modify the header, incase you didn't the data will no longer be processed by the HTTP Parser anymore and all the data can be processed at the raw data callbacks.
+</p>
+<h1> <span class="mw-headline" id="Common_pitfalls"> Common pitfalls </span></h1>
+<h2> <span class="mw-headline" id="Multi_threading"> Multi threading </span></h2>
+<p>The callbacks calls are multi threaded, make sure that non thread safe code is protected with Mutex or Critical section.
+</p>
+<h2> <span class="mw-headline" id="Dependencies"> Dependencies </span></h2>
+<p>The DLL failed to load because it is dependent on 3rd party DLLs, for example CRT runtime DLL that is not installed by default on all machines.
+</p>
+<h2> <span class="mw-headline" id="Not_understanding_what_bHeaderCheck_does"> Not understanding what bHeaderCheck does </span></h2>
+<p>bHeaderCheck is the core of the HTTP reply processing, not using it will often lead to problems of not seeing HTTP responses.
+</p>
+<h2> <span class="mw-headline" id="Modifying_HTTP_body_size"> Modifying HTTP body size </span></h2>
+<p>When modifying the HTTP body size, it must be reflected in the header, this can be done by either using a flag that tells the SDK to adjust the header automatically (dhrModifyBodySDKAdjustHeader), or modify the header in the DLL and use a flag that indicates that the header has been modified (dhrModify).
+</p>
+<h2> <span class="mw-headline" id="Crashes.2FMemory_corruption"> Crashes/Memory corruption </span></h2>
+<p>Crashes and memory corruption may affect the SDK and cause traffic to get blocked.
+</p>
+<h2> <span class="mw-headline" id="Spending_too_much_time_inside_callbacks"> Spending too much time inside callbacks </span></h2>
+<p>The DLL should not spend more then five seconds inside a callback, more then that can cause unexpected behavior (the true safe limit is 20 seconds, after 5 seconds inside a callback warnings will be written to the log)
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 909/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key komod_wikidb:pcache:idhash:35-0!*!0!!en!*!* and timestamp 20150219153508 -->
+</div><div class="printfooter">
+Retrieved from "<a href="../index.php@title=Komodia%2527s_Redirector_DLL_framework_guide&amp;oldid=1430.html">http://www.komodia.com/wiki/index.php?title=Komodia%27s_Redirector_DLL_framework_guide&amp;oldid=1430</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Komodia's_Redirector_DLL_framework_guide.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://www.komodia.com/wiki/index.php?title=Talk:Komodia%27s_Redirector_DLL_framework_guide&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="../index.php@title=Komodia%2527s_Redirector_DLL_framework_guide&amp;action=edit.html" primary="1" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="../index.php@title=Komodia%2527s_Redirector_DLL_framework_guide&amp;action=history.html" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="../index.php@title=Special%253AUserLogin&amp;returnto=Komodia%2527s+Redirector+DLL+framework+guide.html" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+<a href="Main_Page.html" style="background-image: url(http://www.komodia.com/images/logo.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-Official-homepage"><a href="../../index.php.html">Official homepage</a></li>
+				<li id="n-recentchanges"><a href="Special%253ARecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://www.komodia.com/wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search Komodia [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special%253AWhatLinksHere/Komodia's_Redirector_DLL_framework_guide.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special%253ARecentChangesLinked/Komodia's_Redirector_DLL_framework_guide.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="Special%253ASpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="../index.php@title=Komodia%2527s_Redirector_DLL_framework_guide&amp;printable=yes.html" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+				<li id="t-permalink"><a href="../index.php@title=Komodia%2527s_Redirector_DLL_framework_guide&amp;oldid=1430.html" title="Permanent link to this revision of the page">Permanent link</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 5 February 2015, at 01:45.</li>
+		<li id="viewcount">This page has been accessed 36,748 times.</li>
+		<li id="privacy"><a href="Komodia%253APrivacy_policy.html" title="Komodia:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="Komodia%253AAbout.html" title="Komodia:About">About Komodia</a></li>
+		<li id="disclaimer"><a href="Komodia%253AGeneral_disclaimer.html" title="Komodia:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest"], null, true);
+}</script>
+<script>if(window.mw){
+mw.loader.state({"site":"ready"});
+}</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6898822-1");
+pageTracker._trackPageview();
+</script><!-- Piwik -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.komodia.com/" : "http://piwik.komodia.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 6);
+piwikTracker.setDocumentTitle("");
+piwikTracker.setIgnoreClasses("image");
+
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+/* ]]> */
+</script><noscript><p><img src="http://piwik.komodia.com/piwik.php?idsite=6" style="border:0" alt=""/></p></noscript>
+<!-- /Piwik --><!-- Served in 0.175 secs. --></body></html>

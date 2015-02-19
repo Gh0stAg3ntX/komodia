@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Komodia's Redirector API Guide - Komodia</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.20.4" />
+<link rel="shortcut icon" href="../../favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Komodia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="../api.php@action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="Komodia Atom feed" href="../index.php@title=Special%253ARecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="../load.php@debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;%252A.css" />
+<!--[if IE 6]><link rel="stylesheet" href="/wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: komod_wikidb:resourceloader:filter:minify-css:7:dffa96a73b1be9b0dae7e17005fcc939 */</style>
+
+<script src="../load.php@debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;%252A"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Komodia\'s_Redirector_API_Guide","wgTitle":"Komodia\'s Redirector API Guide","wgCurRevisionId":1439,"wgArticleId":40,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Komodia\'s_Redirector_API_Guide","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+/* cache key: komod_wikidb:resourceloader:filter:minify-js:7:c89fc005766e312c555f83b307d08d63 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Komodia_s_Redirector_API_Guide skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading"><span dir="auto">Komodia's Redirector API Guide</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From Komodia</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="Komodia's_Redirector_API_Guide.html#column-one">navigation</a>, <a href="Komodia's_Redirector_API_Guide.html#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page covers <a href="Komodia's_Redirector.html" title="Komodia's Redirector">Komodia's Redirector</a> API, this page should be read only after you worked with the Redirector and know how to control it, you can learn more on how to control the Redirector here <a href="Komodia's_Redirector_installation_guide.html" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide</a>.
+</p><p>This page also covers the samples that are provided with the Redirector.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Komodia's_Redirector_API_Guide.html#When_to_use"><span class="tocnumber">1</span> <span class="toctext">When to use</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Komodia's_Redirector_API_Guide.html#Samples"><span class="tocnumber">2</span> <span class="toctext">Samples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="Komodia's_Redirector_API_Guide.html#VB6"><span class="tocnumber">2.1</span> <span class="toctext">VB6</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="Komodia's_Redirector_API_Guide.html#VB.Net"><span class="tocnumber">2.2</span> <span class="toctext">VB.Net</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="Komodia's_Redirector_API_Guide.html#Redirector"><span class="tocnumber">2.2.1</span> <span class="toctext">Redirector</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="Komodia's_Redirector_API_Guide.html#Watchdog"><span class="tocnumber">2.2.2</span> <span class="toctext">Watchdog</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="Komodia's_Redirector_API_Guide.html#Traffic_handling_samples"><span class="tocnumber">2.2.3</span> <span class="toctext">Traffic handling samples</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="Komodia's_Redirector_API_Guide.html#C.23"><span class="tocnumber">2.3</span> <span class="toctext">C#</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="Komodia's_Redirector_API_Guide.html#Redirector_2"><span class="tocnumber">2.3.1</span> <span class="toctext">Redirector</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="Komodia's_Redirector_API_Guide.html#Watchdog_2"><span class="tocnumber">2.3.2</span> <span class="toctext">Watchdog</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="Komodia's_Redirector_API_Guide.html#Traffic_handling_samples_2"><span class="tocnumber">2.3.3</span> <span class="toctext">Traffic handling samples</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="Komodia's_Redirector_API_Guide.html#C.2B.2B"><span class="tocnumber">2.4</span> <span class="toctext">C++</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="Komodia's_Redirector_API_Guide.html#CRedirectorControl_class"><span class="tocnumber">2.4.1</span> <span class="toctext">CRedirectorControl class</span></a>
+<ul>
+<li class="toclevel-4 tocsection-14"><a href="Komodia's_Redirector_API_Guide.html#SetFlag"><span class="tocnumber">2.4.1.1</span> <span class="toctext">SetFlag</span></a></li>
+<li class="toclevel-4 tocsection-15"><a href="Komodia's_Redirector_API_Guide.html#GetFlag"><span class="tocnumber">2.4.1.2</span> <span class="toctext">GetFlag</span></a></li>
+<li class="toclevel-4 tocsection-16"><a href="Komodia's_Redirector_API_Guide.html#SetRedirectorEnabled"><span class="tocnumber">2.4.1.3</span> <span class="toctext">SetRedirectorEnabled</span></a></li>
+<li class="toclevel-4 tocsection-17"><a href="Komodia's_Redirector_API_Guide.html#IsRedirectorEnabled"><span class="tocnumber">2.4.1.4</span> <span class="toctext">IsRedirectorEnabled</span></a></li>
+<li class="toclevel-4 tocsection-18"><a href="Komodia's_Redirector_API_Guide.html#Proxy_control"><span class="tocnumber">2.4.1.5</span> <span class="toctext">Proxy control</span></a>
+<ul>
+<li class="toclevel-5 tocsection-19"><a href="Komodia's_Redirector_API_Guide.html#ClearProxyInformation"><span class="tocnumber">2.4.1.5.1</span> <span class="toctext">ClearProxyInformation</span></a></li>
+<li class="toclevel-5 tocsection-20"><a href="Komodia's_Redirector_API_Guide.html#GetProxyInformation"><span class="tocnumber">2.4.1.5.2</span> <span class="toctext">GetProxyInformation</span></a></li>
+<li class="toclevel-5 tocsection-21"><a href="Komodia's_Redirector_API_Guide.html#SetProxyInformation"><span class="tocnumber">2.4.1.5.3</span> <span class="toctext">SetProxyInformation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4 tocsection-22"><a href="Komodia's_Redirector_API_Guide.html#Items"><span class="tocnumber">2.4.1.6</span> <span class="toctext">Items</span></a>
+<ul>
+<li class="toclevel-5 tocsection-23"><a href="Komodia's_Redirector_API_Guide.html#DeleteItem"><span class="tocnumber">2.4.1.6.1</span> <span class="toctext">DeleteItem</span></a></li>
+<li class="toclevel-5 tocsection-24"><a href="Komodia's_Redirector_API_Guide.html#AddItem"><span class="tocnumber">2.4.1.6.2</span> <span class="toctext">AddItem</span></a></li>
+<li class="toclevel-5 tocsection-25"><a href="Komodia's_Redirector_API_Guide.html#GetItems"><span class="tocnumber">2.4.1.6.3</span> <span class="toctext">GetItems</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4 tocsection-26"><a href="Komodia's_Redirector_API_Guide.html#TakeAction"><span class="tocnumber">2.4.1.7</span> <span class="toctext">TakeAction</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-27"><a href="Komodia's_Redirector_API_Guide.html#Direct"><span class="tocnumber">2.4.2</span> <span class="toctext">Direct</span></a>
+<ul>
+<li class="toclevel-4 tocsection-28"><a href="Komodia's_Redirector_API_Guide.html#API"><span class="tocnumber">2.4.2.1</span> <span class="toctext">API</span></a></li>
+<li class="toclevel-4 tocsection-29"><a href="Komodia's_Redirector_API_Guide.html#Header_and_cookies"><span class="tocnumber">2.4.2.2</span> <span class="toctext">Header and cookies</span></a></li>
+<li class="toclevel-4 tocsection-30"><a href="Komodia's_Redirector_API_Guide.html#Proxy"><span class="tocnumber">2.4.2.3</span> <span class="toctext">Proxy</span></a></li>
+<li class="toclevel-4 tocsection-31"><a href="Komodia's_Redirector_API_Guide.html#Traffic_handling_samples_3"><span class="tocnumber">2.4.2.4</span> <span class="toctext">Traffic handling samples</span></a></li>
+<li class="toclevel-4 tocsection-32"><a href="Komodia's_Redirector_API_Guide.html#Ad_inject_with_HTTP_Parser"><span class="tocnumber">2.4.2.5</span> <span class="toctext">Ad inject with HTTP Parser</span></a></li>
+<li class="toclevel-4 tocsection-33"><a href="Komodia's_Redirector_API_Guide.html#Ad_inject_with_ad_injector"><span class="tocnumber">2.4.2.6</span> <span class="toctext">Ad inject with ad injector</span></a></li>
+<li class="toclevel-4 tocsection-34"><a href="Komodia's_Redirector_API_Guide.html#Ad_injection_.28using_service_instead_of_console.29"><span class="tocnumber">2.4.2.7</span> <span class="toctext">Ad injection (using service instead of console)</span></a>
+<ul>
+<li class="toclevel-5 tocsection-35"><a href="Komodia's_Redirector_API_Guide.html#Compiling"><span class="tocnumber">2.4.2.7.1</span> <span class="toctext">Compiling</span></a></li>
+<li class="toclevel-5 tocsection-36"><a href="Komodia's_Redirector_API_Guide.html#Installing"><span class="tocnumber">2.4.2.7.2</span> <span class="toctext">Installing</span></a></li>
+<li class="toclevel-5 tocsection-37"><a href="Komodia's_Redirector_API_Guide.html#Uninstalling"><span class="tocnumber">2.4.2.7.3</span> <span class="toctext">Uninstalling</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-38"><a href="Komodia's_Redirector_API_Guide.html#DLL"><span class="tocnumber">2.4.3</span> <span class="toctext">DLL</span></a>
+<ul>
+<li class="toclevel-4 tocsection-39"><a href="Komodia's_Redirector_API_Guide.html#RedirectorControlDLL"><span class="tocnumber">2.4.3.1</span> <span class="toctext">RedirectorControlDLL</span></a></li>
+<li class="toclevel-4 tocsection-40"><a href="Komodia's_Redirector_API_Guide.html#TestControlDLL"><span class="tocnumber">2.4.3.2</span> <span class="toctext">TestControlDLL</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-41"><a href="Komodia's_Redirector_API_Guide.html#LSP_Installer_DLL_Control"><span class="tocnumber">2.5</span> <span class="toctext">LSP Installer DLL Control</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-42"><a href="Komodia's_Redirector_API_Guide.html#Starting_and_shutting_down_the_service"><span class="tocnumber">3</span> <span class="toctext">Starting and shutting down the service</span></a>
+<ul>
+<li class="toclevel-2 tocsection-43"><a href="Komodia's_Redirector_API_Guide.html#Service_start"><span class="tocnumber">3.1</span> <span class="toctext">Service start</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="Komodia's_Redirector_API_Guide.html#Using_SCM"><span class="tocnumber">3.2</span> <span class="toctext">Using SCM</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="Komodia's_Redirector_API_Guide.html#Using_COM"><span class="tocnumber">3.3</span> <span class="toctext">Using COM</span></a>
+<ul>
+<li class="toclevel-3 tocsection-46"><a href="Komodia's_Redirector_API_Guide.html#Shutting_down"><span class="tocnumber">3.3.1</span> <span class="toctext">Shutting down</span></a></li>
+<li class="toclevel-3 tocsection-47"><a href="Komodia's_Redirector_API_Guide.html#Starting_up"><span class="tocnumber">3.3.2</span> <span class="toctext">Starting up</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-48"><a href="Komodia's_Redirector_API_Guide.html#API_2"><span class="tocnumber">4</span> <span class="toctext">API</span></a>
+<ul>
+<li class="toclevel-2 tocsection-49"><a href="Komodia's_Redirector_API_Guide.html#DataTable"><span class="tocnumber">4.1</span> <span class="toctext">DataTable</span></a>
+<ul>
+<li class="toclevel-3 tocsection-50"><a href="Komodia's_Redirector_API_Guide.html#Bulk_methods"><span class="tocnumber">4.1.1</span> <span class="toctext">Bulk methods</span></a>
+<ul>
+<li class="toclevel-4 tocsection-51"><a href="Komodia's_Redirector_API_Guide.html#BulkAdd"><span class="tocnumber">4.1.1.1</span> <span class="toctext">BulkAdd</span></a></li>
+<li class="toclevel-4 tocsection-52"><a href="Komodia's_Redirector_API_Guide.html#BulkGet"><span class="tocnumber">4.1.1.2</span> <span class="toctext">BulkGet</span></a></li>
+<li class="toclevel-4 tocsection-53"><a href="Komodia's_Redirector_API_Guide.html#BulkErase"><span class="tocnumber">4.1.1.3</span> <span class="toctext">BulkErase</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-54"><a href="Komodia's_Redirector_API_Guide.html#AddString"><span class="tocnumber">4.1.2</span> <span class="toctext">AddString</span></a></li>
+<li class="toclevel-3 tocsection-55"><a href="Komodia's_Redirector_API_Guide.html#AddLong"><span class="tocnumber">4.1.3</span> <span class="toctext">AddLong</span></a></li>
+<li class="toclevel-3 tocsection-56"><a href="Komodia's_Redirector_API_Guide.html#AddStringIdx"><span class="tocnumber">4.1.4</span> <span class="toctext">AddStringIdx</span></a></li>
+<li class="toclevel-3 tocsection-57"><a href="Komodia's_Redirector_API_Guide.html#AddLongIdx"><span class="tocnumber">4.1.5</span> <span class="toctext">AddLongIdx</span></a></li>
+<li class="toclevel-3 tocsection-58"><a href="Komodia's_Redirector_API_Guide.html#Clear"><span class="tocnumber">4.1.6</span> <span class="toctext">Clear</span></a></li>
+<li class="toclevel-3 tocsection-59"><a href="Komodia's_Redirector_API_Guide.html#Commit"><span class="tocnumber">4.1.7</span> <span class="toctext">Commit</span></a></li>
+<li class="toclevel-3 tocsection-60"><a href="Komodia's_Redirector_API_Guide.html#DoesLongExists"><span class="tocnumber">4.1.8</span> <span class="toctext">DoesLongExists</span></a></li>
+<li class="toclevel-3 tocsection-61"><a href="Komodia's_Redirector_API_Guide.html#DoesStringExists"><span class="tocnumber">4.1.9</span> <span class="toctext">DoesStringExists</span></a></li>
+<li class="toclevel-3 tocsection-62"><a href="Komodia's_Redirector_API_Guide.html#EraseLong"><span class="tocnumber">4.1.10</span> <span class="toctext">EraseLong</span></a></li>
+<li class="toclevel-3 tocsection-63"><a href="Komodia's_Redirector_API_Guide.html#EraseString"><span class="tocnumber">4.1.11</span> <span class="toctext">EraseString</span></a></li>
+<li class="toclevel-3 tocsection-64"><a href="Komodia's_Redirector_API_Guide.html#GetLong"><span class="tocnumber">4.1.12</span> <span class="toctext">GetLong</span></a></li>
+<li class="toclevel-3 tocsection-65"><a href="Komodia's_Redirector_API_Guide.html#GetString"><span class="tocnumber">4.1.13</span> <span class="toctext">GetString</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-66"><a href="Komodia's_Redirector_API_Guide.html#DataController"><span class="tocnumber">4.2</span> <span class="toctext">DataController</span></a>
+<ul>
+<li class="toclevel-3 tocsection-67"><a href="Komodia's_Redirector_API_Guide.html#GetTable"><span class="tocnumber">4.2.1</span> <span class="toctext">GetTable</span></a>
+<ul>
+<li class="toclevel-4 tocsection-68"><a href="Komodia's_Redirector_API_Guide.html#TCP_Outgoing_tables"><span class="tocnumber">4.2.1.1</span> <span class="toctext">TCP Outgoing tables</span></a></li>
+<li class="toclevel-4 tocsection-69"><a href="Komodia's_Redirector_API_Guide.html#UDP_Outgoing_tables"><span class="tocnumber">4.2.1.2</span> <span class="toctext">UDP Outgoing tables</span></a></li>
+<li class="toclevel-4 tocsection-70"><a href="Komodia's_Redirector_API_Guide.html#TCP_Incoming_tables"><span class="tocnumber">4.2.1.3</span> <span class="toctext">TCP Incoming tables</span></a></li>
+<li class="toclevel-4 tocsection-71"><a href="Komodia's_Redirector_API_Guide.html#Hard_include.2Fexclude"><span class="tocnumber">4.2.1.4</span> <span class="toctext">Hard include/exclude</span></a></li>
+<li class="toclevel-4 tocsection-72"><a href="Komodia's_Redirector_API_Guide.html#Flags"><span class="tocnumber">4.2.1.5</span> <span class="toctext">Flags</span></a></li>
+<li class="toclevel-4 tocsection-73"><a href="Komodia's_Redirector_API_Guide.html#Global_proxy"><span class="tocnumber">4.2.1.6</span> <span class="toctext">Global proxy</span></a></li>
+<li class="toclevel-4 tocsection-74"><a href="Komodia's_Redirector_API_Guide.html#Proxy_per_application"><span class="tocnumber">4.2.1.7</span> <span class="toctext">Proxy per application</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-75"><a href="Komodia's_Redirector_API_Guide.html#Clear_2"><span class="tocnumber">4.2.2</span> <span class="toctext">Clear</span></a></li>
+<li class="toclevel-3 tocsection-76"><a href="Komodia's_Redirector_API_Guide.html#Load"><span class="tocnumber">4.2.3</span> <span class="toctext">Load</span></a>
+<ul>
+<li class="toclevel-4 tocsection-77"><a href="Komodia's_Redirector_API_Guide.html#Text_load"><span class="tocnumber">4.2.3.1</span> <span class="toctext">Text load</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-78"><a href="Komodia's_Redirector_API_Guide.html#Save"><span class="tocnumber">4.2.4</span> <span class="toctext">Save</span></a>
+<ul>
+<li class="toclevel-4 tocsection-79"><a href="Komodia's_Redirector_API_Guide.html#Text_save"><span class="tocnumber">4.2.4.1</span> <span class="toctext">Text save</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-80"><a href="Komodia's_Redirector_API_Guide.html#StopProcess"><span class="tocnumber">4.2.5</span> <span class="toctext">StopProcess</span></a></li>
+<li class="toclevel-3 tocsection-81"><a href="Komodia's_Redirector_API_Guide.html#BroadcastChange"><span class="tocnumber">4.2.6</span> <span class="toctext">BroadcastChange</span></a></li>
+<li class="toclevel-3 tocsection-82"><a href="Komodia's_Redirector_API_Guide.html#UpdateLSPNow"><span class="tocnumber">4.2.7</span> <span class="toctext">UpdateLSPNow</span></a></li>
+<li class="toclevel-3 tocsection-83"><a href="Komodia's_Redirector_API_Guide.html#KillAllConnections"><span class="tocnumber">4.2.8</span> <span class="toctext">KillAllConnections</span></a></li>
+<li class="toclevel-3 tocsection-84"><a href="Komodia's_Redirector_API_Guide.html#GetInstaceID"><span class="tocnumber">4.2.9</span> <span class="toctext">GetInstaceID</span></a></li>
+<li class="toclevel-3 tocsection-85"><a href="Komodia's_Redirector_API_Guide.html#SetEnable"><span class="tocnumber">4.2.10</span> <span class="toctext">SetEnable</span></a></li>
+<li class="toclevel-3 tocsection-86"><a href="Komodia's_Redirector_API_Guide.html#IsEnabled"><span class="tocnumber">4.2.11</span> <span class="toctext">IsEnabled</span></a></li>
+<li class="toclevel-3 tocsection-87"><a href="Komodia's_Redirector_API_Guide.html#DownloadFile"><span class="tocnumber">4.2.12</span> <span class="toctext">DownloadFile</span></a></li>
+<li class="toclevel-3 tocsection-88"><a href="Komodia's_Redirector_API_Guide.html#IsLSPInstalled"><span class="tocnumber">4.2.13</span> <span class="toctext">IsLSPInstalled</span></a></li>
+<li class="toclevel-3 tocsection-89"><a href="Komodia's_Redirector_API_Guide.html#ForceWFPUpdate"><span class="tocnumber">4.2.14</span> <span class="toctext">ForceWFPUpdate</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-90"><a href="Komodia's_Redirector_API_Guide.html#Quick_samples"><span class="tocnumber">5</span> <span class="toctext">Quick samples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-91"><a href="Komodia's_Redirector_API_Guide.html#Adding_applications_to_intercept"><span class="tocnumber">5.1</span> <span class="toctext">Adding applications to intercept</span></a></li>
+<li class="toclevel-2 tocsection-92"><a href="Komodia's_Redirector_API_Guide.html#Setting_intercepting_of_all_apps"><span class="tocnumber">5.2</span> <span class="toctext">Setting intercepting of all apps</span></a></li>
+<li class="toclevel-2 tocsection-93"><a href="Komodia's_Redirector_API_Guide.html#Adding_ports_to_intercept"><span class="tocnumber">5.3</span> <span class="toctext">Adding ports to intercept</span></a></li>
+<li class="toclevel-2 tocsection-94"><a href="Komodia's_Redirector_API_Guide.html#Proxy_settings"><span class="tocnumber">5.4</span> <span class="toctext">Proxy settings</span></a>
+<ul>
+<li class="toclevel-3 tocsection-95"><a href="Komodia's_Redirector_API_Guide.html#Setting_a_global_proxy_server"><span class="tocnumber">5.4.1</span> <span class="toctext">Setting a global proxy server</span></a></li>
+<li class="toclevel-3 tocsection-96"><a href="Komodia's_Redirector_API_Guide.html#Clearing_the_global_proxy_settings"><span class="tocnumber">5.4.2</span> <span class="toctext">Clearing the global proxy settings</span></a></li>
+<li class="toclevel-3 tocsection-97"><a href="Komodia's_Redirector_API_Guide.html#Setting_an_application_proxy_server"><span class="tocnumber">5.4.3</span> <span class="toctext">Setting an application proxy server</span></a></li>
+<li class="toclevel-3 tocsection-98"><a href="Komodia's_Redirector_API_Guide.html#Removing_an_application_proxy_server"><span class="tocnumber">5.4.4</span> <span class="toctext">Removing an application proxy server</span></a></li>
+<li class="toclevel-3 tocsection-99"><a href="Komodia's_Redirector_API_Guide.html#Clearing_all_application_proxies"><span class="tocnumber">5.4.5</span> <span class="toctext">Clearing all application proxies</span></a></li>
+<li class="toclevel-3 tocsection-100"><a href="Komodia's_Redirector_API_Guide.html#Getting_the_value_of_a_specific_application_proxy"><span class="tocnumber">5.4.6</span> <span class="toctext">Getting the value of a specific application proxy</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-101"><a href="Komodia's_Redirector_API_Guide.html#Setting.2FGetting_flag_value"><span class="tocnumber">5.5</span> <span class="toctext">Setting/Getting flag value</span></a></li>
+<li class="toclevel-2 tocsection-102"><a href="Komodia's_Redirector_API_Guide.html#Setting_a_custom_variable"><span class="tocnumber">5.6</span> <span class="toctext">Setting a custom variable</span></a></li>
+<li class="toclevel-2 tocsection-103"><a href="Komodia's_Redirector_API_Guide.html#Getting_a_custom_variable"><span class="tocnumber">5.7</span> <span class="toctext">Getting a custom variable</span></a></li>
+<li class="toclevel-2 tocsection-104"><a href="Komodia's_Redirector_API_Guide.html#Setting_a_DLL_to_load"><span class="tocnumber">5.8</span> <span class="toctext">Setting a DLL to load</span></a></li>
+<li class="toclevel-2 tocsection-105"><a href="Komodia's_Redirector_API_Guide.html#HTTP_header_manipulation"><span class="tocnumber">5.9</span> <span class="toctext">HTTP header manipulation</span></a>
+<ul>
+<li class="toclevel-3 tocsection-106"><a href="Komodia's_Redirector_API_Guide.html#Cache_control"><span class="tocnumber">5.9.1</span> <span class="toctext">Cache control</span></a></li>
+<li class="toclevel-3 tocsection-107"><a href="Komodia's_Redirector_API_Guide.html#Header_control"><span class="tocnumber">5.9.2</span> <span class="toctext">Header control</span></a></li>
+<li class="toclevel-3 tocsection-108"><a href="Komodia's_Redirector_API_Guide.html#Managing_the_header_tables"><span class="tocnumber">5.9.3</span> <span class="toctext">Managing the header tables</span></a>
+<ul>
+<li class="toclevel-4 tocsection-109"><a href="Komodia's_Redirector_API_Guide.html#Adding_field_to_modify.2Fdelete"><span class="tocnumber">5.9.3.1</span> <span class="toctext">Adding field to modify/delete</span></a></li>
+<li class="toclevel-4 tocsection-110"><a href="Komodia's_Redirector_API_Guide.html#Adding_a_custom_field"><span class="tocnumber">5.9.3.2</span> <span class="toctext">Adding a custom field</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-111"><a href="Komodia's_Redirector_API_Guide.html#SSH_connect"><span class="tocnumber">5.10</span> <span class="toctext">SSH connect</span></a></li>
+<li class="toclevel-2 tocsection-112"><a href="Komodia's_Redirector_API_Guide.html#Black.2Fwhite_list_module"><span class="tocnumber">5.11</span> <span class="toctext">Black/white list module</span></a>
+<ul>
+<li class="toclevel-3 tocsection-113"><a href="Komodia's_Redirector_API_Guide.html#Enabling_the_black.2Fwhite_list_module"><span class="tocnumber">5.11.1</span> <span class="toctext">Enabling the black/white list module</span></a></li>
+<li class="toclevel-3 tocsection-114"><a href="Komodia's_Redirector_API_Guide.html#Disabling_the_black.2Fwhite_list_module"><span class="tocnumber">5.11.2</span> <span class="toctext">Disabling the black/white list module</span></a></li>
+<li class="toclevel-3 tocsection-115"><a href="Komodia's_Redirector_API_Guide.html#Setting_the_module_to_whitelist_mode"><span class="tocnumber">5.11.3</span> <span class="toctext">Setting the module to whitelist mode</span></a></li>
+<li class="toclevel-3 tocsection-116"><a href="Komodia's_Redirector_API_Guide.html#Adding_exact_domains_to_the_list_.28black_or_white.29"><span class="tocnumber">5.11.4</span> <span class="toctext">Adding exact domains to the list (black or white)</span></a></li>
+<li class="toclevel-3 tocsection-117"><a href="Komodia's_Redirector_API_Guide.html#Adding_partial_domains_to_the_list_.28black_or_white.29"><span class="tocnumber">5.11.5</span> <span class="toctext">Adding partial domains to the list (black or white)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="When_to_use"> When to use </span></h1>
+<p>The API is used to control all the aspects of the <a href="Komodia's_Redirector.html" title="Komodia's Redirector">Komodia's Redirector</a> which you are currently doing using the PCController.exe
+</p><p>When deploying the SDK you can&#160;:
+</p>
+<ol><li> Use the API (which is detailed below) or
+</li><li> In case your settings are constant, you can set it up once and distribute the INI file with the settings when you install your product (more on the INI files and locations: <a href="Komodia's_Redirector_installation_guide.html#Settings_load_sequence" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#Settings_load_sequence</a>).
+</li></ol>
+<h1> <span class="mw-headline" id="Samples"> Samples </span></h1>
+<p>You can download the samples for: C++, VB6, VB.net,C# from  <a class="external text" href="../../RedirectorAPI.zip">Redirector API samples</a>
+</p><p><b>Important</b> these samples are for the trial version, if you are an existing client you should download the samples from the link provided for you by Komodia after the purchase.
+</p>
+<h2> <span class="mw-headline" id="VB6"> VB6 </span></h2>
+<p>You will find the VB6 project inside the directory VB6, it's the console we give away with the trials to control the Redirector, it can be quite complex so we recommend to read how the API work or view the VB.Net sample which is more specific.
+</p>
+<h2> <span class="mw-headline" id="VB.Net"> VB.Net </span></h2>
+<p>You will find the VB.Net sample inside the directory C#, this is a small sample that just connects to the Redirector and set the DLL framework. This sample is only a base, you can use the C# code to extend it.
+</p>
+<h3> <span class="mw-headline" id="Redirector"> Redirector </span></h3>
+<p>This is the main Redirector control sample, inside there are number of methods to control the Redirector:
+</p>
+<ul><li> Clear - Clears the redirector data.
+</li><li> Load - Loads the data from file.
+</li><li> Save - Saves the data to a file.
+</li><li> Add ports - Adds ports to the interception list, this can also be used to add applications or IPs, just change the line:
+</li></ul>
+<pre>
+tbl = dc.GetTable(PCProxyLib._Tables.dtPort)
+</pre>
+<p>To:
+</p>
+<pre>
+tbl = dc.GetTable(PCProxyLib._Tables.dtApplications)
+</pre>
+<ul><li> Set proxy - Sets a proxy to redirect intercepted traffic to.
+</li><li> Clear proxy - Clear the proxy settings.
+</li><li> Save custom data - Shows the user how to save custom data to the Redirector data storage.
+</li><li> GetCustomData (Internal function) - Shows how to retrieve the custom data.
+</li><li> Connect SSH - Shows how to open a SSH channel (<a href="http://www.komodia.com/wiki/index.php?title=Komodia%27s_Redirector_SSH_component&amp;action=edit&amp;redlink=1" class="new" title="Komodia's Redirector SSH component (page does not exist)">Komodia's Redirector SSH component</a> is an optional component which is needed to be requested during the trial)
+</li><li> Kill SSH - Closes the SSH channel.
+</li><li> Set DLL - Shows how to set a custom DLL.
+</li></ul>
+<h3> <span class="mw-headline" id="Watchdog"> Watchdog </span></h3>
+<p>This is the sample to control the <a href="Komodia's_Watchdog.html" title="Komodia's Watchdog">Komodia's Watchdog</a> (This is an optional module)
+</p>
+<h3> <span class="mw-headline" id="Traffic_handling_samples"> Traffic handling samples </span></h3>
+<p>This samples shows how to use the <a href="Komodia's_Redirector_COM_framework_guide.html" title="Komodia's Redirector COM framework guide">Komodia's Redirector COM framework guide</a>.
+</p>
+<h2> <span class="mw-headline" id="C.23"> C# </span></h2>
+<p>You will find the VB.Net sample inside the directory C#, this is a small sample that just connects to the Redirector and set the DLL framework. This sample is only a base, you can use the VB.Net code to extend it.
+</p>
+<h3> <span class="mw-headline" id="Redirector_2"> Redirector </span></h3>
+<p>This is the main Redirector control sample, inside there are number of methods to control the Redirector:
+</p>
+<ul><li> Clear - Clears the redirector data.
+</li><li> Load - Loads the data from file.
+</li><li> Save - Saves the data to a file.
+</li><li> Add ports - Adds ports to the interception list, this can also be used to add applications or IPs, just change the line:
+</li></ul>
+<pre>
+tbl = dc.GetTable(PCProxyLib._Tables.dtPort)
+</pre>
+<p>To:
+</p>
+<pre>
+tbl = dc.GetTable(PCProxyLib._Tables.dtApplications)
+</pre>
+<ul><li> Set proxy - Sets a proxy to redirect intercepted traffic to.
+</li><li> Clear proxy - Clear the proxy settings.
+</li><li> Save custom data - Shows the user how to save custom data to the Redirector data storage.
+</li><li> GetCustomData (Internal function) - Shows how to retrieve the custom data.
+</li><li> Connect SSH - Shows how to open a SSH channel (<a href="http://www.komodia.com/wiki/index.php?title=Komodia%27s_Redirector_SSH_component&amp;action=edit&amp;redlink=1" class="new" title="Komodia's Redirector SSH component (page does not exist)">Komodia's Redirector SSH component</a> is an optional component which is needed to be requested during the trial)
+</li><li> Kill SSH - Closes the SSH channel.
+</li><li> Set DLL - Shows how to set a custom DLL.
+</li></ul>
+<h3> <span class="mw-headline" id="Watchdog_2"> Watchdog </span></h3>
+<p>This is the sample to control the <a href="Komodia's_Watchdog.html" title="Komodia's Watchdog">Komodia's Watchdog</a> (This is an optional module)
+</p>
+<h3> <span class="mw-headline" id="Traffic_handling_samples_2"> Traffic handling samples </span></h3>
+<p>This samples shows how to use the <a href="Komodia's_Redirector_COM_framework_guide.html" title="Komodia's Redirector COM framework guide">Komodia's Redirector COM framework guide</a>.
+</p>
+<h2> <span class="mw-headline" id="C.2B.2B"> C++ </span></h2>
+<p>The C++ sample contains two folders: one for direct usage of the code (you embedd the class) and one to use via a DLL.
+</p>
+<h3> <span class="mw-headline" id="CRedirectorControl_class"> CRedirectorControl class </span></h3>
+<p>This is the main class used to control the Redirector with direct and DLL method, this is the header:
+</p>
+<pre>
+class CRedirectorControl  
+{
+public:
+	//Set a flag
+	static std::wstring SetFlag(const std::wstring&amp; rFlagName,
+				    const std::wstring&amp; rParameter);
+
+	//Get the flag
+	static std::wstring GetFlag(const std::wstring&amp; rFlagName,
+				    std::wstring&amp; rParameter);
+
+	//Set the redirector status
+	static std::wstring SetRedirectorEnabled(bool bEnabled);
+
+	//Is the redirector enabled
+	static std::wstring IsRedirectorEnabled(bool&amp; rEnabled);
+
+	//Clear the proxy
+	static std::wstring ClearProxyInformation();
+
+	//Get the proxy from the redirector
+	static std::wstring GetProxyInformation(std::string&amp; rIP,
+						unsigned short&amp; rPort,
+						std::string&amp; rUsername,
+						std::string&amp; rPassword,
+						_RD_ProxyType&amp; rType);
+
+	//Set the proxy for the redirector
+	static std::wstring SetProxyInformation(const std::string&amp; rIP,
+						unsigned short usPort,
+						const std::string&amp; rUsername,
+						const std::string&amp; rPassword,
+						_RD_ProxyType aType);
+
+	//Delete an item
+	static std::wstring DeleteItem(_RD_ItemType aItem,
+				       const std::wstring&amp; rItem);
+
+	//Get an item
+	static std::wstring GetItems(_RD_ItemType aItem);
+
+	//Add an item
+	static std::wstring AddItem(_RD_ItemType aItem,
+				    const std::wstring&amp; rItem);
+
+	//Do a clear/load/save
+	static std::wstring TakeAction(_RD_ActionType aType);
+
+	//Ctor and Dtor
+	CRedirectorControl();
+	virtual ~CRedirectorControl();
+};
+</pre>
+<p>The return value of each function is string which denotes if the operation was successful or not:
+</p><p>Success - The string will be empty.
+</p><p>Error - The string will contain the error.
+</p>
+<h4> <span class="mw-headline" id="SetFlag"> SetFlag </span></h4>
+<p>This method sets a flag:
+</p><p>rFlagName - Flag name (flag list will be later in this page)
+</p><p>rParameter - Value to Set.
+</p>
+<h4> <span class="mw-headline" id="GetFlag"> GetFlag </span></h4>
+<p>This method gets the value of a flag:
+</p><p>rFlagName - Flag name.
+</p><p>rParameter - Will contain the value of the flag, if the flag doesn't exists this parameter will remain empty.
+</p>
+<h4> <span class="mw-headline" id="SetRedirectorEnabled"> SetRedirectorEnabled </span></h4>
+<p>This method enable or disable the redirector: (to learn more about disable/enable goto: <a href="Komodia's_Redirector_installation_guide.html#Enable.2Fdisable" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#Enable.2Fdisable</a>.
+</p><p>bEnabled - True for enable, False for disable.
+</p>
+<h4> <span class="mw-headline" id="IsRedirectorEnabled"> IsRedirectorEnabled </span></h4>
+<p>This method queries the state of the Redirector:
+</p><p>rEnabled - Will contain the value denoting if the Redirector is enabled or disabled.
+</p>
+<h4> <span class="mw-headline" id="Proxy_control"> Proxy control </span></h4>
+<p>You can learn more about proxies here: <a href="Komodia's_Redirector_installation_guide.html#Proxy_control" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#Proxy_control</a>.
+</p><p>Proxy type is chosen with this enum:
+</p>
+<pre>
+typedef enum _RD_ProxyType
+{
+	ptHTTP,
+	ptHTTPConnect,
+	ptHTTPConnectSSL,
+	ptHTTPHybrid,
+	ptHTTPHybridSSL,
+	ptSocks4,
+	ptSocks5,
+	ptNone
+} RD_ProxyType;
+</pre>
+<h5> <span class="mw-headline" id="ClearProxyInformation"> ClearProxyInformation </span></h5>
+<p>This method will clear proxy information.
+</p>
+<h5> <span class="mw-headline" id="GetProxyInformation"> GetProxyInformation </span></h5>
+<p>This method will retreive the current proxy settings:
+</p><p>rIP - Will contain the IP of the proxy.
+</p><p>rPort - Will contain the port of the proxy.
+</p><p>rUsername - Will contain the username of the proxy.
+</p><p>rPassword- Will contain the password of the proxy.
+</p><p>rType- Will contain the type of the proxy.
+</p>
+<h5> <span class="mw-headline" id="SetProxyInformation"> SetProxyInformation </span></h5>
+<p>This method will set the proxy settings:
+</p><p>rIP - IP of the proxy.
+</p><p>rPort - Port of the proxy.
+</p><p>rUsername - Username of the proxy.
+</p><p>rPassword- Password of the proxy.
+</p><p>rType- Type of the proxy.
+</p>
+<h4> <span class="mw-headline" id="Items"> Items </span></h4>
+<p>Item control are used to add, get and remove Applications, ports and IPs. The type is controlled via this enum:
+</p>
+<pre>
+typedef enum _RD_ItemType
+{
+    itApplication,
+    itApplicationInv,
+    itPort,
+    itPortInv,
+    itIP,
+    itIPInv,
+    itHardExclude = 9,
+    itHardInclude,
+    itApplicationUDP,
+    itPortUDP,
+    itIPUDP,
+    itApplicationInvUDP,
+    itPortInvUDP,
+    itIPInvUDP,
+    itApplicationTCPI,
+    itPortTCPI,
+    itIPTCPI,
+    itApplicationInvTCPI,
+    itPortInvTCPI,
+    itIPInvTCPI
+} RD_ItemType;</pre>
+<ul><li>The members with the "Inv" at the end denote the list to never intercept (right pane in the PCController when trying to set the interception rules: <a href="Komodia's_Redirector_installation_guide.html#Rules_type" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#Rules_type</a>.
+</li><li> Members that end with UDP are for the UDP interception module.
+</li><li> Members that end with TCPI are for the incoming TCP interception module.
+</li></ul>
+<p>All the methods are case insensitive.
+</p>
+<h5> <span class="mw-headline" id="DeleteItem"> DeleteItem </span></h5>
+<p>This method deletes an item from the list:
+</p><p>aItem - Item type.
+</p><p>rItem - Item to delete.
+</p>
+<h5> <span class="mw-headline" id="AddItem"> AddItem </span></h5>
+<p>This method adds an item to the list:
+</p><p>aItem - Item type.
+</p><p>rItem - Item to delete.
+</p>
+<h5> <span class="mw-headline" id="GetItems"> GetItems </span></h5>
+<p>This method will get all the items inside one of the lists, the data will be delimited by a comma (,):
+</p><p>aItem - Item type.
+</p><p>Return value - The delimited string.
+</p>
+<h4> <span class="mw-headline" id="TakeAction"> TakeAction </span></h4>
+<p>This method clears, saves and loads data according to this enum:
+</p>
+<pre>
+typedef enum _RD_ActionType
+{
+	atSave,
+	atLoad,
+	atClear
+} RD_ActionType;
+</pre>
+<p>aType - Action type.
+</p>
+<h3> <span class="mw-headline" id="Direct"> Direct </span></h3>
+<p>The direct samples is using the class directly to control the Redirector, please note that you must initialize COM in the thread that you are using to control the Redirector.
+</p>
+<h4> <span class="mw-headline" id="API"> API </span></h4>
+<p>This sample shows how to set an application to intercept, save and clear the data.
+</p>
+<h4> <span class="mw-headline" id="Header_and_cookies"> Header and cookies </span></h4>
+<p>This sample shows how to set the headers filtering mechanism and regex cookie processing.
+</p>
+<h4> <span class="mw-headline" id="Proxy"> Proxy </span></h4>
+<p>This samples shows how to set a proxy.
+</p>
+<h4> <span class="mw-headline" id="Traffic_handling_samples_3"> Traffic handling samples </span></h4>
+<p>This samples shows how to use the <a href="Komodia's_Redirector_COM_framework_guide.html" title="Komodia's Redirector COM framework guide">Komodia's Redirector COM framework guide</a>.
+</p>
+<h4> <span class="mw-headline" id="Ad_inject_with_HTTP_Parser"> Ad inject with HTTP Parser </span></h4>
+<p>This sample shows how to inject an item into a HTML page using the HTTP Parser.
+</p>
+<h4> <span class="mw-headline" id="Ad_inject_with_ad_injector"> Ad inject with ad injector </span></h4>
+<p>This sample shows how to inject an item into a HTML page using the HTTP Parser and ad injector, it will be a little bit faster and a little bit more complex.
+</p>
+<h4> <span class="mw-headline" id="Ad_injection_.28using_service_instead_of_console.29"> Ad injection (using service instead of console) </span></h4>
+<p>Service that does ad injection (based on the Ad inject with ad injector sample).
+</p>
+<h5> <span class="mw-headline" id="Compiling"> Compiling </span></h5>
+<ul><li> The main project is InjectorServiceExe
+</li><li> The define INJECTION_STRING under KomodiaInject.h sets the data to inject.
+</li><li> The define INJECTION_DOMAIN under KomodiaInject.h sets the domain to inject to.
+</li><li> The optional define INJECTION_FILE under KomodiaInject.h sets the file name to be read, the file will be loaded from the path of the service, and each line will contain a domain.
+</li></ul>
+<h5> <span class="mw-headline" id="Installing"> Installing </span></h5>
+<p>From UAC enabled command prompt (on Windows Vista and above) run:
+</p>
+<pre>
+InjectorServiceExe install auto
+sc start InjectorService
+</pre>
+<p>It will be running after a reboot since it's installed as automatic start.
+</p>
+<h5> <span class="mw-headline" id="Uninstalling"> Uninstalling </span></h5>
+<p>From UAC enabled command prompt (on Windows Vista and above) run:
+</p>
+<pre>
+sc stop InjectorService
+InjectorServiceExe uninstall
+</pre>
+<h3> <span class="mw-headline" id="DLL"> DLL </span></h3>
+<p>The DLL control is good if you plan to use it from a non C++ language, but does supports DLLs (such as Delphi, although it's possible to use COM directly from Delphi)
+</p>
+<h4> <span class="mw-headline" id="RedirectorControlDLL"> RedirectorControlDLL </span></h4>
+<p>Is the project to compile the DLL.
+</p>
+<h4> <span class="mw-headline" id="TestControlDLL"> TestControlDLL </span></h4>
+<p>Is the sample of how to interface with the DLL.
+</p>
+<h2> <span class="mw-headline" id="LSP_Installer_DLL_Control"> LSP Installer DLL Control </span></h2>
+<p>This sample is given only after purchase of the SDK and it contains code to install/uninstall the LSP and service. It also shows to get list of all installed LSPs.
+</p>
+<h1> <span class="mw-headline" id="Starting_and_shutting_down_the_service"> Starting and shutting down the service </span></h1>
+<h2> <span class="mw-headline" id="Service_start"> Service start </span></h2>
+<p>When starting the service it's important to wait until it's in started mode before making any COM calls.
+</p>
+<h2> <span class="mw-headline" id="Using_SCM"> Using SCM </span></h2>
+<p>The service can be stopped and started via the service control manager, or via the SCM WinAPI, in order to do so the controlling application must have administrative privileges.
+</p>
+<h2> <span class="mw-headline" id="Using_COM"> Using COM </span></h2>
+<p>When using the COM the controlling application doesn't have to have administrating privileges.
+</p>
+<h3> <span class="mw-headline" id="Shutting_down"> Shutting down </span></h3>
+<p>To shut down the proxy you can call the COM method StopProcess
+</p>
+<pre>
+dim dt as new DataController
+dt.StopProcess
+</pre>
+<h3> <span class="mw-headline" id="Starting_up"> Starting up </span></h3>
+<p>Any COM call will start the service, you need to make sure that you wait until the service is in started state before making any further COM calls, also the COM call that brings up the service may fail due to timeout, so make sure you capture and ignore any error you encounter
+</p>
+<pre>
+dim dt as new DataController
+
+'Bring up the service
+dim tb as DataTable
+set tb=dt.GetTable(dtApplications)
+
+'Here will be code that waits until the service is in started mode using the SCM WinAPI
+
+</pre>
+<h1> <span class="mw-headline" id="API_2"> API </span></h1>
+<p>The API is built somewhat like a database, it has tables and containers (which can be regarded to as tables inside tables) which allows the user to set and receive information.
+</p>
+<h2> <span class="mw-headline" id="DataTable"> DataTable </span></h2>
+<p>This class represents a table inside the Redirector, it's where all the data is stored.
+</p><p>The class has several important methods to work with data:
+</p>
+<h3> <span class="mw-headline" id="Bulk_methods"> Bulk methods </span></h3>
+<p>The data structure of bulk data is:
+</p>
+<ul><li> For single data table (like Applications, ports, IPs) it will look like this: iexplore.exe, firefox.exe
+</li><li> For double data tables (like flags which consists of index and data) it will look like this: flagname, flagvalue
+</li></ul>
+<h4> <span class="mw-headline" id="BulkAdd"> BulkAdd </span></h4>
+<p>This methods add data in bulk from the table.
+</p><p>bData - The data to add delimited by comma.
+</p>
+<h4> <span class="mw-headline" id="BulkGet"> BulkGet </span></h4>
+<p>This methods gets data in bulk to the table.
+</p><p>bData - The bulk data received.
+</p>
+<h4> <span class="mw-headline" id="BulkErase"> BulkErase</span></h4>
+<p>This methods erases data in bulk from the table.
+</p><p>bData - The bulk data to be erased.
+</p>
+<h3> <span class="mw-headline" id="AddString"> AddString </span></h3>
+<p>This method will add a string to the table, you can add a number as a string, at the end all data is stored as strings.
+</p><p>bString - String to add.
+</p>
+<h3> <span class="mw-headline" id="AddLong"> AddLong </span></h3>
+<p>This method will add a number to the table.
+</p><p>lData - Number to add.
+</p>
+<h3> <span class="mw-headline" id="AddStringIdx"> AddStringIdx </span></h3>
+<p>This method will add a string to the table that is build with index and data (like the flags table):
+</p><p>bIndex - Index of the data.
+bStr - String of the data.
+</p>
+<h3> <span class="mw-headline" id="AddLongIdx"> AddLongIdx </span></h3>
+<p>This method will add a number to the table that is build with index and data (like the flags table):
+</p><p>bIndex - Index of the data.
+bStr - String of the data.
+</p>
+<h3> <span class="mw-headline" id="Clear"> Clear </span></h3>
+<p>This method clears all data in the table.
+</p>
+<h3> <span class="mw-headline" id="Commit"> Commit </span></h3>
+<p>This method commits the data to the table, all changes are not saved to the table until then. (Keep in mind you will also have to save the data to file later in the process using CDataController::Save)
+</p>
+<h3> <span class="mw-headline" id="DoesLongExists"> DoesLongExists </span></h3>
+<p>This method checks if a number exists in the table:
+</p><p>lData - The number to search.
+</p><p>Return value - 1 for there, 0 for not found.
+</p>
+<h3> <span class="mw-headline" id="DoesStringExists"> DoesStringExists </span></h3>
+<p>This method checks if a string exists in the table:
+</p><p>bString- The string to search.
+</p><p>Return value - 1 for there, 0 for not found.
+</p>
+<h3> <span class="mw-headline" id="EraseLong"> EraseLong </span></h3>
+<p>This method erases a number entry from the table.
+</p><p>lData - The number to erase.
+</p>
+<h3> <span class="mw-headline" id="EraseString"> EraseString </span></h3>
+<p>This method erases a string entry from the table.
+</p><p>bString- The string to erase.
+</p>
+<h3> <span class="mw-headline" id="GetLong"> GetLong </span></h3>
+<p>This method retrieves the numeral data associated with a an index.
+</p><p>bString - Index of the data.
+</p><p>Return value - The data (0 if it's not there)
+</p>
+<h3> <span class="mw-headline" id="GetString"> GetString </span></h3>
+<p>This method retrieves the string data associated with a an index.
+</p><p>bString - Index of the data.
+</p><p>Return value - The string data (empty if it's not there)
+</p>
+<h2> <span class="mw-headline" id="DataController"> DataController </span></h2>
+<p>This is the main COM class to control the Redirector.
+</p>
+<h3> <span class="mw-headline" id="GetTable"> GetTable </span></h3>
+<p>This method is used to retreive system tables that control various aspects of the Redirector functionality.
+</p>
+<h4> <span class="mw-headline" id="TCP_Outgoing_tables"> TCP Outgoing tables </span></h4>
+<ul><li> dtApplication - Applications to intercept.
+</li><li> dtPort - Ports to intercept.
+</li><li> dtIP - IPs to intercept.
+</li><li> dtApplicationInv - Applications to never intercept.
+</li><li> dtPortInv - Ports to never intercept.
+</li><li> dtIPInv - IPs to never intercept.
+</li></ul>
+<h4> <span class="mw-headline" id="UDP_Outgoing_tables"> UDP Outgoing tables </span></h4>
+<p>UDP interception is part of: <a href="http://www.komodia.com/wiki/index.php?title=Komodia%27s_Redirector_Advanced_Version&amp;action=edit&amp;redlink=1" class="new" title="Komodia's Redirector Advanced Version (page does not exist)">Komodia's Redirector Advanced Version</a>.
+</p>
+<ul><li> dtApplicationUDP - Applications to intercept.
+</li><li> dtPortUDP - Ports to intercept.
+</li><li> dtIPUDP - IPs to intercept.
+</li><li> dtApplicationInvUDP - Applications to never intercept.
+</li><li> dtPortInvUDP - Ports to never intercept.
+</li><li> dtIPInvUDP - IPs to never intercept.
+</li></ul>
+<h4> <span class="mw-headline" id="TCP_Incoming_tables"> TCP Incoming tables </span></h4>
+<p>TCP Incoming interception is part of: <a href="http://www.komodia.com/wiki/index.php?title=Komodia%27s_Redirector_Advanced_Version&amp;action=edit&amp;redlink=1" class="new" title="Komodia's Redirector Advanced Version (page does not exist)">Komodia's Redirector Advanced Version</a>.
+</p>
+<ul><li> dtApplicationTCPI - Applications to intercept.
+</li><li> dtPortTCPI - Ports to intercept.
+</li><li> dtIPTCPI - IPs to intercept.
+</li><li> dtApplicationInvTCPI - Applications to never intercept.
+</li><li> dtPortInvTCPI - Ports to never intercept.
+</li><li> dtIPInvTCPI - IPs to never intercept.
+</li></ul>
+<h4> <span class="mw-headline" id="Hard_include.2Fexclude"> Hard include/exclude </span></h4>
+<ul><li> dtHardExclude - Hard exclude applications.
+</li><li> dtHardInclude - Hard include applications.
+</li></ul>
+<h4> <span class="mw-headline" id="Flags"> Flags </span></h4>
+<p>Flags table (dtFlags) is a index/data type table which holds many settings to control the Redirector.
+</p><p>These are the index values:
+</p>
+<ul><li> lsprefresh - LSP refresh time, don't change this value without consulting with Komodia first.
+</li><li> rdenabled - Redirector enable/disable status.
+</li><li> appinv - TCP outgoing applications inversion flag.
+</li><li> portinv - TCP outgoing ports inversion flag.
+</li><li> ipinv - TCP outgoing IPs inversion flag.
+</li><li> appinvudp - UDP outgoing applications inversion flag.
+</li><li> portinvudp - UDP outgoing ports inversion flag.
+</li><li> ipinvudp - UDP outgoing IPs inversion flag.
+</li><li> appinvi - TCP incoming applications inversion flag.
+</li><li> portinvi - TCP incoming ports inversion flag.
+</li><li> ipinvi - TCP incoming IPs inversion flag.
+</li><li> dlltoload - DLL to load file name.
+</li><li> disablecache - Disable HTTP caching.
+</li><li> httpdisable - Disable <a href="http://www.komodia.com/wiki/index.php?title=HTTP_Parser&amp;action=edit&amp;redlink=1" class="new" title="HTTP Parser (page does not exist)">HTTP Parser</a> (only if it exists).
+</li><li> tcprulesand - When true, sets the rules between the applications, ports, and IPs to logical AND instead of logical OR.
+</li><li> processname - When true and HTTP header processing enabled it will add a header to the outgoing request (X-Process-Name) with the name of the process.
+</li><li> dllhttponly - When using the DLL framework setting this flag to true will send the DLL only the HTTP methods and not DataBeforeReceive and DataBeforeSend
+</li><li> intservices - Inverses the services compile time behavior.
+</li><li> pcdebug - Sets debugging print for callbacks.
+</li><li> pclog - Enables HTTP Parser traffic logs (only when traffic log is enabled)
+</li><li> proxysni - When using HTTP Connect proxy, SDK will try to use SNI instead of IP, this will not work 100% because the way browsers and SNI works.
+</li><li> nocom - Disables COM for LSP, LSP will work via offline file only.
+</li><li> cdebug - Setting it to 1 will write the classification received into the main log.
+</li><li> holdhtml - Setting it to 1 will cause any HTML page to be held and only released when the SDK has the entire page.
+</li><li> kcsppenabled - Setting it to 1 will enable per page classification (only for versions that has this module).
+</li><li> ddisable - Domains in this flag will not be held by HTTP Parser (you can specify number of domains, and use "," as a delimiter)
+</li><li> cdebug - Set this flag to 1 to enable classification debug prints.
+</li><li> comdisableredirect - Disable COM redirect on COM framework error.
+</li><li> comredirectoncealways - Redirect once, on COM framework error, even if set to disconnect on error is true.
+</li><li> SSL Digestor:
+<ul><li> ssldisable - Disable SSL Digestor.
+</li><li> ssldisablecc - Disable handling of SSL client certificates.
+</li><li> sslinv - When true the SSL exclusion list will become inverted and only apps in the list will be decrypted.
+</li><li> ssldinv - When true the SSL exclusion list will become inverted and only domains in the list will be decrypted.
+</li><li> Custom CA: (SDK must be restarted after setting these keys)
+<ul><li> sslpub - To the path of the public key .pem file.
+</li><li> sslprv - To the path of the private key .pem file.
+</li><li> sslpsd - To the password of the root CA (it's mandatory).
+</li><li> sslforce - The three previous keys only work if the certs inside KomodiaProduct.h don't exist, if there are certs, an override is needed, when sslforce is set to 1, the SDK will use the new certs.
+</li></ul>
+</li></ul>
+</li></ul>
+<h4> <span class="mw-headline" id="Global_proxy"> Global proxy </span></h4>
+<p>Proxy table (dtProxy) is a index/data type table which holds many settings to control proxy usage of the Redirector (<a href="Komodia's_Redirector_installation_guide.html#Global_proxy_control" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#Global_proxy_control</a>).
+</p><p>These are the index values:
+</p>
+<ul><li> ip - IP of the proxy.
+</li><li> port - Port of the proxy.
+</li><li> username - Username of the proxy.
+</li><li> password - Password of the proxy.
+</li><li> type - Type of the proxy, according to this enum:
+</li></ul>
+<pre>
+typedef enum _IProxyType
+{
+	iptHTTP,
+	iptHTTPConnect,
+	iptHTTPConnectSSL,
+	iptHTTPHybrid,
+	iptHTTPHybridSSL,
+	iptSocks4,
+	iptSocks5,
+	iptHTTPSSL,
+	iptSocks5TCPUDP,
+	iptRedirect,
+	iptRedirectBypass,
+	iptSSLSubst,
+	iptNone
+} IProxyType;
+</pre>
+<h4> <span class="mw-headline" id="Proxy_per_application"> Proxy per application </span></h4>
+<p>Proxy per application (<a href="Komodia's_Redirector_installation_guide.html#Proxy_per_application" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#Proxy per application</a>) table is under the table dtProxyApps, and it is composed of an index with the name of the app, and ~ delimited data with the proxy actual data which is: proxy type (integer using the num)~Proxy IP~Proxy port~Username (optional if needed)~Password (optional if needed)
+</p><p>For example a HTTP Hybrid proxy for Internet Explorer line would look like:
+</p><p>Index: iexplore.exe
+Data: 3~127.0.0.1~8080
+</p><p>Or if we wanted to specify a socks5 with username and password:
+</p><p>Index: iexplore.exe
+Data: 6~127.0.0.1~1080~admin~adminpass
+</p>
+<h3> <span class="mw-headline" id="Clear_2"> Clear </span></h3>
+<p>This method will reset the Redirector to its default values.
+</p>
+<h3> <span class="mw-headline" id="Load"> Load </span></h3>
+<p>This method will load settings from file.
+</p>
+<h4> <span class="mw-headline" id="Text_load"> Text load </span></h4>
+<p>Allows to load data from editable mode (without using the API to edit the data):
+</p>
+<ul><li> LoadFromText- Will Load the data from a file.
+</li><li> LoadFromString- Will Load the data from a string.
+</li></ul>
+<h3> <span class="mw-headline" id="Save"> Save </span></h3>
+<p>This method will save settings to a file.
+</p>
+<h4> <span class="mw-headline" id="Text_save"> Text save </span></h4>
+<p>Allows to save data in editable mode (without using the API to edit the data):
+</p>
+<ul><li> SaveToText - Will save the data to a file.
+</li><li> SaveToString - Will save the data to a string.
+</li></ul>
+<h3> <span class="mw-headline" id="StopProcess"> StopProcess </span></h3>
+<p>This method will stop the Redirector process, the process will exit gracefully.
+</p>
+<h3> <span class="mw-headline" id="BroadcastChange"> BroadcastChange </span></h3>
+<p>This method pushes the Redirector settings immediately, you can read more about it here: <a href="Komodia's_Redirector_user_experience_guide.html#Rules_update" title="Komodia's Redirector user experience guide">Komodia's Redirector user experience guide#Rules_update</a>.
+</p><p>It only effects when rules has been changed, it has no effect when the proxy has been changed.
+</p>
+<h3> <span class="mw-headline" id="UpdateLSPNow"> UpdateLSPNow </span></h3>
+<p>This is needed when you update a proxy that contains a UDP proxy, when you switch to or from a UDP proxy, this method will create or terminate the TCP associate.
+</p>
+<h3> <span class="mw-headline" id="KillAllConnections"> KillAllConnections </span></h3>
+<p>Will terminate all existing connections, the terminate will be sent as soon as there's data on the session, this means that an idle connection will be open until a data will be sent/receive.
+</p><p>This method is good if you want to terminate all existing connections when you switch a proxy.
+</p>
+<h3> <span class="mw-headline" id="GetInstaceID"> GetInstaceID </span></h3>
+<p>This method gets the instance ID of the Redirector, in case the Redirector was restarted, the instance ID will change, also it gives the ID of the current COM interface (if you are using the COM framework), in case the interface was changed, or there was an error and the interface was removed, this ID will change as well. The format of the ID is GUID and the two IDs are seperated by a comma:
+</p>
+<pre>
+GUID,GUID
+</pre>
+<h3> <span class="mw-headline" id="SetEnable"> SetEnable </span></h3>
+<p>This methods changes the Redirector state to normal or bypass (default is normal), when in bypass, traffic that is set to intercepted is going via the Redirector, but isn't processed in any way.
+</p>
+<h3> <span class="mw-headline" id="IsEnabled"> IsEnabled </span></h3>
+<p>This methods gives the state of the Redirector, is it normal or bypass.
+</p>
+<h3> <span class="mw-headline" id="DownloadFile"> DownloadFile </span></h3>
+<pre>
+HRESULT DownloadFile(BSTR bURL,
+		     BSTR bFile,
+		     long lTimeout,
+		     [out]long* pTimeout,
+		     [out,retval]BSTR* pError);
+</pre>
+<p>This method will download a file to the hard driver, parameters:
+</p>
+<ul><li> bURL - Full URL of the file, including http://
+</li><li> bFile - Full path of the file to store
+</li><li> lTimeout - Timeout in miliseconds, 0 is no timeout
+</li><li> pTimeout - When the function exists, this will contain true if a timeout occurred
+</li><li> pError - When the function exists, this will contain the error if an error occurred
+</li></ul>
+<h3> <span class="mw-headline" id="IsLSPInstalled"> IsLSPInstalled </span></h3>
+<pre>
+typedef enum _ILSPInstall
+{
+	iliNo=0,
+	iliOKSingle,
+	iliOKAnd3rdParty,
+	iliOnly3rdParty,
+	iliFileMissing,
+	ili32bitOS
+} ILSPInstall;
+
+HRESULT IsLSPInstalled32([out,retval]ILSPInstall* lResult);
+HRESULT IsLSPInstalled64([out,retval]ILSPInstall* lResult);
+</pre>
+<p>This method will return the state of the LSP installation:
+</p>
+<ul><li> iliNo - LSP is not installed.
+</li><li> iliOKSingle - LSP is installed and is single on the stack.
+</li><li> iliOKAnd3rdParty - LSP is installed and also a 3rd party.
+</li><li> iliOnly3rdParty - Only 3rd party LSP is installed.
+</li><li> iliFileMissing - LSP is installed by the DLL itself is missing.
+</li><li> ili32bitOS - You called the 64bit method on 32bit OS.
+</li></ul>
+<p>You use IsLSPInstalled32 to get 32bit LSP status (you call this always), and IsLSPInstalled64 to get 64bit LSP status, this is called on 64bit OSs only.
+</p>
+<h3> <span class="mw-headline" id="ForceWFPUpdate"> ForceWFPUpdate </span></h3>
+<p>When deploying a .ini file from another machine, call this method to make sure the WFP gets the correct settings, the reason is that WFP uses a shadow table, which might be in the .ini from the development machine which will affect WFP update.
+</p>
+<h1> <span class="mw-headline" id="Quick_samples"> Quick samples </span></h1>
+<p>All quick samples are written using VB6 syntax.
+</p>
+<h2> <span class="mw-headline" id="Adding_applications_to_intercept"> Adding applications to intercept </span></h2>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtApplications)
+
+'Add the applications
+tb.AddString &quot;iexplore.exe&quot;
+tb.AddString &quot;firefox.exe&quot;
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h2> <span class="mw-headline" id="Setting_intercepting_of_all_apps"> Setting intercepting of all apps </span></h2>
+<p>You need to make sure that the app list in the outgoing TCP is clear.
+</p>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtFlags)
+
+'Inversing the flag
+tb.AddStringIdx(&quot;appinv&quot;,&quot;1&quot;)
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h2> <span class="mw-headline" id="Adding_ports_to_intercept"> Adding ports to intercept </span></h2>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtPorts)
+
+'Add the applications
+tb.AddString &quot;443&quot;
+tb.AddString &quot;80&quot;
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h2> <span class="mw-headline" id="Proxy_settings"> Proxy settings </span></h2>
+<h3> <span class="mw-headline" id="Setting_a_global_proxy_server"> Setting a global proxy server </span></h3>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtProxy)
+
+'Add the proxy 
+tb.AddStringIdx &quot;ip&quot;,&quot;127.0.0.1&quot;
+tb.AddStringIdx &quot;port&quot;,&quot;8080&quot;
+tb.AddStringIdx &quot;type&quot;,3
+
+'Optional username and password
+tb.AddStringIdxPreserveCase &quot;username&quot;,&quot;admin&quot;
+tb.AddStringIdxPreserveCase &quot;password&quot;,&quot;pass&quot;
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h3> <span class="mw-headline" id="Clearing_the_global_proxy_settings"> Clearing the global proxy settings </span></h3>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtProxy)
+
+'Add the proxy 
+tb.Clear
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h3> <span class="mw-headline" id="Setting_an_application_proxy_server"> Setting an application proxy server </span></h3>
+<p>This will set a hybrid HTTP Server for Internet Explorer.
+</p>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtProxyApps)
+
+'Add the proxy 
+tb.AddStringIdxPreserveCase &quot;iexplore.exe&quot;,&quot;3~127.0.0.1~8080&quot;
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h3> <span class="mw-headline" id="Removing_an_application_proxy_server"> Removing an application proxy server </span></h3>
+<p>This will remove entry for Internet Explorer.
+</p>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtProxyApps)
+
+'Add the proxy 
+tb.EraseString &quot;iexplore.exe&quot;
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h3> <span class="mw-headline" id="Clearing_all_application_proxies"> Clearing all application proxies </span></h3>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtProxyApps)
+
+'Add the proxy 
+tb.Clear
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h3> <span class="mw-headline" id="Getting_the_value_of_a_specific_application_proxy"> Getting the value of a specific application proxy </span></h3>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtProxyApps)
+
+'Check if we have a record for Internet Explorer
+if tb.DoesStringExists(&quot;iexplore.exe&quot;) then
+    dim ProxyData as string
+    ProxyData=tb.GetString(&quot;iexplore.exe&quot;)
+endif
+</pre>
+<h2> <span class="mw-headline" id="Setting.2FGetting_flag_value"> Setting/Getting flag value </span></h2>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtFlags)
+
+'Inverse the applications status
+if tb.GetString(&quot;appinv&quot;)=&quot;1&quot;
+    tb.AddStringIdx(&quot;appinv&quot;,&quot;0&quot;)
+else
+    tb.AddStringIdx(&quot;appinv&quot;,&quot;1&quot;)
+end if
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h2> <span class="mw-headline" id="Setting_a_custom_variable"> Setting a custom variable </span></h2>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtFlags)
+
+'Set the variable
+tb.AddStringIdx &quot;myvar&quot;,&quot;mydata&quot;
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h2> <span class="mw-headline" id="Getting_a_custom_variable"> Getting a custom variable </span></h2>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtFlags)
+
+'Set the variable
+msgbox tb.GetString(&quot;myvar&quot;)
+</pre>
+<h2> <span class="mw-headline" id="Setting_a_DLL_to_load"> Setting a DLL to load </span></h2>
+<p>Settings a DLL to load is just setting a variable in the flags (the variable is: "dlltoload")
+</p>
+<pre>
+'Get the table
+dim dt as new DataController
+dim tb as DataTable
+set tb=dt.GetTable(dtFlags)
+
+'Set the variable
+tb.AddStringIdx &quot;dlltoload&quot;,&quot;full dll path&quot; 'Full DLL path can look like this: c:\program files\prog\dll.dll
+'You can also use system variables:&#160;%programfiles%\prog\dll.dll
+
+'Commit the data
+tb.Commit
+
+'Save data to file
+dt.Save
+</pre>
+<h2> <span class="mw-headline" id="HTTP_header_manipulation"> HTTP header manipulation </span></h2>
+<p>Header manipulation is under a container, which has two tables and some flags.
+</p>
+<h3> <span class="mw-headline" id="Cache_control"> Cache control </span></h3>
+<p>To enable/disable clearing the cache:
+</p>
+<pre>
+Dim dt As DataTable
+Set dt = dc.GetTable(dtFlags)
+    
+'This is a checkbox in the form
+If DisableCaching = Checked Then
+    dt.AddLongIdx &quot;disablecache&quot;, 1
+Else
+    dt.AddLongIdx &quot;disablecache&quot;, 0
+End If
+        
+'Save it
+dt.Commit
+</pre>
+<h3> <span class="mw-headline" id="Header_control"> Header control </span></h3>
+<p>To enable/disable the header processing:
+</p>
+<pre>
+Dim dt As DataTable
+Set dt = dc.GetTable(dtFlags)
+    
+'This is a checkbox in the form
+If DisableCaching = Checked Then
+    dt.AddLongIdx &quot;filterhttp&quot;, 1
+Else
+    dt.AddLongIdx &quot;filterhttp&quot;, 0
+End If
+        
+'Save it
+dt.Commit
+</pre>
+<h3> <span class="mw-headline" id="Managing_the_header_tables"> Managing the header tables </span></h3>
+<p>The header processing tables are under the container ctHTTPFilter and they are named: filter and custom
+</p>
+<h4> <span class="mw-headline" id="Adding_field_to_modify.2Fdelete"> Adding field to modify/delete </span></h4>
+<pre>
+'Get the DC
+Set dc = GetDataController
+    
+'Get the manager
+Dim Mgr As DataTableHolder
+Set Mgr = dc.GetContainer(ctHTTPFilter)
+    
+'Get the table
+Dim FilterTbl As DataTable
+Set FilterTbl = Mgr.GetTable(&quot;filter&quot;)
+
+'Add a header to change (for example user-agent)
+FilterTbl.AddStringIdx &quot;user-agent&quot;,&quot;some value&quot;
+
+'Add a header to delete
+FilterTbl.AddStringIdx &quot;refer&quot;
+
+'Save changes
+FilterTbl.Commit
+Mgr.Commit
+dc.Save
+</pre>
+<h4> <span class="mw-headline" id="Adding_a_custom_field"> Adding a custom field </span></h4>
+<pre>
+'Get the DC
+Set dc = GetDataController
+    
+'Get the manager
+Dim Mgr As DataTableHolder
+Set Mgr = dc.GetContainer(ctHTTPFilter)
+    
+'Get the table
+Dim FilterTbl As DataTable
+Set FilterTbl = Mgr.GetTable(&quot;custom&quot;)
+
+'Add a header to change (for example user-agent)
+FilterTbl.AddStringIdx &quot;X-customheader&quot;,&quot;some value&quot;
+
+'Save changes
+FilterTbl.Commit
+Mgr.Commit
+dc.Save
+</pre>
+<h2> <span class="mw-headline" id="SSH_connect"> SSH connect </span></h2>
+<pre>
+Dim sh As New SSHController
+sh.SetSSHLogFile TextLog
+If sh.CreateSSHSession(SSHText, TimeoutText) &lt;&gt; 0 Then
+    MsgBox &quot;Failed to create SSH&quot;
+Else
+    MsgBox &quot;SSH created&quot;
+End If
+</pre>
+<ul><li> SSHText - Contains the SSH connection syntax (learn more at: <a href="Komodia's_Redirector_installation_guide.html#SSH_Module" title="Komodia's Redirector installation guide">Komodia's Redirector installation guide#SSH_Module</a>.
+</li><li> TimeoutText - Timeout in Mili seconds, default is 10000
+</li></ul>
+<h2> <span class="mw-headline" id="Black.2Fwhite_list_module"> Black/white list module </span></h2>
+<h3> <span class="mw-headline" id="Enabling_the_black.2Fwhite_list_module"> Enabling the black/white list module </span></h3>
+<pre>
+'Set it
+Dim dc As DataController
+Set dc = GetDataController
+    
+'Get the flags
+Dim tbl As DataTable
+Set tbl = dc.GetTable(dtFlags)
+    
+'Get the flag
+Dim lParental As Long
+lParental = tbl.GetLong(&quot;parentalcontrol&quot;)
+    
+'Set it
+tbl.AddLongIdx &quot;parentalcontrol&quot;, 1
+    
+'Save it
+tbl.Commit
+</pre>
+<h3> <span class="mw-headline" id="Disabling_the_black.2Fwhite_list_module"> Disabling the black/white list module </span></h3>
+<pre>
+'Set it
+Dim dc As DataController
+Set dc = GetDataController
+    
+'Get the flags
+Dim tbl As DataTable
+Set tbl = dc.GetTable(dtFlags)
+    
+'Get the flag
+Dim lParental As Long
+lParental = tbl.GetLong(&quot;parentalcontrol&quot;)
+    
+'Set it
+tbl.AddLongIdx &quot;parentalcontrol&quot;, 0
+    
+'Save it
+tbl.Commit
+</pre>
+<h3> <span class="mw-headline" id="Setting_the_module_to_whitelist_mode"> Setting the module to whitelist mode </span></h3>
+<pre>
+'Get the type
+Dim dc As DataController
+Set dc = GetDataController
+        
+'First get the container
+Dim tbh As DataTableHolder
+Set tbh = dc.GetContainer(ctParentalControl)
+        
+'Get the table
+Dim tbl As DataTable
+Set tbl = tbh.GetTable(&quot;flags&quot;)
+        
+tbl.AddLongIdx &quot;parentalcontrolwhitelist&quot;, 1
+        
+'This is where any other site will be redirected to (must not include http:// or https://)
+tbl.AddStringIdx &quot;whitelistredirect&quot;, &quot;www.siteredirect.com&quot;
+        
+tbl.Commit
+tbh.Commit
+</pre>
+<h3> <span class="mw-headline" id="Adding_exact_domains_to_the_list_.28black_or_white.29"> Adding exact domains to the list (black or white) </span></h3>
+<pre>
+'Get the DC
+Set dc = GetDataController
+    
+'Get the manager
+Dim Mgr As DataTableHolder
+Set Mgr = dc.GetContainer(ctParentalControl)
+    
+'Get the table
+Dim Tbl As DataTable
+Set Tbl = Mgr.GetTable(&quot;exactdomainblacklist&quot;)
+
+'Add a domain
+Tbl.AddStringIdx &quot;www.block.com&quot;
+
+'Save changes
+Tbl .Commit
+Mgr.Commit
+</pre>
+<p><br />
+</p>
+<h3> <span class="mw-headline" id="Adding_partial_domains_to_the_list_.28black_or_white.29"> Adding partial domains to the list (black or white) </span></h3>
+<pre>
+'Get the DC
+Set dc = GetDataController
+    
+'Get the manager
+Dim Mgr As DataTableHolder
+Set Mgr = dc.GetContainer(ctParentalControl)
+    
+'Get the table
+Dim Tbl As DataTable
+Set Tbl = Mgr.GetTable(&quot;partialdomainblacklist&quot;)
+
+'Add a domain
+Tbl.AddStringIdx &quot;www.block.com&quot;
+
+'Save changes
+Tbl .Commit
+Mgr.Commit
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 972/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key komod_wikidb:pcache:idhash:40-0!*!0!!en!*!* and timestamp 20150219035546 -->
+</div><div class="printfooter">
+Retrieved from "<a href="../index.php@title=Komodia%2527s_Redirector_API_Guide&amp;oldid=1439.html">http://www.komodia.com/wiki/index.php?title=Komodia%27s_Redirector_API_Guide&amp;oldid=1439</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Komodia's_Redirector_API_Guide.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://www.komodia.com/wiki/index.php?title=Talk:Komodia%27s_Redirector_API_Guide&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="../index.php@title=Komodia%2527s_Redirector_API_Guide&amp;action=edit.html" primary="1" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="../index.php@title=Komodia%2527s_Redirector_API_Guide&amp;action=history.html" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="../index.php@title=Special%253AUserLogin&amp;returnto=Komodia%2527s+Redirector+API+Guide.html" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+<a href="Main_Page.html" style="background-image: url(http://www.komodia.com/images/logo.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-Official-homepage"><a href="../../index.php.html">Official homepage</a></li>
+				<li id="n-recentchanges"><a href="Special%253ARecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://www.komodia.com/wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search Komodia [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special%253AWhatLinksHere/Komodia's_Redirector_API_Guide.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special%253ARecentChangesLinked/Komodia's_Redirector_API_Guide.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="Special%253ASpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="../index.php@title=Komodia%2527s_Redirector_API_Guide&amp;printable=yes.html" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+				<li id="t-permalink"><a href="../index.php@title=Komodia%2527s_Redirector_API_Guide&amp;oldid=1439.html" title="Permanent link to this revision of the page">Permanent link</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 17 February 2015, at 00:29.</li>
+		<li id="viewcount">This page has been accessed 42,084 times.</li>
+		<li id="privacy"><a href="Komodia%253APrivacy_policy.html" title="Komodia:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="Komodia%253AAbout.html" title="Komodia:About">About Komodia</a></li>
+		<li id="disclaimer"><a href="Komodia%253AGeneral_disclaimer.html" title="Komodia:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest"], null, true);
+}</script>
+<script>if(window.mw){
+mw.loader.state({"site":"ready"});
+}</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6898822-1");
+pageTracker._trackPageview();
+</script><!-- Piwik -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.komodia.com/" : "http://piwik.komodia.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 6);
+piwikTracker.setDocumentTitle("");
+piwikTracker.setIgnoreClasses("image");
+
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+/* ]]> */
+</script><noscript><p><img src="http://piwik.komodia.com/piwik.php?idsite=6" style="border:0" alt=""/></p></noscript>
+<!-- /Piwik --><!-- Served in 0.164 secs. --></body></html>
