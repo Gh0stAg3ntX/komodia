@@ -3,7 +3,7 @@ payback's a stitch
 
 w00d
 
-#### source code and binaries:
+#### sources and binaries:
 
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaAhoCorasick.zip
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaRelay.zip
