@@ -48,6 +48,7 @@ w00d
 
 * Komodia rootkit: https://gist.github.com/Wack0/f865ef369eb8c23ee028
 * Komodia certs: https://gist.github.com/Wack0/17c56b77a90073be81d3
+* Proof-of-concept attack: https://twitter.com/ErrataRob/status/568556702234050560/photo/1
 * General info collection: https://github.com/hannob/superfishy
 * https://bugzilla.mozilla.org/show_bug.cgi?id=1134506
 * https://filippo.io/Badfish/
@@ -58,5 +59,10 @@ w00d
 * http://blog.erratasec.com/2015/02/some-notes-on-superfish.html
 * https://www.eff.org/deeplinks/2015/02/further-evidence-lenovo-breaking-https-security-its-laptops
 * https://plus.google.com/+KristianK%C3%B6hntopp/posts/FE3sRsFnqe6
+
+#### mainstream media:
+
 * http://www.forbes.com/sites/thomasbrewster/2015/02/19/superfish-history-of-malware-and-surveillance/
 * http://www.forbes.com/sites/thomasbrewster/2015/02/20/komodia-lenovo-superfish-ddos/
+* http://arstechnica.com/security/2015/02/superfish-doubles-down-says-https-busting-adware-poses-no-security-risk/
+* http://www.csoonline.com/article/2887235/application-security/spin-and-fud-superfish-ceo-says-software-presents-no-security-risk.html#tk.rss_dataprotection
