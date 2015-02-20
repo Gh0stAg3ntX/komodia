@@ -3,7 +3,7 @@ payback's a stitch
 
 w00d
 
-#### source code:
+#### source code and binaries:
 
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaAhoCorasick.zip
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaRelay.zip
@@ -13,6 +13,7 @@ w00d
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/packet_crafter.zip
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/tcpip_lib4.zip
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/tcpip_lib51.zip
+* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/clients/ocx.zip
 
 #### best of evil:
 
