@@ -19,6 +19,7 @@ komodia.com whois: https://archive.today/lhomp
 * https://lastpass.com/superfish/
 * http://www.kb.cert.org/vuls/id/529496
 * http://blog.erratasec.com/2015/02/extracting-superfish-certificate.html
+* http://blog.erratasec.com/2015/02/some-notes-on-superfish.html
 * https://www.eff.org/deeplinks/2015/02/further-evidence-lenovo-breaking-https-security-its-laptops
 * https://plus.google.com/+KristianK%C3%B6hntopp/posts/FE3sRsFnqe6
 * http://www.forbes.com/sites/thomasbrewster/2015/02/19/superfish-history-of-malware-and-surveillance/
