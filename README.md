@@ -41,9 +41,10 @@ w00d
 * komodia.com whois: https://archive.today/lhomp
 
 #### best of good:
+
+* https://github.com/hannob/superfishy
 * https://gist.github.com/Wack0/17c56b77a90073be81d3#file-gistfile1-txt
 * https://bugzilla.mozilla.org/show_bug.cgi?id=1134506
-* https://github.com/hannob/superfishy
 * https://filippo.io/Badfish/
 * https://lastpass.com/superfish/
 * http://www.kb.cert.org/vuls/id/529496
