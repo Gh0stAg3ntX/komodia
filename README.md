@@ -51,6 +51,7 @@ w00d
 * General info collection: https://github.com/hannob/superfishy
 * https://bugzilla.mozilla.org/show_bug.cgi?id=1134506
 * https://filippo.io/Badfish/
+* https://blog.filippo.io/komodia-superfish-ssl-validation-is-broken/
 * https://lastpass.com/superfish/
 * http://www.kb.cert.org/vuls/id/529496
 * http://blog.erratasec.com/2015/02/extracting-superfish-certificate.html
