@@ -43,7 +43,8 @@ w00d
 #### best of good:
 
 * https://github.com/hannob/superfishy
-* https://gist.github.com/Wack0/17c56b77a90073be81d3#file-gistfile1-txt
+* Rootkit: https://gist.github.com/Wack0/f865ef369eb8c23ee028
+* Certs: https://gist.github.com/Wack0/17c56b77a90073be81d3
 * https://bugzilla.mozilla.org/show_bug.cgi?id=1134506
 * https://filippo.io/Badfish/
 * https://lastpass.com/superfish/
