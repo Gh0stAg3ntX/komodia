@@ -5,28 +5,28 @@ w00d
 
 #### sources and binaries:
 
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaAhoCorasick.zip
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaRelay.zip
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaSSLSnifferV2.zip
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/PCProxyDLL.zip
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/RedirectorAPI.zip
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/packet_crafter.zip
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/tcpip_lib4.zip
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/tcpip_lib51.zip
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/clients/ocx.zip
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/KomodiaAhoCorasick.zip
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/KomodiaRelay.zip
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/KomodiaSSLSnifferV2.zip
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/PCProxyDLL.zip
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/RedirectorAPI.zip
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/packet_crafter.zip
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/tcpip_lib4.zip
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/tcpip_lib51.zip
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/clients/ocx.zip
 * https://github.com/cryptostorm/komodia/tree/master/www.komodia.com/winsock-lsp
 
 #### pdf, powerpoint:
 
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/Anonymizer.pps
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/ParentalControl.pps
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/AhoCorasick.pdf
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/DevelopDiff.pdf
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KRDR_DLL_manual.pdf
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaLSPTypes.pdf
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/TCPIP51_usage.pdf
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/quotes/InterceptorQ.pdf
-* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/quotes/RedirectorQ.pdf
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/Anonymizer.pps
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/ParentalControl.pps
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/AhoCorasick.pdf
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/DevelopDiff.pdf
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/KRDR_DLL_manual.pdf
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/KomodiaLSPTypes.pdf
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/TCPIP51_usage.pdf
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/quotes/InterceptorQ.pdf
+* https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/quotes/RedirectorQ.pdf
 
 #### best of evil:
 
