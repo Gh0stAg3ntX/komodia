@@ -14,6 +14,7 @@ w00d
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/tcpip_lib4.zip
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/tcpip_lib51.zip
 * https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/clients/ocx.zip
+* https://github.com/cryptostorm/komodia/tree/master/www.komodia.com/winsock-lsp
 
 #### best of evil:
 
