@@ -26,3 +26,4 @@ komodia.com whois: https://archive.today/lhomp
 * https://plus.google.com/+KristianK%C3%B6hntopp/posts/FE3sRsFnqe6
 * http://www.forbes.com/sites/thomasbrewster/2015/02/19/superfish-history-of-malware-and-surveillance/
 * https://gist.github.com/Wack0/17c56b77a90073be81d3#file-gistfile1-txt
+* https://bugzilla.mozilla.org/show_bug.cgi?id=1134506
