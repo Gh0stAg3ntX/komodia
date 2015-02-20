@@ -36,8 +36,8 @@ w00d
 * Parental control SDKAPI - https://archive.today/0pMQR
 * Superfish Twitter - https://twitter.com/SuperfishTeam
 * Superfish Founder Twitter - https://twitter.com/_adip_
-* https://www.ssllabs.com/ssltest/analyze.html?d=komodia.com
-* https://www.ssllabs.com/ssltest/analyze.html?d=superfish.com
+* https://www.ssllabs.com/ssltest/analyze.html?d=komodia.com (no SSL, smart move)
+* https://www.ssllabs.com/ssltest/analyze.html?d=superfish.com (vulnerable to Heartbleed, OpenSSL CSS, etc)
 * komodia.com whois: https://archive.today/lhomp
 
 #### best of good:
