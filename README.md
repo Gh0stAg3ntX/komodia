@@ -53,3 +53,4 @@ w00d
 * https://www.eff.org/deeplinks/2015/02/further-evidence-lenovo-breaking-https-security-its-laptops
 * https://plus.google.com/+KristianK%C3%B6hntopp/posts/FE3sRsFnqe6
 * http://www.forbes.com/sites/thomasbrewster/2015/02/19/superfish-history-of-malware-and-surveillance/
+* http://www.forbes.com/sites/thomasbrewster/2015/02/20/komodia-lenovo-superfish-ddos/
