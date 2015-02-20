@@ -59,6 +59,7 @@ w00d
 * http://blog.erratasec.com/2015/02/some-notes-on-superfish.html
 * https://www.eff.org/deeplinks/2015/02/further-evidence-lenovo-breaking-https-security-its-laptops
 * https://plus.google.com/+KristianK%C3%B6hntopp/posts/FE3sRsFnqe6
+* http://marcrogers.org/2015/02/19/will-the-madness-never-end-komodia-ssl-certificates-are-everywhere/
 
 #### mainstream media:
 
