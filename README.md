@@ -34,11 +34,12 @@ w00d
 * DNS hijack - https://archive.today/fePdu
 * Kernel SDK protection watchdog - https://archive.today/7ZnwY
 * Parental control SDKAPI - https://archive.today/0pMQR
-* Superfish Twitter - https://twitter.com/SuperfishTeam
-* Superfish Founder Twitter - https://twitter.com/_adip_
 * https://www.ssllabs.com/ssltest/analyze.html?d=komodia.com (no SSL, smart move)
 * https://www.ssllabs.com/ssltest/analyze.html?d=superfish.com (vulnerable to Heartbleed, OpenSSL CSS, etc)
 * komodia.com whois: https://archive.today/lhomp
+* Komodia Youtube channel: https://www.youtube.com/user/komodiaDOTcom/videos
+* Superfish Twitter - https://twitter.com/SuperfishTeam
+* Superfish Founder Twitter - https://twitter.com/_adip_
 
 #### best of good:
 
