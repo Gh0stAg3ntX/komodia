@@ -13,6 +13,7 @@ komodia.com whois: https://archive.today/lhomp
 * Parental control SDKAPI - https://archive.today/0pMQR
 * Superfish Twitter - https://twitter.com/SuperfishTeam
 * Superfish Founder Twitter - https://twitter.com/_adip_
+* https://www.ssllabs.com/ssltest/analyze.html?d=komodia.com
 * https://www.ssllabs.com/ssltest/analyze.html?d=superfish.com
 
 #### best of good:
