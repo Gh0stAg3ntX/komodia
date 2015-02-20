@@ -3,6 +3,17 @@ payback's a stitch
 
 w00d
 
+#### source code:
+
+* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaAhoCorasick.zip
+* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaRelay.zip
+* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/KomodiaSSLSnifferV2.zip
+* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/PCProxyDLL.zip
+* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/RedirectorAPI.zip
+* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/packet_crafter.zip
+* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/tcpip_lib4.zip
+* https://github.com/cryptostorm/komodia/blob/master/www.komodia.com/tcpip_lib51.zip
+
 #### best of evil:
 
 * Anti AV module - https://archive.today/AHvz4
