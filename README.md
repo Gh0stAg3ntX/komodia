@@ -3,6 +3,8 @@ payback's a stitch
 
 w00d
 
+browsable mirror of komodia.com: http://komodia.fishy.website/
+
 #### sources and binaries:
 
 * https://github.com/cryptostorm/komodia/raw/master/www.komodia.com/KomodiaAhoCorasick.zip
