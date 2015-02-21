@@ -39,10 +39,12 @@ browsable mirror of komodia.com: http://komodia.fishy.website/
 * https://www.ssllabs.com/ssltest/analyze.html?d=komodia.com (no SSL, smart move)
 * https://www.ssllabs.com/ssltest/analyze.html?d=superfish.com (vulnerable to Heartbleed, OpenSSL CSS, etc)
 * Weichselbaum on Packetstorm: http://packetstormsecurity.com/files/author/1608/
+* Weichselbaum on MSDN:https://social.msdn.microsoft.com/Profile/barak%20weichselbaum/activity
 * Weichselbaum on EzineArticles: http://ezinearticles.com/?expert=Barak_Weichselbaum
 * Weichselbaum on Linkedin: https://www.linkedin.com/in/barakweichselbaum
-* komodia.com whois: https://archive.today/lhomp
+* Komodia on Facebook: https://www.facebook.com/pages/Komodia/129677207087283
 * Komodia Youtube channel: https://www.youtube.com/user/komodiaDOTcom/videos
+* komodia.com whois: https://archive.today/lhomp
 * Superfish Twitter - https://twitter.com/SuperfishTeam
 * Superfish Founder Twitter - https://twitter.com/_adip_
 
