@@ -1,0 +1,60 @@
+https://www.virustotal.com/en/file/e920f2f7f8eb470058c24eb609aa41c2cf883080d73259bb80dd40677529785b/analysis/
+
+Here's the cert info embedded in the package; are these legit?
+
+	
+[+] Websecure Ltd
+Status  Valid
+Valid from 1:00 AM 12/6/2013
+Valid to 1:00 PM 12/11/2015
+Valid usage Code Signing
+Algorithm SHA1
+Thumbrint C5B1488A594FB633B4FA81D51DD4EC8CCF4E427A
+Serial number 0E 3D 5B 30 01 4A 39 A6 CD F3 B2 D4 FD 06 BA EC
+
+[+] DigiCert Assured ID Code Signing CA-1
+Status  Valid
+Valid from 1:00 PM 2/11/2011
+Valid to 1:00 PM 2/10/2026
+Valid usage Code Signing
+Algorithm SHA1
+Thumbrint 409AA4A74A0CDA7C0FEE6BD0BB8823D16B5F1875
+Serial number 0F A8 49 06 15 D7 00 A0 BE 21 76 FD C5 EC 6D BD
+
+[+] DigiCert
+Status  Valid
+Valid from 1:00 AM 11/10/2006
+Valid to 1:00 AM 11/10/2031
+Valid usage Server Auth, Client Auth, Email Protection, Code Signing, Timestamp Signing
+Algorithm SHA1
+Thumbrint 0563B8630D62D75ABBC8AB1E4BDFB5A899B24D43
+Serial number 0C E7 E0 E5 17 D8 46 FE 8F E5 60 FC 1B F0 30 39
+
+
+Counter signers	
+[+] DigiCert Timestamp Responder
+Status  Valid
+Valid from 1:00 AM 10/22/2014
+Valid to 1:00 AM 10/22/2024
+Valid usage Timestamp Signing
+Algorithm SHA1
+Thumbrint 614D271D9102E30169822487FDE5DE00A352B01D
+Serial number 03 01 9A 02 3A FF 58 B1 6B D6 D5 EA E6 17 F0 66
+
+[+] DigiCert Assured ID CA-1
+Status  Valid
+Valid from 1:00 AM 11/10/2006
+Valid to 1:00 AM 11/10/2021
+Valid usage Server Auth, Client Auth, Code Signing, Email Protection, Timestamp Signing
+Algorithm SHA1
+Thumbrint 19A09B5A36F4DD99727DF783C17A51231A56C117
+Serial number 06 FD F9 03 96 03 AD EA 00 0A EB 3F 27 BB BA 1B
+
+[+] DigiCert
+Status  Valid
+Valid from 1:00 AM 11/10/2006
+Valid to 1:00 AM 11/10/2031
+Valid usage Server Auth, Client Auth, Email Protection, Code Signing, Timestamp Signing
+Algorithm SHA1
+Thumbrint 0563B8630D62D75ABBC8AB1E4BDFB5A899B24D43
+Serial number 0C E7 E0 E5 17 D8 46 FE 8F E5 60 FC 1B F0 30 39
