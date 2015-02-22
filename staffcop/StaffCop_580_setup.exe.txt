@@ -1,3 +1,7 @@
 Well this is certainly interesting...
 
 https://www.virustotal.com/en/file/4788e6dc4703ed1b78b82c8c4354bdb9ea3e00d12ea9c002491e17d61ba109ca/analysis/1424576515/
+
+
+Here's the intstaller:
+http://komodia.fishy.website/staffcop/StaffCop_580_setup.exe
